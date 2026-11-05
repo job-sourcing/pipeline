@@ -1,9 +1,9 @@
 {
  "label": "legendbiotech_us_fulltime",
- "rows": 72,
- "kept": 72,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 67,
+ "kept": 66,
+ "new": 1,
+ "ghosts_dropped": 6,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 72,
- "banded": 2,
+ "state_rows": 67,
+ "banded": 1,
  "lca_pools": 39,
- "snapshot": "2026-11-04"
+ "snapshot": "2026-11-05"
 }

@@ -69,7 +69,7 @@ We move quickly and hold a high bar, but we also believe sustainable performance
 
 • Family leave – paid maternity, paternity, and caregiver time
 
-• Company retreats – twice-yearly gatherings in inspiring locations",3851,https://apply.workable.com/j/3AE376AFCA,,,,,,,not_checked,,2026-10-31,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
+• Company retreats – twice-yearly gatherings in inspiring locations",3851,https://apply.workable.com/j/3AE376AFCA,,,,,,,not_checked,,2026-10-31,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
 782F9AA284,Senior Product Marketing Manager,Runware,runware,Full time,Posted 4 Days Ago,,,(Remote),1,(Remote),true,,United States,,0,"We're looking for a Senior Product Marketing Manager to own positioning, messaging and go-to-market across our model APIs, serverless compute and dedicated capacity. You'll turn our technical capabilities into clear propositions that help customers understand what to use, why it matters and how to get started.
 
 This is a hands-on role. You'll interview customers, collaborate with engineers, create product marketing content and enable Sales, working closely with Product, Engineering, Growth and Ecosystem teams.
@@ -134,7 +134,7 @@ Our release cycles are fast and intense, but they’re followed by real downtime
 
 • Family leave – paid maternity, paternity, and caregiver time
 
-• Company retreats – twice-yearly gatherings in inspiring locations",3636,https://apply.workable.com/j/782F9AA284,,,,,,,not_checked,,2026-10-31,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
+• Company retreats – twice-yearly gatherings in inspiring locations",3636,https://apply.workable.com/j/782F9AA284,,,,,,,not_checked,,2026-10-31,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
 A68D795201,Senior Software Engineer,Runware,runware,Full time,Posted 5 Days Ago,,,(Remote),1,(Remote),true,,United States,,0,"We’re looking for a Senior Software Engineer who thrives on turning ambitious ideas into production systems that delight developers and deliver real business impact.
 
 You’ll work across the stack, from backend APIs and orchestration to SDKs, dashboards, and developer tools. You’ll take ownership from start to finish, understanding user needs, designing elegant solutions, and delivering outcomes that make building with AI faster, simpler, and more creative.
@@ -205,4 +205,463 @@ We move quickly and hold a high bar, but we also believe sustainable performance
 
 • Family leave – paid maternity, paternity, and caregiver time
 
-• Company retreats – twice-yearly gatherings in inspiring locations",3851,https://apply.workable.com/j/A68D795201,,,,,,,not_checked,,2026-10-31,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
+• Company retreats – twice-yearly gatherings in inspiring locations",3851,https://apply.workable.com/j/A68D795201,,,,,,,not_checked,,2026-10-31,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+1D44B99A55,AI Factory Network Architect,Runware,runware,Full time,Posted Today,,,(Remote),1,(Remote),true,,United States,,0,"About Runware
+
+Runware is the AI inference platform that builds and runs its own infrastructure, end to end. Our Sonic Inference Engine has served more than 20 billion requests for over 1 million developers and 500 million end users, with 400,000+ models behind a single integration, at up to 10x lower cost per token than traditional providers.
+
+We are now building the AI Factory that runs it. The Sonic Inference Pod packs 1 MW of custom-designed compute into a 20-foot container with closed-loop, water-free cooling, sited wherever power exists. Pods are live in the US and Europe, and we are scaling to dozens of pods and tens of thousands of GPUs, all operated as one distributed fabric that reroutes traffic the moment a pod goes offline (announcement).
+
+The network is what turns those pods into a supercomputer. That is the job.
+
+The role
+
+As AI Factory Network Architect, you will own the network architecture of Runware's AI supercomputer, from the NVLink domain inside a server to the optical links between pods on two continents. You will set the design, build the first systems with your own hands, and grow the team that runs them.
+
+This is a hands-on leadership role, not a slide-deck role. You will specify the fabrics, validate them on real hardware, debug the first congestion collapse at 3 a.m., and then write the standard so it never happens again. You will work directly with our hardware, platform, and inference engineering teams, with NVIDIA and our optical and switching vendors, and with the site teams deploying pods.
+
+Success means inference traffic flows across tens of thousands of GPUs at line rate, pods join the fabric in days rather than weeks, and a failure anywhere in the network is invisible to the developer calling our API.
+
+What you'll do
+
+• Own the end-to-end network architecture for the AI Factory: the scale-up fabric (NVLink and NVSwitch domains), the scale-out fabric (InfiniBand and RoCE), the storage and management networks, and the pod-to-pod and inter-site backbone.
+
+• Design the optical layer: transceiver and cable selection, co-packaged and linear-drive optics evaluation, DWDM for pod-to-pod and metro links, and the link budgets and reliability targets behind them.
+
+• Define the reference network design for the Sonic Inference Pod so every new pod ships with a validated, repeatable fabric and joins the global network in days.
+
+• Build and bring up the first fabrics yourself: rail-optimized topologies, subnet manager and routing configuration, adaptive routing, congestion control, QoS, and GPUDirect RDMA tuning, measured against inference throughput and tail latency rather than synthetic benchmarks.
+
+• Work with the inference engine team so the Sonic Inference Engine's traffic patterns, from tensor- and pipeline-parallel collectives to KV-cache transfer and multi-node serving, drive topology and buffer decisions, not the other way round.
+
+• Run capacity planning and the vendor roadmap with NVIDIA, switch and optics suppliers, and carriers; negotiate technical specifications and lead evaluations of new fabric generations.
+
+• Set the operating standard: telemetry, link-health monitoring, failure-domain design, automated fault isolation, and runbooks that let a small team operate tens of thousands of ports.
+
+• Hire and lead a team of network engineers as the footprint grows, and act as the final technical escalation for fabric incidents across all sites.
+
+Requirements
+
+What we're looking for
+
+• 15+ years designing, building, and operating high-performance networks, with a significant part of that in HPC or AI supercomputers at the scale of thousands of GPUs or more.
+
+• Deep, hands-on InfiniBand experience: fabric design, subnet management, routing engines, adaptive routing, congestion control, and performance debugging at the port and queue-pair level.
+
+• Working knowledge of NVLink and NVSwitch domains and how scale-up and scale-out fabrics interact for multi-GPU and multi-node inference and training.
+
+• Optical networking depth: transceivers and cabling at 400G and 800G, link budgets, DWDM and coherent optics for inter-site links, and the operational realities of optics at scale (failure rates, cleaning, inventory).
+
+• Hands-on RDMA experience across InfiniBand and RoCE, including GPUDirect, NCCL and collective behaviour, PFC and ECN tuning, and the trade-offs between the two.
+
+• A track record of leading network teams through greenfield builds and production incidents, and of being the person engineers call when the fabric is doing something nobody understands.
+
+• Comfort automating everything: Python or Go, infrastructure as code, and telemetry pipelines rather than CLI sessions.
+
+• Clear writing and the ability to turn a design into a document that a site team on another continent can execute from.
+
+• Willingness to travel to pod sites in the US and Europe for bring-up and major changes.
+
+Strong differentiators
+
+• Experience with NVIDIA Spectrum-X, Quantum-X800, or Blackwell-generation NVLink systems, or the equivalent from a hyperscaler's in-house stack.
+
+• Hands-on time with co-packaged optics, linear-drive pluggables, or photonic switching evaluations.
+
+• Experience designing networks for modular or containerized data centers, edge sites, or deployments with constrained power and space.
+
+• Background in inference-specific traffic patterns: disaggregated prefill and decode, KV-cache transfer, and multi-tenant serving across a shared fabric.
+
+• Contributions to SONiC, OpenFabrics, UEC, or similar open networking efforts.
+
+• Experience with sovereign or data-residency network designs, including inter-site encryption and segmentation.
+
+• Prior work at a GPU cloud, hyperscaler, national lab, or AI lab building its own supercomputer.
+
+Benefits
+
+Why Runware
+
+You will design the network for an AI supercomputer that is being built right now, with the budget, the hardware, and the mandate to do it properly. Few network architects get to own a fabric from the first pod to the global backbone, with a direct line to the people deciding what the next pod looks like.
+
+We're a remote-first collective, meeting in person twice a year to plan, brainstorm, celebrate wins, and enjoy some face-to-face time. We have core hours for cooperative working and calls, but outside of that your calendar is yours. Work the hours that let you perform at your peak while also building a healthy life.
+
+Our release cycles are fast and intense, but they're followed by real downtime. After big pushes we expect the team to unplug, recharge, and come back ready and stronger than ever for the next leap.
+
+• Generous paid time off: vacation, sick days, public holidays
+
+• Meaningful stock options: share in the upside you create
+
+• Flexible hours: own your schedule outside core collaboration blocks
+
+• Family leave: paid maternity, paternity, and caregiver time
+
+• Company retreats: twice-yearly gatherings in inspiring locations",6937,https://apply.workable.com/j/1D44B99A55,,,,,,,not_checked,,2026-11-04,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+74771F5688,Senior Security Engineer,Runware,runware,Full time,Posted Today,,,(Remote),1,(Remote),true,,United States,,0,"About Runware
+
+Runware is the AI inference platform that builds and runs its own infrastructure, end to end. Our Sonic Inference Engine has served more than 20 billion requests for over 1 million developers and 500 million end users, with 400,000+ models behind a single integration, at up to 10x lower cost per token than traditional providers.
+
+We are now building the AI Factory that runs it. The Sonic Inference Pod packs 1 MW of custom-designed compute into a 20-foot container with closed-loop, water-free cooling, sited wherever power exists. Pods are live in the US and Europe, and we are scaling to dozens of pods and tens of thousands of GPUs, all operated as one distributed fabric that reroutes traffic the moment a pod goes offline (announcement).
+
+Every one of those pods holds customer models, customer data and millions of dollars of GPUs, sometimes inside a customer's own perimeter or a sovereign jurisdiction. Keeping all of it secure without slowing anyone down is the job.
+
+The role
+
+As Senior Security Engineer, you will own the security of Runware's AI supercomputer: the bare-metal GPU fleet, the Sonic Inference Pods it lives in, the managed Kubernetes clusters we hand to customers, and the control plane that ties it all together across the US and Europe. You will design the controls, build the first version with your own hands, and set the standard for how security is run across every pod.
+
+This is a hands-on senior individual-contributor role. You will threat-model a new pod before it ships, harden the image that every GPU node boots from, prove to an enterprise customer's security team that their model weights never leave their tenant, and when something goes wrong, lead the response and fix the root cause so it never happens again. You will work directly with our CISO, with the inference engine, platform and hardware teams, and with the site teams deploying pods.
+
+Success means a customer workload on a shared pod is isolated as strongly as on a dedicated one, no human has a standing login to a production node, every change to the fleet is reviewed, signed and auditable, and an enterprise security review takes days instead of months.
+
+What you'll do
+
+• Own the security architecture of the fleet: host hardening for bare-metal GPU nodes, immutable images and a signed build pipeline, boot integrity, and the identity, secrets and access model for humans and services across every pod.
+
+• Secure multi-tenancy on shared infrastructure. Design and verify isolation between customer workloads at the network, Kubernetes, host and GPU layers, and produce the evidence that proves it holds.
+
+• Secure the managed Kubernetes offering: cluster hardening, admission control, RBAC, supply-chain controls for images, and a clean, auditable handover of clusters to customers.
+
+• Build security visibility across the fleet: logging, detection, alerting and audit trails from firmware to API, wired into the fleet dashboards and on-call so that an anomaly on one node in one pod is seen within minutes.
+
+• Lead security reviews and threat models for new pods, sites, servers and platform features, with a focus on real-world risk rather than checklists.
+
+• Run incident response for the infrastructure: investigation, containment, recovery and post-incident learning, as part of the on-call rotation.
+
+• Own vulnerability management for the fleet: firmware, kernel, drivers, GPU stack and container images across thousands of nodes, with a patch cadence you can defend to a customer.
+
+• Answer enterprise customers' security due diligence with engineering evidence, and partner with the CISO on the SOC 2 and ISO 27001 controls that touch the infrastructure.
+
+• Design for sovereign and on-premise deployments: data residency, in-country key management, and physical and remote-access controls for a pod sitting on a customer's site.
+
+• Use AI to accelerate the work: automate evidence collection, log triage, configuration audits and runbooks with LLM-based agents, so that a very small team can secure a very large fleet.
+
+Requirements
+
+What we're looking for
+
+• 8+ years in security or infrastructure engineering, with several of those securing production infrastructure at a company that runs its own hardware at scale.
+
+• A track record of building security controls, not just auditing them. You have taken a hardening standard, an access model or a detection pipeline from design to running across a fleet, and you know what breaks between the two.
+
+• Deep, current, hands-on Linux security expertise: kernel hardening, namespaces and cgroups, seccomp, eBPF, secure and measured boot, TPM-based attestation, and the tooling to see exactly what a process did.
+
+• Strong Kubernetes security: RBAC, admission control and policy engines, network policy, runtime security, image signing and SBOMs, and the ways a container escapes.
+
+• Fluent in network security on real hardware: segmentation and VLAN or VXLAN isolation, firewalls, out-of-band management networks, and the risks that live in BMC, IPMI and switch management planes.
+
+• Experience with identity, secrets and PKI at scale: short-lived credentials, workload identity, hardware-backed keys, and removing standing access without slowing engineers down.
+
+• Fluent in Python or Go, and comfortable writing the tooling, scanners and automation yourself rather than waiting for someone else to.
+
+• You use AI to accelerate your own output every day, for scripting, log analysis, code review, documentation and incident triage, and you have a clear view of how a small security team armed with these tools should operate differently.
+
+• A clear communicator who can explain the same trade-off to an engineer, a customer's CISO and a founder in one afternoon, and who assesses risk pragmatically rather than by the book.
+
+• Able to travel to sites in the US and Europe as needed.
+
+Nice to have
+
+• Experience securing GPU clusters for AI training or inference: the NVIDIA driver and fabric manager stack, GPU multi-tenancy (MIG, time-slicing, per-tenant isolation), confidential computing on GPUs, and protecting model weights at rest and in flight.
+
+• Firmware and hardware security: UEFI, BMC and NIC firmware lifecycle, Redfish, hardware root of trust and supply-chain attestation for servers arriving at a site.
+
+• Hands-on experience with InfiniBand or RoCE fabrics and the security model of RDMA.
+
+• Delivering SOC 2 or ISO 27001 in a production environment, and compliance tooling and evidence automation.
+
+• Offensive experience: red teaming, penetration testing or vulnerability research against infrastructure.
+
+• Experience with sovereign, air-gapped or regulated deployments, including data residency across jurisdictions.
+
+• Physical security of data centres or edge sites: access control, tamper evidence and remote-hands procedures.
+
+Benefits
+
+What we offer
+
+• A rare mandate: secure an AI supercomputer from the firmware up, at a company that owns every layer of its stack and whose enterprise customers are trusting it with their models, with the backing to match.
+
+• Meaningful stock options.
+
+• We're a remote-first collective, meeting in person twice a year to plan, brainstorm and celebrate wins. We keep core hours for collaboration and calls; outside those, you set your own schedule.
+
+• Our release cycles are fast and intense, and they're followed by real downtime. We expect you to take it.
+
+• Generous paid time off, including vacation, sick days and public holidays.
+
+• Paid maternity, paternity and caregiver leave.
+
+• Twice-yearly company retreats in inspiring locations.",7592,https://apply.workable.com/j/74771F5688,,,,,,,not_checked,,2026-11-04,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+AB1A1BB146,Senior Storage Engineer,Runware,runware,Full time,Posted Today,,,(Remote),1,(Remote),true,,United States,,0,"Runware is the AI inference platform that builds and runs its own infrastructure, end to end. Our Sonic Inference Engine has served more than 20 billion requests for over 1 million developers and 500 million end users, with 400,000+ models behind a single integration, at up to 10x lower cost per token than traditional providers.
+
+We are now building the AI Factory that runs it. The Sonic Inference Pod packs 1 MW of custom-designed compute into a 20-foot container with closed-loop, water-free cooling, sited wherever power exists. Pods are live in the US and Europe, and we are scaling to dozens of pods and tens of thousands of GPUs, all operated as one distributed fabric that reroutes traffic the moment a pod goes offline (announcement).
+
+Every one of those 400,000 models has to be on the right GPU, in the right pod, in seconds. Storage is what makes that possible. That is the job.
+
+The role
+
+As Senior Storage Engineer, you will own the storage architecture of Runware's AI supercomputer: how model weights, caches and customer data move from object storage on two continents to the NVMe and GPU memory of the node that needs them. You will design the data path, build the first version with your own hands, and set the standard for how storage is run across every pod.
+
+This is a hands-on senior individual-contributor role. You will specify the systems, benchmark them on real hardware, find the reason a 70 GB checkpoint took four minutes to load instead of twenty seconds, and then fix it at the root so it never happens again. You will work directly with our inference engine, platform and hardware teams, with our storage and NVMe vendors, and with the site teams deploying pods.
+
+Success means a cold model loads onto a GPU anywhere in the fleet in seconds, a new pod has its working set warm before it takes traffic, and a disk, node or whole site failing is invisible to the developer calling our API.
+
+What you'll do
+
+• Own the end-to-end storage architecture for the fleet: the durable object store that holds 400,000+ models, the per-pod high-throughput tier that feeds GPUs, the node-local NVMe cache, and the replication and placement logic that ties them together across the US and Europe.
+
+• Design and build the model distribution path. Decide how weights get from the source of truth to a pod, how they are chunked, deduplicated, prefetched and pinned, and how a new pod warms its working set before it takes production traffic.
+
+• Drive model load latency down and keep it down. Profile the full path from disk to GPU memory, including the kernel, file system, NVMe-oF or RDMA transport, GPUDirect Storage and the inference engine's loader, and remove the bottleneck wherever it sits.
+
+• Select, benchmark and operate the storage systems themselves: parallel and distributed file systems, object storage, NVMe drives and enclosures, and the software that manages them. Validate every choice on our hardware before it ships to a pod.
+
+• Set and hit reliability and durability targets. Own capacity planning, monitoring, alerting, drive health and failure prediction, rebuild behaviour, backup and recovery, and on-call for the storage layer.
+
+• Make storage a routine part of pod bring-up: a documented, automated playbook so that the storage tier of the next 1 MW pod is provisioned, validated and warm in hours, not weeks.
+
+• Partner with inference engine, platform and hardware engineering so that what we design is operable at scale, and feed what you learn from production back into the next generation of servers and pods.
+
+• Use AI to accelerate the work: automate benchmarks, runbooks, triage and tooling with LLM-based agents, so that a very small team can run storage for a very large fleet.
+
+• Own data residency and the operational side of storage security: encryption at rest, access control, retention and in-country placement for sovereign deployments.
+
+Requirements
+
+What we're looking for
+
+• 8+ years in storage or systems engineering, with several of those designing and running storage at a company that operates its own hardware at scale.
+
+• A track record of building storage systems, not just operating what someone else built. You have taken a design from a whiteboard to petabytes in production and know what goes wrong between the two.
+
+• Deep, current, hands-on Linux storage expertise: the block layer, io_uring and NVMe queues, file systems such as XFS, ext4 and ZFS, the page cache, and the tools to see exactly where an I/O spends its time.
+
+• Real experience with at least one parallel or distributed file system in production (Lustre, WEKA, VAST, GPFS, Ceph or similar) and with S3-compatible object storage at petabyte scale.
+
+• Strong understanding of NVMe, NVMe-oF, RDMA transports and the networking that storage rides on. You can tell a saturated PCIe link from a slow drive from a misconfigured switch.
+
+• Fluent in a systems language (Go, Rust or C/C++) and Python, and comfortable writing the tooling, benchmarks and automation yourself rather than waiting for someone else to.
+
+• You use AI to accelerate your own output every day, for scripting, benchmarking, analysis, documentation and debugging, and you have a clear view of how a small team armed with these tools should operate differently.
+
+• Comfortable owning outcomes in a fast-moving, ambiguous environment, making decisions with incomplete information and being accountable for latency, durability and cost.
+
+• Able to travel to sites in the US and Europe as needed.
+
+Nice to have
+
+• Experience feeding large GPU fleets for AI training or inference: GPUDirect Storage, NCCL-aware data loading, model weight caching and the loaders in vLLM, SGLang, TensorRT-LLM or similar engines.
+
+• Hands-on experience with InfiniBand or RoCE fabrics and 400G+ Ethernet from the storage side.
+
+• Experience with content-addressed or deduplicated storage, erasure coding, and multi-region replication and consistency trade-offs.
+
+• Kernel or driver contributions, or deep familiarity with SPDK, DPDK or user-space storage stacks.
+
+• Experience with Kubernetes CSI, Ceph or Rook on bare metal, and an automation stack such as Ansible and Terraform with Prometheus and Grafana observability.
+
+• Familiarity with the storage hardware supply chain: drive qualification, firmware lifecycle, enclosure and backplane design, spares and RMA economics.
+
+• Experience building or running storage to meet data residency, sovereignty or compliance requirements across jurisdictions.
+
+Benefits
+
+What we offer
+
+• A rare mandate: design the storage layer of an AI supercomputer from the ground up, at a company whose business depends on doing it better than anyone else, with the hardware budget and backing to match.
+
+• Meaningful stock options.
+
+• We're a remote-first collective, meeting in person twice a year to plan, brainstorm and celebrate wins. We keep core hours for collaboration and calls; outside those, you set your own schedule.
+
+• Our release cycles are fast and intense, and they're followed by real downtime. We expect you to take it.
+
+• Generous paid time off, including vacation, sick days and public holidays.
+
+• Paid maternity, paternity and caregiver leave.
+
+• Twice-yearly company retreats in inspiring locations.",7239,https://apply.workable.com/j/AB1A1BB146,,,,,,,not_checked,,2026-11-04,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+F279FC8F94,Network Architect,Runware,runware,Full time,Posted Today,,,(Remote),1,(Remote),true,,United States,,0,"About Runware
+
+Runware is the AI inference platform that builds and operates its own infrastructure, end to end. One API gives developers access to image, video, audio, 3D and language models, and our Sonic Inference Engine runs them on hardware we designed ourselves: custom servers, custom boards and a closed-loop, water-free cooling system, packed into Sonic Inference Pods — roughly 1 MW of liquid-cooled GPU compute in a 20-foot container that can be sited wherever power is cheap and available.
+
+This is why infrastructure at Runware is the product, not a cost center. Our edge is that we run inference 30–90% cheaper per GPU-hour than our peers, and that edge is earned in the data center: in how fast we can stand up a new site, how tightly we run our fleet, and how little downtime our customers ever see. More than 20 billion requests have run through the platform for over a million developers, with customers such as Wix, Quora, Freepik and Higgsfield building production applications on top of it.
+
+We raised a $50M Series A led by Dawn Capital, with Comcast Ventures, Speedinvest, Insight Partners and a16z speedrun participating, and we are now building out a global network of pods across the US and Europe. We need someone to own how that network is operated.
+
+The Role
+
+As Network Architect, you'll own the design, build, and operation of the network that moves every inference request through Runware: the GPU cluster fabric inside our data centers, the backbone and edge that deliver results to customers, and the cloud and hybrid connectivity that ties partner capacity into one platform. Runware's product is latency. The network is where a large share of that latency, and of our cost per request, is decided, and today there is no single owner for it. You'll be that owner.
+
+This is a senior, hands-on architecture role with significant authority and no direct reports to start. You'll report to Risto Haukioja, Head of AI Infrastructure. You'll set the network strategy, design and build the systems yourself, define how they are operated and capacity-planned, and lead through design authority across Infrastructure, Platform, and ML Engineering. You've run high-performance teams before, and you'll shape the standards and hiring plan for network engineering as the footprint grows. We expect you to use AI tooling as a core part of how you work, so that one architect can produce what a small team used to.
+
+What you'll do
+
+• Own the network architecture end to end. Define the target architecture and multi-year roadmap for Runware's data center fabric, backbone and edge, and cloud and hybrid connectivity, and make the design decisions that trade off latency, throughput, cost, and resilience.
+
+• Design and build the GPU cluster fabric. Architect spine-leaf fabrics for multi-node inference and training: 400G/800G Ethernet, RoCEv2 and InfiniBand, lossless transport, congestion control, and topology choices that keep east-west traffic from becoming the bottleneck.
+
+• Deliver inference to customers fast and reliably. Own the backbone and edge: multi-region interconnect, transit and peering strategy, anycast and traffic steering, DDoS and edge security posture, and the path that gets every response to the customer with as few milliseconds as possible.
+
+• Connect cloud, bare metal, and partner capacity into one platform. Design VPC, VPN, and private interconnect across hyperscalers, bare-metal providers, and colocation sites so new capacity can be brought online quickly and operated consistently.
+
+• Build network operations, not just networks. Define how the network is monitored, changed, and repaired: telemetry and observability, change management, incident runbooks, and on-call practices that hold up at scale. Stand up what doesn't exist yet.
+
+• Run capacity planning. Build the models that forecast bandwidth, port, and interconnect needs from product growth, and turn them into procurement and build plans with lead times that match the business, not the other way round.
+
+• Automate the network. Treat network configuration as code: IaC, intent-based provisioning, automated validation and rollback, and telemetry-driven remediation, so the network can grow without a proportional growth in people.
+
+• Accelerate your own output with AI. Use AI tools throughout your work (design exploration, configuration generation, log and telemetry analysis, documentation, automation code) and set the standard for how the wider infrastructure team does the same.
+
+• Lead through design authority. Set network standards, review designs across Infrastructure, Platform, and ML Engineering, mentor engineers, and define the hiring plan and operating model for network engineering as the footprint grows.
+
+• Own vendor and carrier relationships. Evaluate and select hardware, optics, carriers, and interconnect partners, and negotiate for performance and cost.
+
+Requirements
+
+• 15+ years in network engineering and architecture, including at least 5 years as the design authority for large-scale production networks at a cloud provider, hyperscaler, CDN, HPC/AI infrastructure company, or carrier.
+
+• Hands-on. You still design, configure, and troubleshoot networks yourself, and you've built data center, backbone, and cloud networks from the ground up, not just inherited them.
+
+• Deep, current expertise in modern data center networking: spine-leaf Clos fabrics, EVPN/VXLAN, BGP at scale, 400G/800G Ethernet, RoCEv2 and lossless Ethernet (PFC, ECN, DCQCN), and InfiniBand for GPU clusters.
+
+• Strong backbone and edge experience: multi-region interconnect, transit and peering, anycast, traffic engineering, and DDoS mitigation, with a track record of measurably reducing customer-facing latency.
+
+• Cloud and hybrid networking across at least two hyperscalers plus bare-metal or colocation environments: VPC design, private interconnect (Direct Connect, ExpressRoute, Cloud Interconnect or equivalent), and VPN at scale.
+
+• Experience designing and running network operations: observability, change management, incident response, and on-call, with the judgement to know what to build first when starting from little.
+
+• Proven capacity planning: you've built forecasting models that turned product growth into bandwidth, port, and interconnect plans, and you've run the procurement cycles that followed.
+
+• Network automation as a working practice, not an aspiration: Python or Go, IaC for network config, CI-style validation, and streaming telemetry.
+
+• You use AI to accelerate your own output. You can show how AI tooling is part of how you design, write configuration and automation code, analyse telemetry, and document, and you expect it to multiply what you ship.
+
+• Experience leading high-performance engineering teams: you've hired, set standards, and run teams that delivered under pressure, and you lead well through influence when you have no direct reports.
+
+• Strong ownership and comfort in a fast-moving, ambiguous environment where you identify the problems, create clarity, and drive the work to done.
+
+• Based in, or with full working overlap with, US Pacific time.
+
+Strong Differentiators
+
+• Experience networking large GPU clusters for AI inference or training (NVIDIA Spectrum-X, Quantum InfiniBand, NCCL tuning, GPUDirect RDMA), and an opinion on Ethernet versus InfiniBand backed by production numbers.
+
+• Hands-on with modern network operating systems and disaggregated hardware: SONiC, Cumulus, Arista EOS, Junos, or NVIDIA Cumulus/Spectrum platforms.
+
+• Experience with Ultra Ethernet, 800G and 1.6T optics, co-packaged optics, or other emerging fabric technologies.
+
+• Experience running peering and transit for a latency-sensitive product, including ASN management, route optimisation, and IXP presence.
+
+• Experience with eBPF, DPDK, SmartNICs/DPUs, or kernel-bypass networking on the host side.
+
+• Prior work at a startup or scale-up where you built the network function from zero.
+
+• Public contributions: RFCs, open-source network tooling, conference talks, or published post-mortems.
+
+Benefits
+
+We're a remote-first collective, meeting in person twice a year to plan, brainstorm, celebrate wins, and enjoy some face-to-face time. We have core hours for cooperative working and calls, but outside of that your calendar is yours. Work the hours that let you perform at your peak while also building a healthy life.
+
+Our release cycles are fast and intense, but they're followed by real downtime. After big pushes we expect the team to unplug, recharge, and come back ready and stronger than ever for the next leap.
+
+• Generous paid time off: vacation, sick days, public holidays
+
+• Meaningful stock options: share in the upside you create
+
+• Flexible hours: own your schedule outside core collaboration blocks
+
+• Family leave: paid maternity, paternity, and caregiver time
+
+• Company retreats: twice-yearly gatherings in inspiring locations",8916,https://apply.workable.com/j/F279FC8F94,,,,,,,not_checked,,2026-11-04,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+F91F16354A,Head of Infrastructure Operations,Runware,runware,Full time,Posted Today,,,(Remote),1,(Remote),true,,United States,,0,"About Runware
+
+Runware is the AI inference platform that builds and operates its own infrastructure, end to end. One API gives developers access to image, video, audio, 3D and language models, and our Sonic Inference Engine runs them on hardware we designed ourselves: custom servers, custom boards and a closed-loop, water-free cooling system, packed into Sonic Inference Pods — roughly 1 MW of liquid-cooled GPU compute in a 20-foot container that can be sited wherever power is cheap and available.
+
+This is why infrastructure at Runware is the product, not a cost center. Our edge is that we run inference 30–90% cheaper per GPU-hour than our peers, and that edge is earned in the data center: in how fast we can stand up a new site, how tightly we run our fleet, and how little downtime our customers ever see. More than 20 billion requests have run through the platform for over a million developers, with customers such as Wix, Quora, Freepik and Higgsfield building production applications on top of it.
+
+We raised a $50M Series A led by Dawn Capital, with Comcast Ventures, Speedinvest, Insight Partners and a16z speedrun participating, and we are now building out a global network of pods across the US and Europe. We need someone to own how that network is operated.
+
+The role
+
+As Head of Infrastructure Operations, you'll own the physical and operational backbone of Runware: the servers, storage and networking across every site we run, and the team that keeps them running. You'll take us from a handful of pods to a global fleet, and you'll decide how that fleet is built, provisioned, monitored, maintained and scaled.
+
+This is a hands-on leadership role. You'll set the operating model and hire the team, but you'll also be in the terminal, in the rack and in the incident channel when it matters. The people who do best here are senior operators who never stopped being engineers, who are already using AI tools to multiply their own output, and who know what a high-performance infrastructure team looks like because they've built one before.
+
+You'll report to Risto Haukioja, Head of AI Infrastructure and work closely with the hardware, platform and inference engineering teams, and with our data center, power and hardware partners.
+
+What you'll do
+
+• Build and run global infrastructure operations across our pod sites in the US and Europe: site bring-up, rack and stack, cabling, power and cooling integration, burn-in and acceptance, through to steady-state operations and decommissioning.
+
+• Own the server, storage and network layers of the fleet end to end: Linux fleet management, bare-metal provisioning and imaging, firmware and driver lifecycle, high-throughput storage for model weights and caches, and the data center and inter-site networks that tie it together.
+
+• Define how a new site goes live, then make it faster every time. Turn pod deployment into a repeatable, documented, largely automated playbook so that standing up the next 1 MW is a routine, not a project.
+
+• Set and hit reliability targets. Own capacity planning, monitoring, alerting, on-call, incident response and post-incident reviews, and drive the GPU, node and network failure rates down over time.
+
+• Hire, lead and develop a high-performance team of data center, systems and network engineers across time zones, and set the bar for how that team operates.
+
+• Manage colocation, power, connectivity and hardware vendors and partners, including capacity contracts, lead times, spares and RMA flows, and site-level budgets.
+
+• Partner with hardware and platform engineering so that what we design is operable at scale, and feed what you learn in the field back into the next generation of servers and pods.
+
+• Use AI to accelerate the work: automate runbooks, triage and tooling with LLM-based agents, and expect your team to do the same, so that a small team can run a very large fleet.
+
+• Own the operational side of security and compliance for our physical infrastructure: access control, hardening, asset tracking and audit readiness, including data residency requirements for in-country deployments.
+
+Requirements
+
+What we're looking for
+
+• 15+ years in infrastructure engineering and operations, with at least several of those leading the function at a company that runs its own hardware at scale.
+
+• A track record of building infrastructure operations across multiple sites, regions or countries, not just operating what someone else built. You've opened data centers, pods or colocation footprints and know what goes wrong between the plan and the first production workload.
+
+• Deep, current, hands-on Linux expertise: kernel and driver behaviour, performance tuning, bare-metal provisioning, configuration management and fleet automation. You can still debug a misbehaving node at 2 a.m. and you'd rather fix the root cause than restart it.
+
+• Strong storage fundamentals: NVMe, distributed and parallel file systems, object storage, and designing for the throughput and IOPS that model loading and caching demand.
+
+• Strong networking fundamentals: L2/L3 design, BGP, data center fabrics, high-bandwidth interconnects and the debugging skills to find a flapping link or a misconfigured switch quickly.
+
+• Experience running high-performance teams: you've hired, led and retained strong engineers, set clear standards, and built an on-call and incident culture that people are proud of rather than burned out by.
+
+• You use AI to accelerate your own output every day, for scripting, runbooks, analysis, documentation and debugging, and you have a clear view of how a small team armed with these tools should operate differently from a traditional ops org.
+
+• Comfortable owning outcomes in a fast-moving, ambiguous environment, making decisions with incomplete information and being accountable for uptime, cost and delivery.
+
+• Able to travel to sites in the US and Europe as needed.
+
+Nice to have
+
+• Experience operating large GPU fleets for AI training or inference, including NVIDIA driver, Fabric Manager and NCCL stacks, and GPU health and failure management at scale.
+
+• Hands-on experience with RDMA fabrics (InfiniBand or RoCE), 400G+ Ethernet and the tooling to monitor them.
+
+• Experience with liquid-cooled, high-density or modular and containerized data center designs, and with power and cooling integration at the site level.
+
+• Familiarity with the hardware supply chain: server ODMs, component lead times, inventory and spares strategy, and RMA economics.
+
+• A strong automation stack background: Ansible, Terraform, PXE and image pipelines, IPMI and Redfish, and observability with Prometheus and Grafana or similar.
+
+• Experience with Kubernetes or Slurm on bare metal.
+
+• Experience building or running infrastructure to meet data residency, sovereignty or compliance requirements across jurisdictions.
+
+Benefits
+
+What we offer
+
+• A rare mandate: build global AI infrastructure operations from the ground up, at a company whose business depends on doing it better than anyone else, with the budget and backing to match.
+
+• Meaningful stock options.
+
+• We're a remote-first collective, meeting in person twice a year to plan, brainstorm and celebrate wins. We keep core hours for collaboration and calls; outside those, you set your own schedule.
+
+• Our release cycles are fast and intense, and they're followed by real downtime. We expect you to take it.
+
+• Generous paid time off, including vacation, sick days and public holidays.
+
+• Paid maternity, paternity and caregiver leave.
+
+• Twice-yearly company retreats in inspiring locations.",7577,https://apply.workable.com/j/F91F16354A,,,,,,,not_checked,,2026-11-04,,2026-11-05,,,,true,0,,,,,,,,,,,,,,

@@ -1,9 +1,9 @@
 {
  "label": "gotion_us_fulltime",
- "rows": 133,
- "kept": 133,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 134,
+ "kept": 132,
+ "new": 2,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 8,
  "feed_excluded_state": 0,
- "state_rows": 141,
- "banded": 15,
+ "state_rows": 142,
+ "banded": 16,
  "lca_pools": 40,
- "snapshot": "2026-11-04"
+ "snapshot": "2026-11-05"
 }

@@ -1,9 +1,9 @@
 {
  "label": "nvidia_us_fulltime",
- "rows": 1425,
- "kept": 1420,
- "new": 5,
- "ghosts_dropped": 0,
+ "rows": 1449,
+ "kept": 1406,
+ "new": 43,
+ "ghosts_dropped": 19,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 1425,
- "banded": 789,
+ "state_rows": 1449,
+ "banded": 811,
  "lca_pools": 330,
- "snapshot": "2026-11-04"
+ "snapshot": "2026-11-05"
 }

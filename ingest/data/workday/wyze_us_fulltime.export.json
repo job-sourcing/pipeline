@@ -1,11 +1,11 @@
 {
  "label": "wyze_us_fulltime",
- "rows": 3,
- "kept": 1,
- "new": 2,
- "ghosts_dropped": 0,
+ "rows": 2,
+ "kept": 2,
+ "new": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
- "pending": 0,
+ "pending": 1,
  "terminal_err": 0,
  "gate_dropped": 0,
  "gate_dropped_survivors": 0,
@@ -14,5 +14,5 @@
  "state_rows": 3,
  "banded": 0,
  "lca_pools": 13,
- "snapshot": "2026-11-04"
+ "snapshot": "2026-11-05"
 }
