@@ -1,60 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-4476106842,Data Science Lead,OpusClip,OpusClip,,Posted 7 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
-We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
-We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
-Check out our latest coverage by Business Insider featuring our product and funding milestones, and our recognition as one of The Information's 50 Most Promising Startups in 2024.
-Headquartered In Mountain View, We Are a Team Of 100 Passionate And Experienced AI Enthusiasts And Video Experts, Driven By Our Core Values
-Be a Champion Team
-Prioritize Ruthlessly
-Ship fast, Quality Follows
-Obsess over customers
-Be a part of this exciting journey with us!
-About The Role
-OpusClip is looking for a staff-level, product-oriented Data Science Lead to lead a team of approximately five: two Data Scientists, two analysts, and one to two Data Engineers. Title will be calibrated to experience.
-This is a hands-on role: you will set the Data roadmap, personally tackle our hardest analytical problems, and build an increasingly AI-native data function. You can lead through technical direction or direct management; formal people management is not required.
-You will work closely with Product, Growth, Finance, Engineering, and AI to turn trusted data into better product and business decisions.
-Success means delivering measurable business improvements while building the systems and practices that let a small Data team support a growing company.
-What You’ll Do
-Lead the team and strengthen the data foundation
-Set priorities, develop the team through technical direction and example, and focus capacity on the highest-impact problems. Personally lead ambiguous, high-stakes analyses.
-Own standards for metric definitions, data validation, and analytical quality. Partner with Engineering to diagnose and prevent recurring issues across tracking, pipelines, transformations, and dashboards.
-Turn recurring requests into reusable datasets, frameworks, and self-service tools so teams can make sound decisions with less manual support.
-Drive product and growth decisions
-Use behavioral analysis, user profiling, and segmentation to identify opportunities across activation, retention, monetization, and lifetime value. Translate findings into recommendations that inform product strategy, operations, and company goals.
-Strengthen experimentation and causal measurement across Product and Growth. Evaluate acquisition quality and the long-term value of different channels and customer segments, moving beyond attribution toward incrementality to guide investment and improve CAC.
-Connect product data to AI improvement
-Partner with AI teams on data curation, evaluation design, and online and offline measurement. Turn product behavior into useful evaluation data, feedback signals, and failure cases.
-Connect changes in AI quality to user behavior and business outcomes, creating a measurable loop from product usage to AI improvement and better product experiences.
-Build AI-native analytics
-Use AI to automate recurring analysis and explore agentic systems that detect unusual metric movements, identify contributing segments, and investigate likely causes.
-Make these workflows reliable enough for teams to use, moving from one-off requests toward proactive insights with clear validation and human judgment.
-What We’re Looking For
-Significant experience in data science, product analytics, decision science, or a related field, with demonstrated Staff, Principal, Lead, or equivalent scope, regardless of title.
-Strong product and business judgment: you identify important questions, navigate ambiguity, and turn evidence into decisions.
-Strong SQL and Python skills and a willingness to stay hands-on.
-Deep experience with product metrics and user behavior, plus a strong foundation in statistics, A/B testing, and causal reasoning.
-Strong data-quality instincts and enough engineering knowledge to trace data through a system, diagnose recurring pipeline problems, and work effectively with engineers on durable fixes.
-Ability to lead through influence, technical credibility, and clear communication across technical and business teams.
-Deep data infrastructure expertise and model-training experience are not required.
-Nice to Have
-Experience measuring paid marketing incrementality and acquisition economics.
-Experience partnering with AI/ML teams on evaluation or data curation, or building AI-assisted or agentic analytics systems.
-Experience in SaaS, consumer software, creator products, subscription businesses, or AI products.
-What Success Looks Like
-Within Your First 6–12 Months, You Will Have
-Delivered measurable business impact: led 1–2 high-impact projects where Data contributes roughly 8%+ improvement to a key metric such as retention, conversion, CAC, monetization, or product adoption.
-Built a more effective Data function: improved metric quality, experimentation, and validation while raising the team's focus and analytical standards.
-Made the team's work go further: shipped reusable tools that help Product, Growth, or AI teams achieve better outcomes without repeated one-off analysis.
-Established a measurable AI feedback loop: turned product behavior into better evaluation data and demonstrable product improvements.
-Beyond These Initial Milestones
-Expand your influence and scope: shape company strategy by uncovering major growth opportunities, with room to take on broader Data leadership as the team and business scale.
-Why Join Us
-Shape how Data works. Define the team's priorities and operating model, with direct influence on product direction, growth investment, monetization, and AI quality.
-Stay close to the work. Combine senior technical leadership with difficult analytical problems and practical AI systems.
-Build on a modern stack. Work with BigQuery, Mixpanel, Superset, Python, Prefect, and Statsig.
-EEO
-OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $230K - $300K",7021,https://www.linkedin.com/jobs/view/4476106842,,,,,,,not_checked,,2026-10-12,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
 4483734735,Talent Acquisition Specialist,OpusClip,OpusClip,,Posted 1 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -91,7 +35,7 @@ Experience recruiting for AI, SaaS, or consumer technology companies.
 Experience using Ashby ATS.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $140,000 - $160,000",3876,https://www.linkedin.com/jobs/view/4483734735,,,,,,,not_checked,,2026-10-27,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $140,000 - $160,000",3876,https://www.linkedin.com/jobs/view/4483734735,,,,,,,not_checked,,2026-10-27,,2026-11-06,,,,true,0,,,,,,,,,,,,,,
 4484411327,Senior/Staff Product Manager,OpusClip,OpusClip,,Posted Today,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -139,7 +83,7 @@ You're uncomfortable operating with ambiguity and rapid iteration
 You want remote or hybrid
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $220,000 - $280,000",6430,https://www.linkedin.com/jobs/view/4484411327,,,,,,,not_checked,,2026-10-28,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $220,000 - $280,000",6430,https://www.linkedin.com/jobs/view/4484411327,,,,,,,not_checked,,2026-10-28,,2026-11-06,,,,true,0,,,,,,,,,,,,,,
 4484738735,Influencer Partnership Manager,OpusClip,OpusClip,,Posted 1 Days Ago,,,"Los Angeles, CA",1,"Los Angeles, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -193,7 +137,7 @@ Medical, dental, and vision coverage
 A chance to shape one of the fastest-moving categories in AI
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484738735,,,,,,,not_checked,,2026-10-29,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484738735,,,,,,,not_checked,,2026-10-29,,2026-11-06,,,,true,0,,,,,,,,,,,,,,
 4484739758,Influencer Partnership Manager,OpusClip,OpusClip,,Posted 1 Days Ago,,,"California, United States",1,"California, United States",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -247,7 +191,7 @@ Medical, dental, and vision coverage
 A chance to shape one of the fastest-moving categories in AI
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484739758,,,,,,,not_checked,,2026-10-29,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484739758,,,,,,,not_checked,,2026-10-29,,2026-11-06,,,,true,0,,,,,,,,,,,,,,
 4485230944,"Senior Product Marketing Manager, Core Product",OpusClip,OpusClip,,Posted 1 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -277,7 +221,7 @@ A great storyteller with sharp content instincts, who can bring user value to li
 Comfortable with 0→1 ambiguity, and never hesitant to step outside defined scope to drive real impact.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485230944,,,,,,,not_checked,,2026-10-30,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485230944,,,,,,,not_checked,,2026-10-30,,2026-11-06,,,,true,0,,,,,,,,,,,,,,
 4485239461,"Senior Product Marketing Manager, Core Product",OpusClip,OpusClip,,Posted 1 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -307,7 +251,7 @@ A great storyteller with sharp content instincts, who can bring user value to li
 Comfortable with 0→1 ambiguity, and never hesitant to step outside defined scope to drive real impact.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485239461,,,,,,,not_checked,,2026-10-30,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485239461,,,,,,,not_checked,,2026-10-30,,2026-11-06,,,,true,0,,,,,,,,,,,,,,
 4485290263,Account Executive,OpusClip,OpusClip,,Posted Today,,,"California, United States",1,"California, United States",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -374,4 +318,4 @@ Location
 US Remote OR NYC | East Coast Preferred
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $110K - $140K",6885,https://www.linkedin.com/jobs/view/4485290263,,,,,,,not_checked,,2026-10-30,,2026-11-05,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $110K - $140K",6885,https://www.linkedin.com/jobs/view/4485290263,,,,,,,not_checked,,2026-10-30,,2026-11-06,,,,true,0,,,,,,,,,,,,,,

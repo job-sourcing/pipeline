@@ -1,9 +1,9 @@
 {
  "label": "foxit_us_fulltime",
- "rows": 5,
- "kept": 5,
+ "rows": 4,
+ "kept": 4,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 3,
  "feed_excluded_state": 0,
- "state_rows": 8,
+ "state_rows": 7,
  "banded": 0,
  "lca_pools": 4,
- "snapshot": "2026-11-05"
+ "snapshot": "2026-11-06"
 }
