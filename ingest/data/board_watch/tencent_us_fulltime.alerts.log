@@ -395,3 +395,6 @@ NEW Senior Network Architect - Tencent Global Edge Network | US-Washington-Belle
 NEW Senior Project Manager – Workday Financials ERP Implementation | US-California-Palo Alto | 2026-11-06 | https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Project-Manager---Workday-Financials-ERP-Implementation_R107961-1
 (2026-11-07T01:11:53)
 
+board-watch tencent_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Tencent&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-07T16:39:03)
+
