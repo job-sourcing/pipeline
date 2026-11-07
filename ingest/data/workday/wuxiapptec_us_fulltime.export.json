@@ -1,9 +1,9 @@
 {
  "label": "wuxiapptec_us_fulltime",
- "rows": 46,
- "kept": 45,
- "new": 1,
- "ghosts_dropped": 0,
+ "rows": 44,
+ "kept": 44,
+ "new": 0,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 46,
- "banded": 3,
+ "state_rows": 44,
+ "banded": 2,
  "lca_pools": 10,
- "snapshot": "2026-11-06"
+ "snapshot": "2026-11-07"
 }

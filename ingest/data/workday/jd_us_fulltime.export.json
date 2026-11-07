@@ -1,18 +1,18 @@
 {
  "label": "jd_us_fulltime",
- "rows": 71,
+ "rows": 72,
  "kept": 70,
- "new": 1,
- "ghosts_dropped": 0,
+ "new": 2,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 622,
+ "gate_dropped": 623,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 622,
+ "gate_dropped_new": 623,
  "feed_excluded_state": 4,
- "state_rows": 697,
+ "state_rows": 699,
  "banded": 0,
  "lca_pools": 3,
- "snapshot": "2026-11-06"
+ "snapshot": "2026-11-07"
 }
