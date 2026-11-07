@@ -60,3 +60,6 @@ TCL board-watch 2026-11-07: +1 new, -0 gone (8 active [tcl_us_fulltime])
 NEW [FINANCE] Channel Finance Analyst | Irvine, California | Posted 1 Days Ago | https://job-boards.greenhouse.io/tcl/jobs/4485310009
 (2026-11-07T01:12:58)
 
+board-watch tcl_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=TCL&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-07T16:38:34)
+
