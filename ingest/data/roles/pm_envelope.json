@@ -17,16 +17,16 @@
   "muse": "ok",
   "usajobs": "error:relay-error:fleet:http402",
   "himalayas": "ok",
-  "seed_envelope": "ok:9062/9679"
+  "seed_envelope": "ok:9199/9957"
  },
  "layers": {
-  "l0": 230,
-  "l1.5": 7422,
+  "l0": 231,
+  "l1.5": 7427,
   "?": 0,
   "l1": 70,
-  "l2": 971
+  "l2": 963
  },
- "ran_at": "2026-11-06T18:39:05Z",
+ "ran_at": "2026-11-07T17:06:56Z",
  "queries": [
   "product manager",
   "senior product manager",
@@ -36,50 +36,50 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 9957,
- "rows_dropped": 615,
+ "rows_kept": 10097,
+ "rows_dropped": 555,
  "counters": {
-  "family_other": 2547,
-  "nontech_gate": 527,
-  "dedup_merge": 4598,
-  "usgate_non_us": 38,
-  "pending_sector": 4370,
-  "staffing_repost": 2261,
-  "employer_anonymized": 254,
-  "dedup_dateless": 198,
-  "residual_dup_est": 4816,
-  "g1b_title": 52,
-  "screening_post": 36,
-  "seed_rows_in": 9062,
-  "seed_dup_absorbed": 2052,
-  "seed_dup_residual": 7008,
-  "roster_kept": 2615,
-  "agency_pending": 1621,
-  "res7_merge": 691,
-  "cross_src_merge": 92,
-  "jd_cache_hits": 1938,
-  "jd_seed_admitted": 1662,
-  "url_identity_merge": 685
+  "family_other": 2536,
+  "nontech_gate": 462,
+  "dedup_merge": 4677,
+  "usgate_non_us": 25,
+  "pending_sector": 4430,
+  "staffing_repost": 2297,
+  "employer_anonymized": 269,
+  "dedup_dateless": 172,
+  "residual_dup_est": 4941,
+  "g1b_title": 53,
+  "screening_post": 40,
+  "seed_rows_in": 9199,
+  "seed_dup_absorbed": 2028,
+  "seed_dup_residual": 7168,
+  "roster_kept": 2566,
+  "agency_pending": 1625,
+  "res7_merge": 728,
+  "cross_src_merge": 122,
+  "jd_cache_hits": 1942,
+  "jd_seed_admitted": 1623,
+  "url_identity_merge": 733
  },
- "seniority_conflicts": 1,
+ "seniority_conflicts": 0,
  "title_conflicts": 1,
  "day_delta_histogram": {
-  "re7": 690,
-  "xs1": 63,
-  "xs2": 21,
-  "xs3": 8,
-  "0": 37,
-  "1": 8
+  "re7": 728,
+  "xs1": 103,
+  "xs2": 15,
+  "xs3": 4,
+  "1": 11,
+  "0": 36
  },
- "dedup_merges": 4598,
+ "dedup_merges": 4677,
  "family_histogram": {
-  "pm": 8851,
-  "adjacent": 1106
+  "pm": 8995,
+  "adjacent": 1102
  },
  "seniority_histogram": {
-  "senior": 3401,
-  "director+": 1964,
-  "mid": 4266,
-  "junior": 326
+  "senior": 3467,
+  "director+": 1984,
+  "mid": 4321,
+  "junior": 325
  }
 }
