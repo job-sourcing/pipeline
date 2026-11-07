@@ -1,10 +1,10 @@
 {
- "last_leg": "2026-11-05T22:03:23Z",
- "transport": "direct",
+ "last_leg": "2026-11-07T18:06:55Z",
+ "transport": "fc_relay",
  "mode": "pending",
- "fetched": 150,
- "remaining": 1665,
- "targets_seen": 3127,
+ "fetched": 390,
+ "remaining": 2949,
+ "targets_seen": 3702,
  "pending_snapshot": [
   "adzuna|https://www.adzuna.com/details/5872784240?utm_medium=api&utm_source=46fd1e82",
   "adzuna|https://www.adzuna.com/details/5872818874?utm_medium=api&utm_source=46fd1e82",
