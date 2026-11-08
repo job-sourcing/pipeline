@@ -256,3 +256,6 @@ REPOSTED Alibaba Cloud-Facility Lead Engineer-Atlanta (label reset 14d→0d, sta
 REPOSTED Alibaba Cloud-Legal Counsel-Sunnyvale (label reset 10d→0d, startDate +10d)
 (2026-11-06T14:39:52)
 
+board-watch alibaba_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Alibaba+Group&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-08T00:55:24)
+
