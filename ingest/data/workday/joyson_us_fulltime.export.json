@@ -1,7 +1,7 @@
 {
  "label": "joyson_us_fulltime",
- "rows": 6,
- "kept": 6,
+ "rows": 5,
+ "kept": 5,
  "new": 0,
  "ghosts_dropped": 1,
  "ghosts_in_state": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 6,
+ "state_rows": 5,
  "banded": 1,
  "lca_pools": 7,
- "snapshot": "2026-11-07"
+ "snapshot": "2026-11-08"
 }
