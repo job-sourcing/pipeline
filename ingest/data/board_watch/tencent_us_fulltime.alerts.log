@@ -398,3 +398,10 @@ NEW Senior Project Manager – Workday Financials ERP Implementation | US-Califo
 board-watch tencent_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Tencent&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-07T16:39:03)
 
+Tencent board-watch 2026-11-09: +0 new, -4 gone (241 active [tencent_us_fulltime])
+GONE Associate Solution Architect, MPaaS (first seen 2026-10-29)
+GONE Senior Strategic Sales Executive, Advertising (first seen 2026-09-19)
+GONE Senior Product Manager, Utility Apps — Global Markets (first seen 2026-09-23)
+GONE Growth Operations Manager, Utility Apps (first seen 2026-09-23)
+(2026-11-09T16:55:07)
+
