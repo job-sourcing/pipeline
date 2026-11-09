@@ -784,3 +784,8 @@ NEW Bilingual Account Executive, SME & Growth | CA - Toronto | Posted Today | ht
 board-watch airwallex_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Airwallex&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-08T13:53:42)
 
+Airwallex board-watch 2026-11-09: +0 new, -0 gone (462 active [airwallex_us_fulltime])
+REPOSTED (1)
+REPOSTED Senior Information Security GRC Specialist (label reset 3d→1d)
+(2026-11-09T01:12:01)
+
