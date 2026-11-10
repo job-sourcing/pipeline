@@ -63,3 +63,7 @@ NEW [FINANCE] Channel Finance Analyst | Irvine, California | Posted 1 Days Ago |
 board-watch tcl_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=TCL&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-07T16:38:34)
 
+TCL board-watch 2026-11-10: +1 new, -0 gone (9 active [tcl_us_fulltime])
+NEW [SALES] Senior Sales Manager, Amazon | Irvine, California | Posted Today | https://job-boards.greenhouse.io/tcl/jobs/4487725009
+(2026-11-10T03:50:37)
+
