@@ -26,3 +26,4 @@
 {"ts": "2026-11-07T17:06:56Z", "family": "pm", "verdict": "complete", "rows": 10097, "sources_dead": []}
 {"ts": "2026-11-08T17:21:18Z", "family": "pm", "verdict": "complete", "rows": 10144, "sources_dead": ["muse"]}
 {"ts": "2026-11-09T21:43:58Z", "family": "pm", "verdict": "complete", "rows": 10172, "sources_dead": ["muse"]}
+{"ts": "2026-11-10T19:00:19Z", "family": "pm", "verdict": "complete", "rows": 10359, "sources_dead": ["muse"]}
