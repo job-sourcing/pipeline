@@ -39,3 +39,7 @@ GONE 运营实习生-日本东京 (first seen 2026-10-08)
 board-watch poizon_us_fulltime FAILED: list fetch crashed (RuntimeError: feishuhire:poizon: search page at offset 0 failed after retry: HTTPError: HTTP Error 429: Too Many Requests)
 (2026-11-09T16:59:15)
 
+POIZON board-watch 2026-11-10: +0 new, -1 gone (13 active [poizon_us_fulltime])
+GONE 品牌研究运营（美国） (first seen 2026-09-27)
+(2026-11-10T15:21:33)
+
