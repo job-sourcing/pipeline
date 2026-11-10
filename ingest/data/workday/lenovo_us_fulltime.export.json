@@ -1,9 +1,9 @@
 {
  "label": "lenovo_us_fulltime",
- "rows": 273,
- "kept": 273,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 276,
+ "kept": 268,
+ "new": 8,
+ "ghosts_dropped": 5,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 273,
+ "state_rows": 276,
  "banded": 6,
  "lca_pools": 156,
- "snapshot": "2026-11-09"
+ "snapshot": "2026-11-10"
 }

@@ -1,8 +1,8 @@
 {
  "label": "baidu_us_fulltime",
- "rows": 25,
+ "rows": 26,
  "kept": 25,
- "new": 0,
+ "new": 1,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 25,
+ "state_rows": 26,
  "banded": 0,
  "lca_pools": 2,
- "snapshot": "2026-11-09"
+ "snapshot": "2026-11-10"
 }
