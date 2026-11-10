@@ -259,3 +259,10 @@ REPOSTED Alibaba Cloud-Legal Counsel-Sunnyvale (label reset 10d→0d, startDate 
 board-watch alibaba_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Alibaba+Group&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-08T00:55:24)
 
+Alibaba Group board-watch 2026-11-10: +1 new, -1 gone (48 active [alibaba_us_fulltime])
+NEW Alibaba.com-Channel Partnerships Manager-New York | New York | 2026-11-10 — 25 applicants | /en/off-campus/position-detail?positionId=100027415027&track_id=SSP1794323822779ToyTWVwGlH3925
+GONE Alibaba.com-Channel Business Development Manager-AI Agent (first seen 2026-09-19)
+REPOSTED (1)
+REPOSTED Alibaba Cloud Intelligence-GenAI Solution Architect-International AI Native (Sunnyvale) (label reset 4d→0d, startDate +4d)
+(2026-11-10T15:17:45)
+
