@@ -46,3 +46,6 @@ GONE Application Engineer (first seen 2026-09-24)
 board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-10T18:11:43)
 
+board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 2/14
+(2026-11-11T01:32:12)
+
