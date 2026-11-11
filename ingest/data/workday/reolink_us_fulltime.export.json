@@ -7,12 +7,12 @@
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 49,
+ "gate_dropped": 52,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 49,
+ "gate_dropped_new": 52,
  "feed_excluded_state": 0,
- "state_rows": 67,
+ "state_rows": 70,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-11-10"
+ "snapshot": "2026-11-11"
 }
