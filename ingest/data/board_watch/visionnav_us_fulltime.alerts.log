@@ -22,3 +22,9 @@ board-watch visionnav_us_fulltime FAILED: EMPTY-LIST ANOMALY (had 15 postings ye
 board-watch visionnav_us_fulltime FAILED: EMPTY-LIST ANOMALY (had 15 postings yesterday) — state untouched
 (2026-11-12T02:34:36)
 
+board-watch visionnav_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Server Error: Bad Gateway for url: https://www.visionnav.com/about/data.php)
+(2026-11-12T15:42:50)
+
+board-watch visionnav_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Server Error: Bad Gateway for url: https://www.visionnav.com/about/data.php)
+(2026-11-12T15:44:56)
+
