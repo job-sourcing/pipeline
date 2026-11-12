@@ -1,18 +1,18 @@
 {
  "label": "tencent_us_fulltime",
  "rows": 38,
- "kept": 38,
- "new": 0,
+ "kept": 37,
+ "new": 1,
  "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 202,
+ "gate_dropped": 197,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 202,
+ "gate_dropped_new": 197,
  "feed_excluded_state": 4,
- "state_rows": 244,
- "banded": 2,
+ "state_rows": 239,
+ "banded": 1,
  "lca_pools": 42,
- "snapshot": "2026-11-11"
+ "snapshot": "2026-11-12"
 }

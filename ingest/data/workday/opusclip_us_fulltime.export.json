@@ -1,8 +1,8 @@
 {
  "label": "opusclip_us_fulltime",
  "rows": 8,
- "kept": 7,
- "new": 1,
+ "kept": 8,
+ "new": 0,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -14,5 +14,5 @@
  "state_rows": 8,
  "banded": 0,
  "lca_pools": 5,
- "snapshot": "2026-11-11"
+ "snapshot": "2026-11-12"
 }

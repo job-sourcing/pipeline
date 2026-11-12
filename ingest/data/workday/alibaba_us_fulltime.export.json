@@ -1,8 +1,8 @@
 {
  "label": "alibaba_us_fulltime",
- "rows": 49,
- "kept": 47,
- "new": 2,
+ "rows": 48,
+ "kept": 48,
+ "new": 0,
  "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 49,
+ "state_rows": 48,
  "banded": 4,
  "lca_pools": 29,
- "snapshot": "2026-11-11"
+ "snapshot": "2026-11-12"
 }

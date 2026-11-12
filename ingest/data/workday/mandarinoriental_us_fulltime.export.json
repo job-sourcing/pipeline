@@ -1,8 +1,8 @@
 {
  "label": "mandarinoriental_us_fulltime",
  "rows": 33,
- "kept": 31,
- "new": 2,
+ "kept": 32,
+ "new": 1,
  "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -14,5 +14,5 @@
  "state_rows": 33,
  "banded": 0,
  "lca_pools": 1,
- "snapshot": "2026-11-11"
+ "snapshot": "2026-11-12"
 }

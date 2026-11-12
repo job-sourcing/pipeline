@@ -1,8 +1,8 @@
 {
  "label": "bambulab_us_fulltime",
- "rows": 9,
+ "rows": 10,
  "kept": 9,
- "new": 0,
+ "new": 1,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 11,
  "feed_excluded_state": 0,
- "state_rows": 20,
+ "state_rows": 21,
  "banded": 0,
  "lca_pools": 1,
- "snapshot": "2026-11-11"
+ "snapshot": "2026-11-12"
 }
