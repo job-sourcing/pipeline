@@ -1,6 +1,6 @@
 # Home services / construction × SF Bay Area — industry sweep report
 
-- ran: 2026-11-06T20:27:43Z | raw rows: 9946 | kept: 2146 | **head-lined raw: 929 | unique roles (company×title rollup): 564 | staffing-brand: 149**
+- ran: 2026-11-13T20:54:59Z | raw rows: 7373 | kept: 2682 | **head-lined raw: 1215 | unique roles (company×title rollup): 727 | staffing-brand: 195**
 - region: San Francisco Bay Area, CA (gate: bay_area | adzuna geo: San Francisco, CA)
 
 ## Sources (the exhaustion measurement)
@@ -9,229 +9,366 @@
 - talent: skipped:pm-hardcoded
 - himalayas: skipped:pm-hardcoded
 - wwr: skipped:pm-hardcoded
-- adzuna: ok (raw 1776, kept 1186)
-- jooble: ok (raw 3362, kept 6)
-- indeed: ok (raw 980, kept 552)
+- adzuna: ok (raw 1780, kept 1413)
+- jooble: error:page1:construction:HTTPError (raw 0, kept 5)
+- indeed: ok (raw 924, kept 654)
 - careerjet: error:construction:HTTPError (raw 0, kept 0)
-- ziprecruiter: blocked:x1 (raw 0, kept 76)
-- glassdoor: ok (raw 803, kept 248)
-- li_keyword: ok (raw 270, kept 11)
+- ziprecruiter: ok:firecrawl (raw 239, kept 100)
+- glassdoor: ok (raw 803, kept 431)
+- li_keyword: ok (raw 270, kept 13)
 - dice: no-joblist:construction (raw 242, kept 1)
-- usajobs: error:relay-error:fleet:http402 (raw 0, kept 0)
-- findwork: ok (raw 65, kept 1)
-- trio: ok (raw 499, kept 0)
-- yc: ok (raw 198, kept 1)
+- usajobs: ok:relay (raw 44, kept 0)
+- findwork: ok (raw 64, kept 1)
+- trio: ok (raw 498, kept 0)
+- yc: ok (raw 203, kept 0)
 - wellfound: ok (raw 46, kept 0)
-- hn: ok (raw 115, kept 0)
-- gj: preflight-fail:credits=-6[fleet-exhausted] (raw 0, kept 62)
-- builtin: error:construction:fleet:http402 (raw 0, kept 0)
-- seed_envelope: ok:1590
-- jd_cache consult: ok:30744entries (7 desc upgrades (pre-gate) — S47-B §6.5, W2b-12)
-- adzuna category: 661 stamped, 0 filtered (stamp-don't-filter — DESIGN-S47 §6.7)
-- per-query yield: 178 source×query cells persisted (artifact per_query; columns — raw: fresh fetch yield only, kept: all kept rows incl. seed carries, seed: the kept portion re-entering from the prior artifact — [W2b-6] kept > raw is the carry, not an anomaly)
+- hn: ok (raw 137, kept 0)
+- gj: error:remodeling c:http500 (raw 0, kept 62)
+- builtin: ok (raw 0, kept 0)
+- seed_envelope: ok:2123
+- jd_cache consult: ok:30903entries (5 desc upgrades (pre-gate) — S47-B §6.5, W2b-12)
+- adzuna category: 911 stamped, 0 filtered (stamp-don't-filter — DESIGN-S47 §6.7)
+- per-query yield: 157 source×query cells persisted (artifact per_query; columns — raw: fresh fetch yield only, kept: all kept rows incl. seed carries, seed: the kept portion re-entering from the prior artifact — [W2b-6] kept > raw is the carry, not an anomaly)
 
 ## Gate counters
 
-- drop:dup_url: 2604
-- drop:industry_no_affirm: 1582
-- drop:level_licensed_professional: 55
-- drop:level_pure_labor: 49
-- drop:region_other: 3470
-- drop:stale_dice: 40
-- kept:corp_office: 1199
-- kept:field_mgmt: 217
-- kept:region_bay_area: 2119
-- kept:region_remote: 27
-- kept:unclassified: 730
+- drop:dup_url: 1031
+- drop:industry_no_affirm: 1550
+- drop:level_licensed_professional: 54
+- drop:level_pure_labor: 51
+- drop:level_retail_service: 3
+- drop:region_other: 1958
+- drop:stale_dice: 44
+- kept:corp_office: 1541
+- kept:field_mgmt: 256
+- kept:region_bay_area: 2653
+- kept:region_remote: 29
+- kept:unclassified: 885
 
-## Head-lined roles (564 unique of 929 raw — n_rows × n_locations per role) — rollup keys suffix-stripped (trailing city/state + salary tails — DESIGN-S47 §6.2/F19; the rows' raw titles are unchanged)
+## Head-lined roles (727 unique of 1215 raw — n_rows × n_locations per role) — rollup keys suffix-stripped (trailing city/state + salary tails — DESIGN-S47 §6.2/F19; the rows' raw titles are unchanged)
 
 - **HVAC Inside Sales Lead Generator** — Atlas Trillo Heating&Air Conditioning | Sunnyvale, Santa Clara County · 54 rows ×14 locations | bay_area | adzuna | posted 2026-10-08
-- **Electrical Project Manager/Estimator** — Gpac [staffing] | Daly City, San Mateo County · 15 rows ×9 locations | bay_area | adzuna | posted 2026-10-28
-- **Project Manager - Commercial Construction** — Jobot [staffing] | San Francisco, California · 14 rows ×2 locations | bay_area | adzuna | posted 2026-10-14
+- **Project Manager - Commercial Construction** — Jobot [staffing] | San Jose, Santa Clara County · 20 rows ×2 locations | bay_area | adzuna | posted 2026-11-09
+- **Electrical Project Manager/Estimator** — Gpac [staffing] | Redwood City, San Mateo County · 18 rows ×9 locations | bay_area | adzuna | posted 2026-11-07
+- **Construction Project Coordinator/Project Engineer** — EMCOR Group | Campbell, Santa Clara County · 15 rows | bay_area | adzuna | posted 2026-10-14
+- **Landscape Maintenance Account Manager** —  | San Francisco Bay Area, CA · 12 rows | bay_area | glassdoor | posted 
 - **Manager, Constructability - Modular - Data Center** — Cupertino Electric | Campbell, Santa Clara County · 12 rows ×2 locations | bay_area | adzuna | posted 2026-10-15
-- **Construction Project Coordinator/Project Engineer** — EMCOR Group | Campbell, Santa Clara County · 12 rows | bay_area | adzuna | posted 2026-10-14
+- **Construction Project Manager** — Jobot [staffing] | Los Altos, Santa Clara County · 12 rows ×3 locations | bay_area | adzuna | posted 2026-11-08
+- **Landscape Account Manager** —  | San Francisco Bay Area, CA · 10 rows | bay_area | glassdoor | posted 
 - **Assistant Project Manager - Public Infrastructure** — Cupertino Electric | Campbell, Santa Clara County · 10 rows ×2 locations | bay_area | adzuna | posted 2026-09-26
-- **Construction Project Manager** — Jobot [staffing] | Los Altos, Santa Clara County · 9 rows ×3 locations | bay_area | adzuna | posted 2026-10-13
-- **Landscape Maintenance Account Manager** —  | San Francisco Bay Area, CA · 8 rows | bay_area | glassdoor | posted 
-- **Electrical Project Manager** — Gpac [staffing] | Daly City, San Mateo County · 8 rows ×6 locations | bay_area | adzuna | posted 2026-10-28
-- **Program Development Manager, Data Center Design and Construction** — Meta | Menlo Park, San Mateo County · 8 rows | bay_area | adzuna | posted 2026-10-04
+- **Electrical Project Manager** — Gpac [staffing] | Daly City, San Mateo County · 10 rows ×6 locations | bay_area | adzuna | posted 2026-10-28
+- **Project Manager - Commercial HVAC** — Jobot [staffing] | San Jose, Santa Clara County · 10 rows | bay_area | adzuna | posted 2026-10-30
+- **Program Development Manager, Data Center Design and Construction** — Meta | Menlo Park, San Mateo County · 10 rows | bay_area | adzuna | posted 2026-10-04
+- **Construction Project Manager - Commercial TI  TECH  Healthcare** — Jobot [staffing] | Cupertino, Santa Clara County · 9 rows ×3 locations | bay_area | adzuna | posted 2026-10-23
+- **Senior Electrical Estimator** — Gpac [staffing] | San Francisco, California · 8 rows ×6 locations | bay_area | adzuna | posted 2026-11-10
+- **Project Manager | Residential Construction** — Jobot [staffing] | Los Altos, Santa Clara County · 8 rows ×2 locations | bay_area | adzuna | posted 2026-11-08
+- **Project Manager - Residential Construction** — Jobot [staffing] | Campbell, Santa Clara County · 8 rows ×4 locations | bay_area | adzuna | posted 2026-10-31
+- **Home Improvement Sales Consultant - Warm Leads** —  | San Francisco Bay Area, CA · 7 rows | bay_area | glassdoor | posted 
+- **Assistant Construction Project Manager** —  | San Francisco Bay Area, CA · 7 rows | bay_area | glassdoor | posted 
 - **Plumbing Estimator - Commercial & Industrial Plumbing** — AlphaX | San Jose, Santa Clara County · 7 rows ×2 locations | bay_area | adzuna | posted 2026-11-03
 - **Project Manager - Commercial** — Cupertino Electric | Campbell, Santa Clara County · 7 rows ×2 locations | bay_area | adzuna | posted 2026-10-15
-- **Project Manager - Commercial HVAC** — Jobot [staffing] | San Jose, Santa Clara County · 7 rows | bay_area | adzuna | posted 2026-10-30
-- **Assistant Construction Project Manager** —  | San Francisco Bay Area, CA · 6 rows | bay_area | glassdoor | posted 
-- **Landscape Account Manager** —  | San Francisco Bay Area, CA · 6 rows | bay_area | glassdoor | posted 
+- **Construction Administrative Assistant** —  | San Francisco Bay Area, CA · 6 rows | bay_area | glassdoor | posted 
+- **In-Home Bathroom & Flooring Sales Representative Premier Home Pros** —  | San Francisco Bay Area, CA · 6 rows | bay_area | glassdoor | posted 
+- **Systems / MEPF Preconstruction Manager** — Clark Construction Group, LLC | SoMa, San Francisco · 6 rows | bay_area | adzuna | posted 2026-10-16
 - **Project Manager - Public Infrastructure** — Cupertino Electric | SoMa, San Francisco · 6 rows ×2 locations | bay_area | adzuna | posted 2026-09-26
-- **Senior Electrical Estimator** — Gpac [staffing] | San Mateo, San Mateo County · 6 rows ×6 locations | bay_area | adzuna | posted 2026-10-28
-- **Construction Project Manager - Commercial TI  TECH  Healthcare** — Jobot [staffing] | Cupertino, Santa Clara County · 6 rows ×3 locations | bay_area | adzuna | posted 2026-10-23
-- **Project Manager | Residential Construction** — Jobot [staffing] | San Jose, Santa Clara County · 6 rows ×2 locations | bay_area | adzuna | posted 2026-10-15
-- **Assistant Project Manager - Construction** — Jobot [staffing] | Saratoga, Santa Clara County · 5 rows ×2 locations | bay_area | adzuna | posted 2026-10-20
-- **Territory Sales Manager, Construction Equipment-San Jose, CA** — John Deere | Campbell, Santa Clara County · 5 rows ×2 locations | bay_area | adzuna | posted 2026-10-11
+- **Forensic Accounting Senior Associate (Construction)** — Grant Thornton | SoMa, San Francisco · 6 rows ×2 locations | bay_area | adzuna | posted 2026-10-14
+- **Construction Project Manager** — Insight Global [staffing] | Menlo Park, San Mateo County · 6 rows | bay_area | adzuna | posted 2026-10-30
+- **Project Accountant - Construction** — Jobot [staffing] | Los Altos, Santa Clara County · 6 rows ×2 locations | bay_area | adzuna | posted 2026-10-31
+- **Assistant Project Manager - Construction** — Jobot [staffing] | Saratoga, Santa Clara County · 6 rows ×2 locations | bay_area | adzuna | posted 2026-10-20
+- **Territory Sales Manager, Construction Equipment-San Jose, CA** — John Deere | Campbell, Santa Clara County · 6 rows ×2 locations | bay_area | adzuna | posted 2026-10-11
+- **Construction Office Manager** —  | San Francisco Bay Area, CA · 5 rows | bay_area | glassdoor | posted 
+- **Director of Construction and Real Estate** — COHERENT | Holy, Santa Clara County · 5 rows | bay_area | adzuna | posted 2026-10-16
+- **Senior Scheduler (Construction- Primavera P6)** — CUPERTINO ELECTRIC | San Jose, CA, USA · 5 rows ×3 locations | bay_area | indeed | posted 2026-11-05
+- **Project Controls Manager** — Clark Construction Group | San Francisco, California · 5 rows ×2 locations | bay_area | adzuna | posted 2026-09-16
+- **Aptitude Project Manager 2- (Low Voltage) Santa Rita** — J.E. Dunn Construction Company | Holy, Santa Clara County · 5 rows | bay_area | adzuna | posted 2026-10-03
+- **Director, Technical Construction** — JLL | San Francisco, California · 5 rows | bay_area | adzuna | posted 2026-10-11
+- **Project Manager – Electrical Construction (Multifamily & Affordable Housing)** — Jobot [staffing] | Sunnyvale, Santa Clara County · 5 rows | bay_area | adzuna | posted 2026-11-06
+- **Accountant | Residential Construction** — Jobot [staffing] | Los Altos, Santa Clara County · 5 rows | bay_area | adzuna | posted 2026-10-31
+- **Electrical Construction Project Manager/Estimator** — Jobot [staffing] | Santa Clara, Santa Clara County · 5 rows | bay_area | adzuna | posted 2026-10-31
 - **Construction Project Coordinator** — Kelly Services [staffing] | Campbell, Santa Clara County · 5 rows ×2 locations | bay_area | adzuna | posted 2026-10-22
-- **Home Improvement Sales Consultant - Warm Leads** —  | San Francisco Bay Area, CA · 4 rows | bay_area | glassdoor | posted 
-- **In-Home Bathroom & Flooring Sales Representative Premier Home Pros** —  | San Francisco Bay Area, CA · 4 rows | bay_area | glassdoor | posted 
+- **Landscape Estimate and Project Manager** — Pazmany Bros. Landscaping | Mountain View, Santa Clara County · 5 rows ×2 locations | bay_area | adzuna | posted 2026-11-07
 - **Construction Project Coordinator** —  | San Francisco Bay Area, CA · 4 rows | bay_area | glassdoor | posted 
-- **Construction Project Manager** — Bisnow | San Mateo, San Mateo County · 4 rows ×3 locations | bay_area | adzuna | posted 2026-10-02
+- **Residential HVAC Sales Consultant** — Atlas Trillo Heating&Air Conditioning | Santa Clara, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-14
+- **Construction Project Manager** — Bisnow | San Mateo, San Mateo County · 4 rows ×3 locations | bay_area | adzuna | posted 2026-10-01
 - **Assistant Project Manager (Design and Construction)** — Brailsford and Dunlavey | South San Francisco, San Mateo County · 4 rows ×3 locations | bay_area | adzuna | posted 2026-10-24
+- **Facilities Program & Construction Support Manager with Security Clearance** — Building People LLC/The | Alviso, San Jose · 4 rows | bay_area | adzuna | posted 2026-10-15
 - **Electrical Regional Chief Estimator** — CDM Smith | Campbell, Santa Clara County · 4 rows ×2 locations | bay_area | adzuna | posted 2026-10-16
-- **Director of Construction and Real Estate** — COHERENT | Holy, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-16
+- **Facilities Project Manager - Real Estate & Construction** — COHERENT | Holy, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-16
 - **Assistant Project Manager - Energy (Estimating to Traveling)** — CUPERTINO ELECTRIC | San Jose, CA, USA · 4 rows ×3 locations | bay_area | indeed | posted 2026-09-22
-- **Project Controls Manager** — Clark Construction Group | San Francisco, California · 4 rows ×2 locations | bay_area | adzuna | posted 2026-09-16
-- **Systems / MEPF Preconstruction Manager** — Clark Construction Group, LLC | SoMa, San Francisco · 4 rows | bay_area | adzuna | posted 2026-10-16
+- **Preconstruction Manager** — Clark Construction Group, LLC | SoMa, San Francisco · 4 rows | bay_area | adzuna | posted 2026-10-16
+- **Estimator** — Clark Construction Group, LLC | SoMa, San Francisco · 4 rows | bay_area | adzuna | posted 2026-10-16
+- **Project Scheduler** — Clark Construction Group, LLC | SoMa, San Francisco · 4 rows | bay_area | adzuna | posted 2026-10-16
 - **Account Manager - Landscape Maintenance** — Gothic Landscape | San Jose, Santa Clara County · 4 rows ×4 locations | bay_area | adzuna | posted 2026-10-24
-- **Forensic Accounting Senior Associate (Construction)** — Grant Thornton | SoMa, San Francisco · 4 rows | bay_area | adzuna | posted 2026-10-14
+- **Commercial Construction Assistant Project Manager** — HITT Contracting | Santa Clara, Santa Clara County · 4 rows ×2 locations | bay_area | adzuna | posted 2026-11-12
 - **Construction Assistant** — HITT Contracting Inc | San Jose, CA · 4 rows ×3 locations | bay_area | gj | posted 
-- **Construction Project Manager** — Insight Global [staffing] | Menlo Park, San Mateo County · 4 rows | bay_area | adzuna | posted 2026-10-30
 - **Construction Project Manager - MEP** — Insight Global [staffing] | Palo Alto, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-05
-- **Aptitude Project Manager 2- (Low Voltage) Santa Rita** — J.E. Dunn Construction Company | Holy, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-03
-- **Director, Technical Construction** — JLL | San Francisco, California · 4 rows | bay_area | adzuna | posted 2026-10-11
-- **Project Manager – Electrical Construction (Multifamily & Affordable Housing)** — Jobot [staffing] | Sunnyvale, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-11-06
-- **Electrical Construction Project Manager/Estimator** — Jobot [staffing] | Santa Clara, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-31
-- **Project Manager - Residential Construction** — Jobot [staffing] | Sunnyvale, Santa Clara County · 4 rows ×4 locations | bay_area | adzuna | posted 2026-10-30
-- **Landscape Estimate and Project Manager** — Pazmany Bros. Landscaping | Mountain View, Santa Clara County · 4 rows ×2 locations | bay_area | adzuna | posted 2026-10-10
+- **Senior Construction Estimator** — Jobot [staffing] | Santa Clara, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-29
+- **Electrical Construction Estimator** — Jobot [staffing] | Santa Clara, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-11-08
+- **Construction Estimator** — Jobot [staffing] | Sunnyvale, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-26
+- **Electrical Project Director- Data Center** — Lemartec Corporation | Campbell, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-15
 - **Construction Estimator** — RIMEPRO INC | San Francisco, CA, USA · 4 rows ×3 locations | bay_area | indeed | posted 2026-10-14
-- **Construction Administrative Assistant** —  | San Francisco Bay Area, CA · 3 rows | bay_area | glassdoor | posted 
+- **Senior Director, Global Design, Construction & Space Standards** — SanDisk | Milpitas, Santa Clara County · 4 rows | bay_area | adzuna | posted 2026-10-23
+- **Plumbing Service Manager** —  | San Francisco Bay Area, CA · 3 rows | bay_area | glassdoor | posted 
+- **Construction Bookkeeper** —  | San Francisco Bay Area, CA · 3 rows | bay_area | glassdoor | posted 
+- **Construction Project Manager** —  | San Francisco Bay Area, CA · 3 rows | bay_area | glassdoor | posted 
 - **HVAC Service Manager** —  | San Francisco Bay Area, CA · 3 rows | bay_area | glassdoor | posted 
 - **Plumbing Estimator - Commercial &amp; Industrial Plumbing** — AlphaGov | San Jose, CA · 3 rows | bay_area | li | posted 2026-11-03
-- **Residential HVAC Sales Consultant** — Atlas Trillo Heating&Air Conditioning | Santa Clara, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-14
 - **Outside Residential Plumbing Sales Representative** — Atlas Trillo Heating&Air Conditioning | San Jose, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-14
-- **Facilities Program & Construction Support Manager with Security Clearance** — Building People LLC/The | Alviso, San Jose · 3 rows | bay_area | adzuna | posted 2026-10-15
-- **Facilities Project Manager - Real Estate & Construction** — COHERENT | Holy, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-16
-- **Senior Scheduler (Construction- Primavera P6)** — CUPERTINO ELECTRIC | San Jose, CA, USA · 3 rows ×3 locations | bay_area | indeed | posted 2026-11-05
+- **Senior Construction Scheduler, Data Center** — CRUSOE | San Francisco, CA, USA · 3 rows ×2 locations | bay_area | indeed | posted 2026-09-28
 - **Assistant Project Manager - Public Works - Alameda County** — CWS Construction Group | Alameda, CA · 3 rows ×2 locations | bay_area | ziprecruiter | posted 
-- **Preconstruction Manager** — Clark Construction Group, LLC | SoMa, San Francisco · 3 rows | bay_area | adzuna | posted 2026-10-16
-- **Estimator** — Clark Construction Group, LLC | SoMa, San Francisco · 3 rows | bay_area | adzuna | posted 2026-10-16
-- **Project Scheduler** — Clark Construction Group, LLC | SoMa, San Francisco · 3 rows | bay_area | adzuna | posted 2026-10-16
+- **Project Manager - Energy** — Cupertino Electric | Campbell, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-25
 - **Senior Estimator II - Substation & High Voltage** — Cupertino Electric | Campbell, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-09-26
 - **Estimator II - Energy** — Cupertino Electric | Campbell, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-09-26
 - **Senior Estimator II - PV & BESS** — Cupertino Electric | Campbell, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-09-26
 - **Dispatcher II** — Granite Construction | Santa Clara, CA, USA · 3 rows ×2 locations | bay_area | indeed | posted 2026-10-29
-- **Commercial Construction Assistant Project Manager** — HITT Contracting | San Jose, CA, USA · 3 rows ×2 locations | bay_area | indeed | posted 2026-09-29
 - **Commercial Construction Assistant Project Manager - Mission Critical** — HITT Contracting Inc | Santa Clara, CA · 3 rows ×2 locations | bay_area | gj | posted 
-- **Project Accountant - Construction** — Jobot [staffing] | Los Altos, Santa Clara County · 3 rows ×2 locations | bay_area | adzuna | posted 2026-10-31
-- **Construction Estimator** — Jobot [staffing] | Sunnyvale, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-26
-- **Senior Construction Estimator** — Jobot [staffing] | Santa Clara, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-29
-- **Electrical Construction Estimator** — Jobot [staffing] | Santa Clara, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-13
+- **Manager - Design & Construction** — Hines | Hayes Valley, San Francisco · 3 rows ×2 locations | bay_area | adzuna | posted 2026-11-12
 - **Construction Project Manager - Tech** — Jobot [staffing] | San Francisco, California · 3 rows | bay_area | adzuna | posted 2026-10-14
 - **Senior Staff Accountant (Construction)** — Jobot [staffing] | San Jose, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-20
 - **Senior Project Manager - Luxury Residential Construction** — Jobot [staffing] | San Francisco, California · 3 rows | bay_area | adzuna | posted 2026-10-10
 - **Construction Project Manager** — Kelly Services [staffing] | Campbell, Santa Clara County · 3 rows ×2 locations | bay_area | adzuna | posted 2026-10-22
 - **Account Manager (Commercial Landscaping)** — LandCare | San Francisco, California · 3 rows ×3 locations | bay_area | adzuna | posted 2026-09-22
 - **Construction Project Coordinator** — Power Plus | Sunnyvale, Santa Clara County · 3 rows ×2 locations | bay_area | adzuna | posted 2026-11-04
-- **Senior Director, Global Design, Construction & Space Standards** — SanDisk | Milpitas, Santa Clara County · 3 rows | bay_area | adzuna | posted 2026-10-23
+- **Project Administrator** — XL Construction | Milpitas, Santa Clara County · 3 rows ×3 locations | bay_area | adzuna | posted 2026-10-25
+- **Office Manager - Construction** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Construction Office Administrator** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **HVAC Dispatcher** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **In-Home Sales Representative – Home Remodeling** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Inside Direct Sales Representative Professional - Residential Remodeling - Persuasive Call Center** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Regional Sales Manager - Midwest (10+ Septic/Radiant/HVAC Ind. Yrs. Exp. Req.)** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Pre-Construction Coordinator** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Project Coordinator - Construction** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Construction Estimator** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Non-Capital Construction Assistant Project Manager** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Assistant Project Manager, Construction** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Landscaping Account Manager** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Account Manager, Commercial Landscape Services** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Construction Accounting Specialist** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
 - **Home Improvement Appointment Coordinator** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
 - **Plumbing Dispatcher** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
-- **Non-Capital Construction Assistant Project Manager** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
-- **Account Manager, Commercial Landscape Services** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
 - **Global Procurement Category Lead Engineering and Construction** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
-- **Construction Bookkeeper** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
-- **Construction Accounting Specialist** —  | San Francisco Bay Area, CA · 2 rows | bay_area | glassdoor | posted 
+- **Estimator - Commercial Plumbing & Process Piping** — AlphaX | San Jose, Santa Clara County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-11-10
 - **MEP Project Manager - Commercial Plumbing** — AlphaX | San Jose, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-11-03
 - **Lead HVAC Counter Sales Specialist** — Atlas Trillo Heating&Air Conditioning | Cupertino, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-14
 - **Accounting Assistant** — BEI Construction | Alameda, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-01
-- **Senior Construction Scheduler, Data Center** — CRUSOE | San Francisco, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-09-28
+- **Strategic Account Executive, Engineering and Construction** — Bloom Energy | San Jose, Santa Clara County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-11-12
+- **Assistant Project Manager (Design and Construction)** — Brailsford & Dunlavey | San Francisco, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-11-06
+- **Account Manager - Landscaping** — Cagwin & Dorward | Petaluma, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-11-09
 - **Project Scheduler** — Clune Construction | San Francisco, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-21
-- **Project Manager - Energy** — Cupertino Electric | Campbell, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-25
 - **Project Manager - Modular - Data Center** — Cupertino Electric | SoMa, San Francisco · 2 rows ×2 locations | bay_area | adzuna | posted 2026-09-26
-- **Estimator** — Dome Construction | San Francisco, California · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-04
 - **Senior Construction Project Manager** — Dowbuilt | San Francisco, California · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-19
 - **Construction Integration Manager 5** — Experis | Holy, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-11-05
 - **Installation Coordinator** — Express Flooring | Hayward, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-09
 - **Technical Program Manager, Data Center Development Planning and Pre-Construction** — Google | Sunnyvale, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-18
 - **Commercial HVAC Project Manager** — Gpac [staffing] | Mission District, San Francisco · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-27
 - **Senior Electrical Project Manager** — Gpac [staffing] | San Jose, Santa Clara County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-01
-- **Design Manager** — HDR Remodeling | Emeryville, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-28
 - **Construction Programs Manager** — Habitat for Humanity Greater San Francisco | San Francisco, California · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-03
 - **Construction Project Manager** — Hoxton Circle | Mountain View, Santa Clara County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-11-05
-- **Accountant | Residential Construction** — Jobot [staffing] | Los Altos, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-31
 - **HVAC Inside Sales Representative** — Keller Supply | Oakland, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-19
 - **Estimator** — Layton Construction Company | San Francisco, California · 2 rows ×2 locations | bay_area | adzuna | posted 2026-11-06
-- **Electrical Project Director- Data Center** — Lemartec Corporation | Campbell, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-15
 - **Preconstruction Manager, Leased - Data Center Design, Engineering, and Construction** — Meta | Menlo Park, San Mateo County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-04
 - **Project Manager** — Novo Construction | Menlo Park, San Mateo County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-24
+- **Commercial Plumbing Estimator** — PACIFIC PLUMBING SYSTSEMS, INC. | San Leandro, CA, USA · 2 rows | bay_area | indeed | posted 2026-11-12
+- **Scheduler** — Plant Construction Company | Hayes Valley, San Francisco · 2 rows | bay_area | adzuna | posted 2026-11-12
 - **Concrete Estimator** — RIMEPRO INC | San Francisco, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-14
 - **HVAC Project Manager (Sheet Metal)** — Raya Workforce | Holy, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-30
 - **Assistant Project Manager - Electrical Construction** — Regent5 | San Carlos, CA · 2 rows ×2 locations | bay_area | gj | posted 
+- **Roofing Sales Representative** — Results Roofing | San Francisco, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-09-30
 - **Senior Program Manager - Residential Construction** — Rise Technical Recruitment [staffing] | San Jose, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-29
+- **Construction Project Coordinator** — Robert Half [staffing] | Holy, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-11-06
+- **Construction / Real Estate Project Coordinator** — Robert Half [staffing] | San Mateo, San Mateo County · 2 rows | bay_area | adzuna | posted 2026-11-01
 - **Field Sales Representative - Excavation** — Roto-Rooter | East Palo Alto, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-11-04
+- **Project Manager 1 - Facilities/Construction** — SLAC | Menlo Park, San Mateo County · 2 rows | bay_area | adzuna | posted 2026-11-12
 - **Roofing Sales Representative – Leads Provided** — Shadowfax Roofing & Solar | San Jose, CA, USA · 2 rows | bay_area | indeed | posted 2026-10-26
+- **Senior Director - Construction** — Stanford Health Care | Stanford, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-10-22
+- **Estimator / Preconstruction Manager** — Suffolk Construction | Financial District, San Francisco · 2 rows ×2 locations | bay_area | adzuna | posted 2026-11-12
 - **Senior Estimator** — Suffolk Construction | Financial District, San Francisco · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-14
+- **Director of Construction** — SummerHill Apartment Communities | Stanford, Santa Clara County · 2 rows | bay_area | adzuna | posted 2026-11-12
 - **Construction Assistant Project Manager - Water Division - Bay Area, CA** — The Walsh Group | Concord, CA, USA · 2 rows ×2 locations | bay_area | indeed | posted 2026-10-26
 - **Plumbing Service Project Manager** — Therma | San Jose, Santa Clara County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-11-06
+- **Cost Manager / Quantity Surveyor - Data Center Construction** — Turner & Townsend | San Francisco, California · 2 rows | bay_area | adzuna | posted 2026-11-08
 - **Vice President, Construction Scheduler** — WSP | Financial District, San Francisco · 2 rows ×2 locations | bay_area | adzuna | posted 2026-09-23
-- **Project Administrator** — XL Construction | Milpitas, Santa Clara County · 2 rows ×2 locations | bay_area | adzuna | posted 2026-10-25
-- **Construction Office Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Office Manager / Public Works Compliance Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Office Manager - Residential Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Facilities Construction Coordinator II - Central Office** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Bookkeeper / Office Manager – Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Office Manager (Heavy Civil Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Office Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Office Manager - Construction Experience Preferred** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Office Manager – Roofing Company** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Office Administrator – Construction / Engineering Company** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Bookkeeper?Office Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Management Back Office Coordinator.** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **On-site Construction Administrative Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Part-Time Administrative Assistant / Construction Coordinator Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Administrative Assistant – Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Administrative Assistant (Construction Project Coordinator)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Administrative Assistant Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Senior Administrative Assistant - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Administrative Assistant - Data Center Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Real Estate Construction Project Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Administrative Assistant/Construction Administrator (Part-Time)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Dispatcher Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Dispatcher/Construction Administrator (Doors and Docks)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Licensed Plumbers, Drain Technicians, Apprentices, CSRs & Dispatchers – Join Bee's Plumbing** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Office Coordinator & Dispatcher (Part Time)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Equipment Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Materials Dispatcher/Resource Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Equipment Rental Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Concrete/Materials Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Plumbing Install Coordinator/Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Plumbing Project Manager/Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Plumbing Product Category Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Plumbing Project Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Outside Sales Rep - Rochester/Syracuse NY ( Plumbing, heating, waterworks and commercial drains exp)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Plumbing / HVAC Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Trade Manager, Plumbing** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Field Office Admin** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Admin** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Home Improvement Sales Consultant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Home Improvement Outside Sales Associate** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Roofing Sales Representative** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Roofing Sales Consultant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Business Development Manager - Plumbing & Hydronic Systems** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Outside Sales Executive - Commercial Flooring** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Regional Manager (HVAC/TAB Sales and Management)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Landscape Design-Build Sales & Project Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Roofing Sales Rep | Paid Training | $100-$150 K First Year Potential** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Residential Roofing Sales Rep at MadeWell Roofing & Exteriors** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Customer Service Representative – Plumbing | Know Plumbing?** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **HVAC Bilingual Customer Service Representative** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Warranty & Customer Service Representative, AZ** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Customer Service Representative-Construction Products** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Customer Service Representative (Solar)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Customer Success Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **HVAC Controls/Service Sales Representative, Iowa** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **NOW HIRING: Residential HVAC Sales Consultant / Comfort Advisor** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Inside Sales Representative – HVAC (Mission Critical Environments)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **HVAC Inside Sales Representative** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial HVAC Controls Sales Specialist** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Outside Sales Representative – Generator, HVAC & Electrical (Commission Only)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **HVAC Sales Associate** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Administrative Project Coordinator - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Coordinator- Commercial Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Facilities Construction Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Sr. Construction Project Coordinator EIT or AIT** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Construction Bid Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Coordinator (Greenfield)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Coordinator (Restaurants/Retail)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Coordinator - Grand Canyon South Rim** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Coordinator (Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Part-Time Construction Draftsman / Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Landscape Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Roofing & Waterproofing Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Estimating Manager – Commercial Construction (IN OFFICE)$7000 Sign On Bonus** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Senior Estimator / Preconstruction Project Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Sr. Heavy Civil Construction Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Estimator/Preconstruction Services** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Roofing Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Estimator - Civil & Heavy Highway** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Permitting Coordinator & Estimator – Residential Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Electrical Estimator/Project Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Estimator Commercial** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Junior Estimator (Construction Experience Required)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Assistant Project Manager (Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Assistant Project Manager Public Works** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Coordinator – Residential Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Interior Designer / Project Coordinator (Remodeling)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Coordinator - Residential Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Remodeling Sales & Project Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Bilingual Construction Project Coordinator – Residential Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Coordinator - Reconstruction & Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Office Operations, Interior Design & Project Coordinator for General Contractor - Res Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Snow and Landscape Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Landscape Management Account Director - For Commercial Properties** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Landscape Field and Accounts Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Associate Landscape Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **High-End Residential Landscape Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Landscape Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Senior Construction Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **(Primavera P6) - Construction Scheduler Analyst** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Scheduler (Construction Projects)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Scheduler, Data Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Site Scheduler | Semiconductor Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Scheduler (OH)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Planning and Scheduling Manager II - Data Center Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Scheduler - P6, Construction, Data Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Smart Sheet - Construction Master Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Fractional Construction Scheduler / Site Progress Auditor** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Roofing Service Coordinator / Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Facilities & Construction Purchasing Specialist** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Fulfillment Buyer, Construction (Starship)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Purchasing Manager (ARG Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Procurement Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Strategic Sourcing Senior Manager - Capital Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **(Residental Construction) Estimating & Purchasing Associate** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Procurement Sr. Specialist, NA Construction Services & Equipment** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial electrical purchasing Agent** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Global Real Estate & Construction Procurement** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Project Coordinator/Lead** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Bookkeeper - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Commercial Construction Full Charge Bookkeeper** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Staff Accountant/Bookkeeper - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Office Manager/Bookkeeper** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Accountant / Bookkeeper** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Forensic Accounting Senior Associate (Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Accounting Controller** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Accountant Need Form Construction Project** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Accounting Manager - Construction emphasis (FT - Client Services)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Accounting Manager - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Assistant AP Manager (Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Junior Payroll Tax Accountant (Multi-State Construction Industry)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Staff Accountant (Construction, Real Estate and Finance experience preferred)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Operations Manager - Integrator at Eagle Pipe Heating & Air** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Field Construction Coordinator - FCC** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Administrator - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Electrical Project Manager – Data Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Manager - Heavy Civil Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Senior Project Manager – Heavy Civil & Preconstruction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Construction Quality Control Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Project Manager Commercial Construction with Commercial Experience** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Home Remodeling Sales Consultant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Outside Sales Representative - Roofing & Home Exteriors** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Facilities Construction Coordinator II - Central Office** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Office Engineer/ Construction Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Bilingual Office Manager - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Senior Administrative Assistant - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Mining Construction Administrative Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Administrative Assistant - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Administrative Assistant - Data Center Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Administrative Assistant/Construction Administrator (Part-Time)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **On-site Construction Administrative Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Project Administrative Assistant – Telecommunications Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Administrative Assistant & Project Coordinator (Part-Time)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Electrical Construction - Project Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Equipment Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Plumbing Install Coordinator/Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Dispatch Coordinator - Roofing & Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Control Room Lead/Construction Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Logistics Manager (Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Experienced Dispatcher / Scheduling Coordinator - Concrete Specialty Contractor** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Licensed Plumbers, Drain Technicians, Apprentices, CSRs & Dispatchers – Join Bee's Plumbing** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Dispatcher/Construction Administrator (Doors and Docks)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Plumbing Sales Specialist SAS** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **HVAC & Plumbing Office Assistant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Plumbing / HVAC Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Plumbing Project Manager/Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Plumbing Product Category Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Plumbing Service Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Field Office Admin - Houston Medical Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **PART TIME Design Studio Receptionist (New Home Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Preconstruction Coordinator & Receptionist** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Admin** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Receptionist** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Commissioned In-Home Sales Representative – Roofing & Exterior Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **In-Home Sales Representative – Home Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Roofing Sales Representative – Entry Level** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Inside Direct Sales Representative Professional - Residential Remodeling - Persuasive Call Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Business Development Manager - Plumbing & Hydronic Systems** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **CONSTRUCTION BUSINESS DEVELOPMENT MANAGER** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Roofing Sales Consultant** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **D2D Sales Manager - Roofing and Restoration** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Entry Level Window Sales Representative $120k-$180K OTE** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **HVAC and Plumbing Service Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **CSR/DISPATCHER FOR HVAC/PLUMBING COMPANIES - FULL TIME** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Customer Success Coordinator/Plumbing Dispatch** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Customer Service Representative – Plumbing | Know Plumbing?** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **HVAC/Plumbing Service Dispatcher** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Service Dispatcher - HVAC / Plumbing Service** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **CSR - Customer Service Representative/ Appointment Setter for HVAC-Plumbing** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **SMB Construction Success Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Customer Service Representative-Construction Products** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Customer Service Representative (Solar)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **HVAC Bilingual Customer Service Representative** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Customer Success Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **HVAC Inside Sales Representative** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Inside Sales Representative – HVAC (Mission Critical Environments)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Regional Sales Manager - Midwest (10+ Septic/Radiant/HVAC Ind. Yrs. Exp. Req.)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Territory Sales Representative - Plumbing/HVAC** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Pre-Construction Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **HVAC Installation/ Project Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Coordinator Sr** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Assistant Project Manager/Construction Field Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Project Coordinator (Project Engineer)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Residential Construction Project Coordinator – Field & Design Support** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Roofing & Waterproofing Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Senior Civil Construction Estimator / Business Development** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Estimator Commercial** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Estimating Manager – Commercial Construction (IN OFFICE)$7000 Sign On Bonus** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Estimator/Preconstruction Services** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Senior Estimator – Heavy Civil Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Senior Civil Construction Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Keystone Electric - Project Estimator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
@@ -249,46 +386,28 @@
 - **Assistant Project Manager - Commercial Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Assistant Project Manager – Specialty Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Assistant Project Manager - Mechanical Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Project Coordinator - Residential Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Project Coordinator – Residential Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Part-Time Executive & Project Coordinator (High-End Residential Remodeling)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Bilingual Construction Project Coordinator – Residential Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Remodeling Sales & Project Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Project Coordinator - Reconstruction & Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Interior Designer / Project Coordinator (Remodeling)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Project Coordinator – Flooring & Remodeling** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Reconstruction Project Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Landscape Account Manager/Client Relationship Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Landscaping Maintenance Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Landscaping Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Commercial Landscape Field and Accounts Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Account Manager – High-End Residential & Commercial Landscape Maintenance** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Associate Landscape Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Account Manager – Commercial Landscaping** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Landscape/Snow Removal Account Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Landscape Management Account Director - For Commercial Properties** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Commercial Account Manager- Landscape & Snow Removal Svcs.** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Account Manager - Landscape Maintenance** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Landscape Account Manager - Ocean Isle** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Senior Construction Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Scheduler - Federal Sector** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Scheduler, Data Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction CPM Scheduler / Project Manager / Project Controls** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Scheduler / Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Landscape Office / Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Scheduler - P6, Construction, Data Center** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Preconstruction Scheduler with AIS Infrastructure** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Project Scheduler** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Facilities & Construction Purchasing Specialist** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Category Manager, Global Real Estate & Construction Procurement [212579]** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Purchasing Agent – Electrical Contracting** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Commercial electrical purchasing Agent** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Procurement Sr. Specialist, NA Construction Services & Equipment** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Category Business Manager - Commodity & Building Materials** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Procurement Manager - Electrical Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Procurement Specialist – Plumbing Equipment & Materials** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Real Estate & Construction Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Bookkeeper - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Construction Accountant/Bookkeeper (Class A Contractor)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Bookkeeper - Construction - Part-time** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Bookkeeper — Construction Subcontractor** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
@@ -297,16 +416,15 @@
 - **Construction Bookkeeper & Project Coordinator** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Project Accountant - Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Accounting Senior (CAAS - Construction Industry)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Forensic Accounting Senior Associate (Construction)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Jr. Accountant ( Manufacturing/Construction Industry)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Staff Accountant - Construction & Real Estate Accounting** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Accounting Manager - Construction emphasis (FT - Client Services)** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Quality Control Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Utility Scale Solar Project Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
 - **Project Manager - Healthcare Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Project Manager - Heavy Civil Construction** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
-- **Construction Project Manager** —  | San Francisco Bay Area, CA | bay_area | glassdoor | posted 
+- **Remote Construction Project Coordinator – Residential Construction** —  | San Francisco Bay Area, CA | remote | glassdoor | posted 
+- **Senior Scheduler - Data Center Construction - REMOTE** —  | San Francisco Bay Area, CA | remote | glassdoor | posted 
+- **Infrastructure Manager- Design & Construction** — 1X | San Carlos, San Mateo County | bay_area | adzuna | posted 2026-11-13
 - **Emerging Project Manager - Construction (Federal)** — 86 Walsh Federal, LLC | Suisun City, CA | bay_area | gj | posted 
+- **Customer Service Representative (CSR) / Customer Experience Specialist** — A 1 Heating & Cooling | San Jose, CA, USA | bay_area | indeed | posted 2026-11-11
 - **Hate Losing? So Do We! - Experienced Roofing Sales Representative** — A BETTER ROOFING COMPANY | Walnut Creek, CA, USA | bay_area | indeed | posted 2026-10-09
 - **Construction and Maintenance Project Manager (Remote)** — ABCO Facility Maintenance | Alexander, AR | remote | gj | posted 
 - **Construction and Maintenance Project Manager (Remote)** — ABCO MAINTENANCE INC. (BIC# 1854) | Phoenix, AZ | remote | gj | posted 
@@ -315,6 +433,7 @@
 - **In Home Sales Rep (HVAC) - San Jose, CA** — ARS | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-09-15
 - **In Home Plumbing Sales Representative** — ARS/Rescue Rooter | San Jose, CA, USA | bay_area | indeed | posted 2026-10-02
 - **Assistant Dispatcher and Customer Service Representative** — Able General Engineering Inc. dba Able Plumbing Sewer & Drain | San Jose, CA, USA | bay_area | indeed | posted 2026-10-21
+- **Electrical Project Manager / Estimator** — Abstrakt Marketing Group | Pleasanton, CA, USA | bay_area | indeed | posted 2026-11-12
 - **Construction Project Manager** — Accend Networks | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Building Materials Sales Associate** — Ace Hardware | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-17
 - **Entry-Level Customer Service Sales Representative** — Advanced Plumbing, Heating and Air | Vacaville, CA, USA | bay_area | indeed | posted 2026-10-28
@@ -323,24 +442,32 @@
 - **Inside Sales Representative- Construction Equipment** — All Star Rents | Vallejo, CA, USA | bay_area | indeed | posted 2026-10-24
 - **Branch Manager** — Allied Landscape | San Jose, CA, USA | bay_area | indeed | posted 2026-10-16
 - **Entry-Level Office Manager** — Alligator Plumbing | Castro Valley, CA, USA | bay_area | indeed | posted 2026-11-04
+- **Estimator - Commercial Plumbing &amp; Process Piping** — AlphaGov | San Jose, CA | bay_area | li | posted 2026-11-10
 - **Electrical Estimator/Project Manager** — Altos Electric Inc | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Construction - Senior Project Manager** — Armor Construction Services, Inc. | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Construction Coordinator** — Ascend | Oakland, CA | bay_area | ziprecruiter | posted 
+- **In Home Sales Rep (HVAC) - San Jose, CA** — Atlas Trillo Heating & Air Conditioning | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-10-13
 - **In-Home Sales Representative – HVAC & Insulation | Hot Leads Provided** — Attic Crew | San Francisco Bay Area, CA, USA | bay_area | indeed | posted 2026-09-23
 - **In-Home Sales Representative – HVAC & Insulation | Hot Leads Provided** — Attic Star | Hayward, CA, USA | bay_area | indeed | posted 2026-11-06
+- **Portfolio Manager - Construction** — BANK OF MARIN | Novato, CA | bay_area | ziprecruiter | posted 
 - **Account Manager in Landscape Maintenance** — BAY PRO | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-04
 - **Payroll Manager** — BEI Construction | Alameda, CA, USA | bay_area | indeed | posted 2026-10-12
 - **Remote Outbound Appointment Setter - Home Improvement** — Bath & Cabinet Experts | Indianapolis, IN | remote | jooble | posted 
 - **Senior Civil Earthwork Estimator** — Bay Area Excavating and Grading Inc. | San Jose, CA, USA | bay_area | indeed | posted 2026-11-02
 - **Project Coordinator** — Bay Home & Window | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-16
-- **Dispatcher Home Services (7AM Start)** — Bellows Plumbing, Heating, Cooling & Electrical | Novato, CA | bay_area | ziprecruiter | posted 
+- **Dispatcher - Home Services (7AM Start)** — Bellows Plumbing, Heating, Cooling & Electrical | Novato, CA | bay_area | ziprecruiter | posted 
 - **Call Center Manager** — Benjamin Franklin Plumbing | Novato, CA, USA | bay_area | indeed | posted 2026-10-19
+- **Remote Sales Executive: Flooring & Construction Growth** — Berry Virtual | Medvirtual | Ai Virtual | Mount Eden, Alameda County | remote | adzuna | posted 2026-11-12
+- **Construction Office Manager / Public Works Compliance Coordinator** — Bilt Rite Inc. | Newark, CA, USA | bay_area | indeed | posted 2026-10-27
 - **Assistant Project Manager - Construction** — Bjork Construction Company, Inc. | Fremont, CA, USA | bay_area | indeed | posted 2026-10-22
 - **HVAC Growth Director (Remote) — Multi-Location Deals** — Blacksmith Agency LLC | Anywhere | remote | gj | posted 
 - **Purchasing Agent II** — Blue Mountain Construction Services | Vacaville, CA, USA | bay_area | indeed | posted 2026-10-31
 - **HVAC Customer Service Representative** — Blue Mountain Construction Services | Vacaville, CA, USA | bay_area | indeed | posted 2026-10-29
 - **Estimator/Inside Sales - Lighting & Electrical** — Blue Streak Lighting Services | Santa Clara, CA, USA | bay_area | indeed | posted 2026-10-13
-- **Assistant Project Manager (Design and Construction)** — Brailsford & Dunlavey, Inc. | San Francisco, CA | bay_area | gj | posted 
+- **Project Coordinator (Design and Construction)** — Brailsford & Dunlavey | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-06
+- **Project Coordinator (Design and Construction)** — Brailsford and Dunlavey | Tenderloin, San Francisco | bay_area | adzuna | posted 2026-11-08
+- **Senior Project Manager- Electrical (Design and Construction)** — Brailsford and Dunlavey | South San Francisco, San Mateo County | bay_area | adzuna | posted 2026-11-13
+- **Senior Project Manager (Design and Construction)** — Brailsford and Dunlavey | South San Francisco, San Mateo County | bay_area | adzuna | posted 2026-11-08
 - **Account Manager** — BrightView Landscapes | Hayward, CA | bay_area | ziprecruiter | posted 
 - **Manager, Electrical Engineering – Power Generation** — Brunel | Redwood City, San Mateo County | bay_area | adzuna | posted 2026-10-14
 - **Construction Project Engineer / Project Coordinator** — Buildcorp | San Francisco, CA, USA | bay_area | indeed | posted 2026-09-30
@@ -350,7 +477,6 @@
 - **Experienced Roofing Estimator / Sales Representative** — C F Y Construction Inc. | Daly City, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Multi-Family Construction Estimator** — CAMP ROOFING Ltd Limited Partnership | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Legal Operations Support Manager** — CUPERTINO ELECTRIC | San Jose, CA, USA | bay_area | indeed | posted 2026-10-31
-- **Account Manager - Landscaping** — Cagwin & Dorward | San Jose, CA, USA | bay_area | indeed | posted 2026-10-29
 - **Account Manager - Landscaping** — Cagwin & Dorward A Corp | Holy, Santa Clara County | bay_area | adzuna | posted 2026-10-23
 - **Assistant Project Manager - Construction & Campus Programs** — California Polytechnic State University-San Luis Obispo | Vallejo, CA | bay_area | gj | posted 
 - **Remote Inside Sales Engineer - HVAC Solutions** — Carrier Global | Phoenix, AZ | remote | gj | posted 
@@ -364,20 +490,19 @@
 - **Bookkeeper / Office Coordinator** — Cheng Design & Construction, Inc. | Berkeley, CA, USA | bay_area | indeed | posted 2026-10-26
 - **Senior Safety Manager** — Clark Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-04
 - **Senior Project Manager** — Clark Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-27
-- **Assistant Project Manager Pre-Construction, Solar-BESS** — Clearway Energy | San Francisco, California | bay_area | adzuna | posted 2026-09-10
 - **Construction Project Manager** — Clune Construction Company | San Francisco, California | bay_area | adzuna | posted 2026-11-01
 - **Assistant Project Manager - Residential Construction** — Confidential | South San Francisco, CA | bay_area | gj | posted 
+- **Receptionist** — Construction Worldwide | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Purchasing Agent** — Contra Costa Electric, Inc. | Martinez, CA | bay_area | ziprecruiter | posted 
 - **Project Assistant** — Contra Costa Electric, Inc. | Martinez, CA | bay_area | gj | posted 
 - **Office Assistant** — Corcus Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-25
+- **Data Center Construction Scheduler** — CoreWeave | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-11
 - **Director of Construction** — Crusoe | San Francisco, California | bay_area | adzuna | posted 2026-10-15
-- **Construction Project Coordinator - Residential Construction** — D&D HOME REMODELING | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-09-08
-- **Assistant Project Manager - Residential Construction** — D&D HOME REMODELING | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-09-08
+- **Senior HVAC/ MEP Project Manager - MEP, HVAC** — CyberCoders | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-11-12
 - **Commercial Assistant Project Manager** — D'Ville Construction Inc. | Los Gatos, CA | bay_area | gj | posted 
 - **Assistant Construction Project Manager** — D+H Construction | Berkeley, CA | bay_area | gj | posted 
 - **Senior Estimator - Industrial Construction Services at D2 Industrial Services** — D2 Industrial Services | Vallejo, CA, USA | bay_area | indeed | posted 2026-10-08
 - **Roofing Estimator (Commercial or Residential)** — DE Group | San Francisco Bay Area, CA, USA | bay_area | indeed | posted 2026-10-22
-- **Sr Electrical Estimator** — DPR | San Francisco, California | bay_area | adzuna | posted 2026-09-11
 - **Sr Planner & Scheduler** — DPR Construction | Santa Clara, CA, USA | bay_area | indeed | posted 2026-11-04
 - **Project Manager** — DPR Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-04
 - **Project Coordinator** — DPR Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-09-25
@@ -386,14 +511,16 @@
 - **Assistant Project Manager** — Design Line Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-15
 - **Assistant Project Manager (APM)** — Design Line Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-14
 - **Assistant Project Manager - Commercial Construction** — Diamond Peak Recruiting [staffing] | San Francisco, CA | bay_area | gj | posted 
+- **Director of Business Development: Construction Tech** — Different Technologies Pty Ltd. | Hayes Valley, San Francisco | bay_area | adzuna | posted 2026-11-12
 - **Dispatcher** — Divine Electric | San Rafael, CA, USA | bay_area | indeed | posted 2026-10-13
+- **Estimator** — Dome Construction | San Francisco, California | bay_area | adzuna | posted 2026-10-04
 - **Scheduler** — Dome Construction | San Francisco, California | bay_area | adzuna | posted 2026-10-22
 - **Senior Scheduler** — Dome Construction | San Francisco, California | bay_area | adzuna | posted 2026-10-22
+- **Office Coordinator** — Dome Construction Corporation | San Francisco, CA | bay_area | ziprecruiter | posted 2026-11-11
 - **Construction Project Coordinator/Project Engineer** — EMCOR | San Jose, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Electrical Estimator** — EMCOR | San Leandro, CA, USA | bay_area | indeed | posted 2026-10-07
 - **Assistant Project Manager for Commercial Projects (Restaurants, Hospitality)** — Echo Summit Construction | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-06
 - **HVAC Sales Representative** — Electrify My Home | Vacaville, CA, USA | bay_area | indeed | posted 2026-10-30
-- **Construction Project Manager** — Essel | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Construction Estimator- Remote** — ExecutivePlacements.com | Fairfax, VA | remote | gj | posted 
 - **Sales Rep** — FRSTeam Restoration | Hayward, CA | bay_area | ziprecruiter | posted 
 - **Construction Coordinator** — FST Technical Services | Santa Clara, Santa Clara County | bay_area | adzuna | posted 2026-10-20
@@ -403,6 +530,7 @@
 - **Hvac Sales Representative** — Flow Masters Plumbing, Inc. | Daly City, CA, USA | bay_area | indeed | posted 2026-09-25
 - **Sales Specialist - Full Time - Sonoma** — Friedman's Home Improvement | Sonoma, CA, USA | bay_area | indeed | posted 2026-10-23
 - **Sales Specialist - Part Time - Petaluma** — Friedman's Home Improvement | Petaluma, CA, USA | bay_area | indeed | posted 2026-09-26
+- **Regional Business Manager (Construction Sales)** — GVW Group, LLC | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Plumbing Project Manager** — Gallaherco | San Jose, CA, USA | bay_area | indeed | posted 2026-10-12
 - **Assistant Project Manager - Plant** — Garney Construction | Oakland, CA (+1 other) | bay_area | gj | posted 
 - **Construction Project Coordinator** — Gidel & Kocal Construction Company | Campbell, CA, USA | bay_area | indeed | posted 2026-11-03
@@ -414,7 +542,10 @@
 - **Construction Project Administrator** — GroundLevel Construction, Inc. | Concord, CA | bay_area | gj | posted 
 - **HVAC Construction Estimator** — Gulfstream Strategic Placements [staffing] | Daly City, San Mateo County | bay_area | adzuna | posted 2026-10-27
 - **HVAC/Plumbing Project Manager** — Gulfstream Strategic Placements [staffing] | San Mateo, San Mateo County | bay_area | adzuna | posted 2026-10-27
+- **Design Manager** — HDR Remodeling | Emeryville, CA, USA | bay_area | indeed | posted 2026-10-28
+- **Assistant Project Manager, Residential & Condo Exterior Construction** — HIGHER STAFFING [staffing] | Daly City, CA, USA | bay_area | indeed | posted 2026-11-09
 - **Commercial Construction Project Manager - Corporate Interiors** — HITT Contracting | Santa Clara, Santa Clara County | bay_area | adzuna | posted 2026-10-14
+- **Construction Project Manage & Estimator** — HYPER Pro Equipment Resource INC | Santa Rosa, CA, USA | bay_area | indeed | posted 2026-11-06
 - **Home Preservation Project Administrator (Construction)** — Habitat for Humanity Greater San Francisco | San Francisco, California | bay_area | adzuna | posted 2026-10-08
 - **Home Improvement Sales Representative - Custom Homes & ADUS (Hybrid, Bay Area)** — Hamilton Exteriors | Castro Valley, CA, USA | bay_area | indeed | posted 2026-10-16
 - **Counter Sales Associate** — Heating and Cooling Supply LLC | Dublin, CA, USA | bay_area | indeed | posted 2026-10-21
@@ -423,11 +554,11 @@
 - **Assistant Project Manager** — Helix Electric, Inc. | Oakland, CA | bay_area | ziprecruiter | posted 
 - **Roofing Sales Representative** — High Rise Roofing | San Jose, CA, USA | bay_area | indeed | posted 2026-09-30
 - **Construction Dispatcher & Office Coordinator** — Hilltop Builders | Pleasant Hill, CA, USA | bay_area | indeed | posted 2026-10-21
-- **Manager - Design & Construction** — Hines | Financial District, San Francisco | bay_area | adzuna | posted 2026-10-02
 - **Full-Charge Bookkeeper / Payroll** — Hometown Heating and Air Conditioning | Concord, CA, USA | bay_area | indeed | posted 2026-10-26
 - **Assistant Project Manager, Construction** — Hudson Pacific Properties | Redwood City, CA | bay_area | gj | posted 
 - **Semiconductor Tool Install Construction Coordinator** — IPS | Santa Clara, Santa Clara County | bay_area | adzuna | posted 2026-10-30
 - **Construction Assistant Project Manager** — ISAT Total Support | Fremont, CA | bay_area | gj | posted 
+- **Project Manager (Mitigation/Remediation)** — Ideal Restoration | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Office Manager** — In & Out Plumbing & Construction | South San Francisco, CA, USA | bay_area | indeed | posted 2026-09-24
 - **Assistant Construction Project Manager (Solar / Renewables - Nationwide Opportunities!)** — Infrastructure and Energy Alternatives Inc. | San Francisco, CA | bay_area | gj | posted 
 - **Project Manager - Electrical Construction - Commercial** — Innovation Consulting [staffing] | Martinez, CA | bay_area | ziprecruiter | posted 2026-10-28
@@ -440,6 +571,7 @@
 - **Assistant Project Manager, Construction, San Francisco, 94123** — Jobleads-US | San Francisco, CA | bay_area | gj | posted 
 - **Assistant Project Manager — High-Impact Construction Coordinator** — Jobot [staffing] | San Ramon, CA | bay_area | gj | posted 
 - **Project Manager \| Residential Construction** — Jobot [staffing] | Los Altos, CA | bay_area | gj | posted 
+- **Landscape Project Coordinator: PT with Room for Advancement** — John | Alameda, CA, USA | bay_area | indeed | posted 2026-11-13
 - **Territory Sales Manager, Compact Construction Equipment-Oakland, CA** — John Deere | Oakland, CA, USA | bay_area | indeed | posted 2026-10-07
 - **Construction Project Coordinator** — Joseph J. Albanese | Santa Clara, Santa Clara County | bay_area | adzuna | posted 2026-10-04
 - **Healthcare Construction Assistant Project Manager – SF** — Jtec Healthcare Construction Management, Inc. | San Francisco, CA | bay_area | gj | posted 
@@ -447,14 +579,17 @@
 - **Sr. Project Manager - Capital Construction** — KLA-Tencor | Milpitas, Santa Clara County | bay_area | adzuna | posted 2026-10-18
 - **Manager, Construction Management, Cost Estimating** — Kaiser Permanente | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-05
 - **Roofing Sales Team Lead / Senior Estimator** — Keith Roofing | San Jose, CA, USA | bay_area | indeed | posted 2026-10-19
+- **HVAC Outside Sales Representative** — Keller Supply | San Jose, CA, USA | bay_area | indeed | posted 2026-11-09
 - **Construction Project Manager** — Kforce Technology Staffing [staffing] | San Mateo, California, USA | bay_area | dice | posted 2026-10-14
 - **Electrical Estimator/Project Manager** — Kiefer Electric Inc. | Santa Rosa, CA, USA | bay_area | indeed | posted 2026-10-25
 - **Construction Project Engineer/Bid Coordinator** — Kirby Construction | Santa Rosa, CA, USA | bay_area | indeed | posted 2026-09-23
+- **Electrical Estimator** — Koch | Pleasanton, CA, USA | bay_area | indeed | posted 2026-11-07
 - **Electrical Estimator, Repowering** — Koch | Pleasanton, CA, USA | bay_area | indeed | posted 2026-09-29
 - **Electrical Project Manager** — LPA | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-29
 - **Project Manager** — Layton Construction Company | San Francisco, California | bay_area | adzuna | posted 2026-09-24
 - **Territory Sales Representative - Flooring Specification** — Lepley Recruiting Services [staffing] | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Construction Estimator - Residential & Light Commercial** — Levitch Design + Construction | Berkeley, CA, USA | bay_area | indeed | posted 2026-10-15
+- **High-end residential Construction: Senior Estimator, San Francisco, 94124** — Lockeandkey | Hayes Valley, San Francisco | bay_area | adzuna | posted 2026-11-12
 - **Sales Representative / Project Manager** — Los Gatos Roofing | San Jose, CA, USA | bay_area | indeed | posted 2026-09-24
 - **Assistant Project Manager — Luxury Residential Construction** — Louis Ptak Construction | Novato, CA | bay_area | gj | posted 
 - **Residential Construction Project Manager / Field Coordinator** — M P Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-09-27
@@ -463,25 +598,32 @@
 - **Experienced Dispatch Manager** — Magic Plumbing | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-27
 - **Remote Construction Accounting Manager** — Manpower Group Inc. | Blain, PA | remote | gj | posted 
 - **Project Manager (Construction MEP)** — Marencor | Richmond, CA | bay_area | ziprecruiter | posted 
+- **Procurement Manager, Construction** — Mariana Minerals | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-10
 - **Staff Product Manager, Engineering & Construction** — Mariana Minerals | San Francisco, California | bay_area | adzuna | posted 2026-09-19
 - **Remodeling Sales Representative** — Mars Construction and Remodeling | Pleasant Hill, CA, USA | bay_area | indeed | posted 2026-10-22
 - **Aspiring Project Manager – Construction & Mechanical** — Mathews-Mechanical | Newark, CA | bay_area | gj | posted 
+- **Field Coordinator / Electrical Service manager** — Max Electric  | Brisbane, CA, USA | bay_area | indeed | posted 2026-11-11
 - **Preconstruction Director - San Jose** — McCarthy Building | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-09-21
 - **Preconstruction Manager** — McCarthy Building | San Francisco, California | bay_area | adzuna | posted 2026-09-16
 - **Assistant Project Manager - Construction - Southport** — Michael Page [staffing] | Fairfield, CA | bay_area | gj | posted 
+- **Project Manager - Euclid Construction (Job Site)** — Mill Creek Residential | East Palo Alto, Santa Clara County | bay_area | adzuna | posted 2026-11-11
+- **Senior Project Manager - Silicon Valley Construction (Job Site)** — Mill Creek Residential | East Palo Alto, Santa Clara County | bay_area | adzuna | posted 2026-11-11
 - **Marketing Coordinator** — Monarch Plumbing and Rooter Inc. | Hayward, CA, USA | bay_area | indeed | posted 2026-10-05
 - **Electrical Construction Assistant PM Field Projects** — Morley Moss Inc. | Sunnyvale, CA | bay_area | gj | posted 
 - **Assistant Project Manager (Electrical Construction - On-Site)** — Morley-Moss Inc. | Sunnyvale, CA | bay_area | gj | posted 
 - **Weekend Dispatcher / Customer Service Representative** — Mr Rooter Plumbing | Fairfield, CA, USA | bay_area | indeed | posted 2026-10-07
 - **Work From Home, Customer Service Specialist for Plumbing Company** — Municipal Backflow LLC | Schaumburg, IL | remote | gj | posted 
+- **Construction Project Manager, Commercial & Multi-Family Residential \| General Contractor \| Berkeley,** — MyGreat Recruitment [staffing] | Berkeley, CA | bay_area | ziprecruiter | posted 2026-11-13
 - **OUTDOOR REMODELING SALES REPRESENTATIVE / BUSINESS DEVELOPMENT** — NC Marble and Stone Pavers | Pleasanton, CA, USA | bay_area | indeed | posted 2026-11-03
 - **Estimator** — NORTHERN CALIFORNIA ROOFING CO | Vacaville, CA, USA | bay_area | indeed | posted 2026-10-23
 - **Construction Project Manager/Estimator** — Newtron L.L.C. | Martinez, CA, USA | bay_area | indeed | posted 2026-10-07
+- **Account Executive - Construction** — Next Level HVAC Energy Management Systems | Redwood City, CA, USA | bay_area | indeed | posted 2026-11-10
 - **Group Operations Manager** — Next Level HVAC Energy Management Systems | Redwood City, CA, USA | bay_area | indeed | posted 2026-10-09
+- **Project Coordinator** — Nima Construction Company | San Rafael, CA, USA | bay_area | indeed | posted 2026-11-06
 - **Construction Estimator-Remote** — Novitium Energy | Kirkwood, NJ | remote | gj | posted 
 - **Preconstruction Manager** — Novo Construction | Menlo Park, San Mateo County | bay_area | adzuna | posted 2026-10-24
-- **Sales Representative- Cars, Solar, Construction Sales** — OT Bay Builders | San Jose, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Project Manager- Home Remodeling** — OT Bay Builders | San Jose, CA, USA | bay_area | indeed | posted 2026-10-22
+- **Sales Representative- Cars, Solar, Construction Sales** — OT Bay Builders | San Jose, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Project Manager, Design and Construction - R&D/Lab Buildouts** — OpenAI | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-27
 - **Project Estimator - Rigging & Construction** — Orion Placement [staffing] | Alameda, CA | bay_area | ziprecruiter | posted 
 - **Account Manager- Landscape Maintenance North Bay** — Oxbow Pool & Landscape Contractors | Napa, CA, USA | bay_area | indeed | posted 2026-10-16
@@ -490,38 +632,44 @@
 - **Accounting Project Accountant** — Oxbow Pool & Landscape Contractors | Napa, CA, USA | bay_area | indeed | posted 2026-11-05
 - **Landscape Construction Project Coordinator** — Oxbow Pool & Landscape Contractors | Napa, CA, USA | bay_area | indeed | posted 2026-09-22
 - **Landscape Construction Estimator ( REMOTE AVAILABLE FOR QUALIFIED CANDIDATES)** — Oxbow Pool & Landscape Contractors | Napa, CA, USA | remote | indeed | posted 2026-10-12
-- **Commercial Plumbing Estimator** — PACIFIC PLUMBING SYSTSEMS, INC. | San Leandro, CA, USA | bay_area | indeed | posted 2026-09-24
 - **Sales Manager – Home Improvement** — Palm construction | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-30
+- **Compact Construction Equipment Territory Manager** — Pape' Machinery Inc | Fremont, CA, USA | bay_area | indeed | posted 2026-11-11
+- **Roofing Sales Representative – Experienced – Appointments Provided** — Paragon Roofing & Remodeling, Inc. | Concord, CA, USA | bay_area | indeed | posted 2026-11-11
 - **HVAC Service Manager** — Patriot Mechanical Inc | San Rafael, CA | bay_area | ziprecruiter | posted 
 - **Project Coordinator Property Restoration** — Paul Davis Restoration of San Francisco and the SF Peninsula CA | South San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Landscape Construction Estimator- Senior at Heritage Landscapes** — People Solutions Center | Novato, CA | bay_area | ziprecruiter | posted 
-- **Plumbing Manager** — PipeDreams Ventures, Inc. | Hayward, CA | bay_area | ziprecruiter | posted 
+- **HVAC Service Manager** — Peter Levi Plumbing | Novato, CA, USA | bay_area | indeed | posted 2026-11-12
+- **Plumbing Service Manager** — Peter Levi Plumbing | Novato, CA, USA | bay_area | indeed | posted 2026-11-12
+- **Accounting & Union Payroll Specialist** — Pleasanton Ready Mix Concrete Inc. | Pleasanton, CA, USA | bay_area | indeed | posted 2026-11-10
 - **Construction Project Coordinator** — Precision General Commercial Contractors, Inc. | Novato, CA, USA | bay_area | indeed | posted 2026-10-20
 - **Sales Associate** — Premier Plumbing Supply | Emeryville, CA, USA | bay_area | indeed | posted 2026-10-07
 - **Roofing Sales Representative** — Premier Roofing | Santa Clara, CA, USA | bay_area | indeed | posted 2026-10-23
+- **Construction Scheduler** — Prime Data Centers | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-11-08
 - **Safety Manager** — Prime Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-29
 - **Fleet & Equipment Director** — Prime Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-08
 - **Senior Construction Estimator** — Quanta Services | Vacaville, CA, USA | bay_area | indeed | posted 2026-11-03
 - **Electrical Construction Estimator** — Quanta Services | Vacaville, CA, USA | bay_area | indeed | posted 2026-11-03
 - **Garage Door Estimator / Technician** — R&S | Concord, CA, USA | bay_area | indeed | posted 2026-09-29
+- **Electrical Procurement / Project Coordinator** — RC Power, Inc. | San Jose, CA, USA | bay_area | indeed | posted 2026-11-12
 - **Preconstruction Estimator** — RIMEPRO INC | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-06
 - **Estimator - Structural Concrete** — RIMEPRO INC | Daly City, CA, USA | bay_area | indeed | posted 2026-10-06
+- **Multifamily Construction Project Manager: Budget & Schedule** — RIMEPRO Inc | South San Francisco, San Mateo County | bay_area | adzuna | posted 2026-11-12
 - **Accounts Payable Specialist** — RK Electric | Fremont, CA, USA | bay_area | indeed | posted 2026-10-06
+- **Commercial Roofing Estimator** — RK Roofing & Construction Inc. | San Leandro, CA | bay_area | ziprecruiter | posted 
 - **Remote Materials Transport Dispatcher Assistant** — Redstone-Construction-Group-Inc.- | Little Rock, AR | remote | gj | posted 
 - **Lead Carpenter / Crew Lead** — Remodel Pro | Walnut Creek, CA, USA | bay_area | indeed | posted 2026-09-29
-- **Roofing Sales Representative** — Results Roofing | San Francisco, CA, USA | bay_area | indeed | posted 2026-09-30
 - **Construction Project Coordinator** — Reva Murphy Associates | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-28
-- **Project Manager, Special Projects Construction** — RimePro Inc | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Program Manager - Residential Construction** — Rise Technical Recruitment [staffing] | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-22
-- **Construction Project Coordinator** — Robert Half [staffing] | Holy, Santa Clara County | bay_area | adzuna | posted 2026-11-06
-- **Construction / Real Estate Project Coordinator** — Robert Half [staffing] | San Mateo, San Mateo County | bay_area | adzuna | posted 2026-11-01
+- **Office Administrator** — Roberts Electric Co Inc | Oakland, CA | bay_area | ziprecruiter | posted 2026-11-11
 - **Construction Estimator – Wood Framing & Heavy Timber** — Roof Structures Inc | Fremont, CA, USA | bay_area | indeed | posted 2026-10-21
 - **Senior Electrical Low Voltage Estimator** — Rosendin | San Francisco, California | bay_area | adzuna | posted 2026-10-02
 - **Project Manager III, Electrical Construction** — Rosendin | San Francisco, California | bay_area | adzuna | posted 2026-10-22
-- **Project Assistant** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-28
 - **Director of Business Development** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-11-05
+- **Estimator II** — Rosendin Electric | Concord, CA, USA | bay_area | indeed | posted 2026-11-10
 - **Estimator III (Semi-Conductor)** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-11-02
 - **Estimating Manager** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-14
+- **IT Support Specialist** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-11-07
+- **Project Assistant** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-28
 - **Field Payroll Manager** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-07
 - **Procurement Specialist** — Rosendin Electric | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-23
 - **HSE Manager** — Rosendin Electric | Concord, CA, USA | bay_area | indeed | posted 2026-10-29
@@ -530,30 +678,41 @@
 - **HSE Manager I** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-10-15
 - **Senior Procurement Specialist** — Rosendin Electric | San Jose, CA, USA | bay_area | indeed | posted 2026-09-30
 - **Field Sales Representative - Water Restoration** — Roto-Rooter | East Palo Alto, Santa Clara County | bay_area | adzuna | posted 2026-11-04
+- **Senior Estimator** — S.J. Amoroso Construction | San Mateo, San Mateo County | bay_area | adzuna | posted 2026-11-12
 - **Fencing & Deck Sales Representative** — SG CONSTRUCTION COMPANY | Concord, CA, USA | bay_area | indeed | posted 2026-11-02
+- **Project Administrative Assistant (Part Time)** — SJ Amoroso Construction | San Francisco, CA | bay_area | ziprecruiter | posted 
+- **Construction Project Manager & Asst. Project Manager** — Saarman Construction | Alameda, CA | bay_area | ziprecruiter | posted 
 - **Assistant Project Managers** — Saarman Construction | Alameda, CA | bay_area | gj | posted 
 - **Construction Project Assistant \| Detail-Driven** — Saarman Construction | Alameda, CA | bay_area | gj | posted 
+- **Estimator** — Saarman Construction, Ltd. | Alameda, CA | bay_area | ziprecruiter | posted 
 - **CPM scheduler** — Salimi Construction Management | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-21
 - **Manager of Construction** — San Mateo County Transit District | Millbrae, San Mateo County | bay_area | adzuna | posted 2026-10-05
 - **Entry Level Construction Industry Sales Representative** — Sequoia Signs & Graphics, Inc. | Martinez, CA | bay_area | ziprecruiter | posted 
+- **Outside Sales Representative** — Service Champions Heating & Air Conditioning | Livermore, CA, USA | bay_area | indeed | posted 2026-11-11
+- **Construction Office Manager** — Servpro Industries | Vacaville, CA, USA | bay_area | indeed | posted 2026-11-12
 - **Construction Administrative Assistant** — Servpro Industries | Vacaville, CA, USA | bay_area | indeed | posted 2026-11-02
 - **Senior Construction Project Manager, Grocery** — Sevan Multi-Site Solutions | Oakland, CA, USA | bay_area | indeed | posted 2026-10-22
+- **Regional Sales Representative** — Simon Roofing | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-28
+- **Senior Estimator / Preconstruction Manager** — Skanska | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-12
 - **Construction Project Coordinator** — Slarve Construction | Napa, CA, USA | bay_area | indeed | posted 2026-09-28
 - **Field Sales Representative (San Jose, CA)** — SolarSesame Inc. | San Jose, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Senior Stucco Estimator / Project Manager - Bay Area, CA** — Specialty Construction Contractor - Northern California | Union City, CA | bay_area | ziprecruiter | posted 
 - **Semiconductor Tool Install Construction Coordinator** — Springtide Project Services | Santa Clara, CA, USA | bay_area | indeed | posted 2026-10-30
+- **Executive Director, Healthcare Construction & Capital Programs** — Stanford Health Care | Stanford, Santa Clara County | bay_area | adzuna | posted 2026-10-22
 - **Director, Sales - Construction Tech (Remote, 50% Travel)** — Stanley Black & Decker | Anywhere | remote | gj | posted 
 - **Customer Service Operations Coordinator** — Statewide Roofing, Inc. | San Jose, CA, USA | bay_area | indeed | posted 2026-10-12
 - **Office Assistant – Construction** — Stealth Construction | Concord, CA, USA | bay_area | indeed | posted 2026-10-14
+- **Kitchen and bathroom showroom manager** — Step Up Construction inc | San Jose, CA, USA | bay_area | indeed | posted 2026-11-09
 - **Receptionist/Administrative Assistant** — Straight Line Construction | Concord, CA, USA | bay_area | indeed | posted 2026-10-27
 - **Senior Design Manager, Architecture** — Suffolk Construction | Financial District, San Francisco | bay_area | adzuna | posted 2026-11-03
 - **Senior Project Manager, Healthcare** — Suffolk Construction | Financial District, San Francisco | bay_area | adzuna | posted 2026-09-26
 - **Project Manager (Custom Residential Construction)** — Supple Homes Inc | Menlo Park, San Mateo County | bay_area | adzuna | posted 2026-10-07
 - **Growth-Oriented Assistant Project Manager (Construction)** — SupportFinity™ | San Francisco, CA | bay_area | gj | posted 
 - **Office Manager** — Symplify Roofing | Walnut Creek, CA, USA | bay_area | indeed | posted 2026-10-14
-- **Construction Project Manager - NB** — System Pavers | Oakland, CA | bay_area | ziprecruiter | posted 2026-10-30
+- **Construction Project Manager - NB** — System Pavers | Oakland, CA | bay_area | ziprecruiter | posted 
 - **Plumbing Project Manager** — TGG Accounting | San Mateo, CA | bay_area | ziprecruiter | posted 
 - **Construction Project Administrative Assistant** — TORP Group | Santa Clara, CA | bay_area | gj | posted 
+- **Sales Consultant - Construction Equipment** — TOTAL INDUSTRIES | Martinez, CA | bay_area | ziprecruiter | posted 
 - **Plumbing Estimator** — Technipower | South San Francisco, San Mateo County | bay_area | adzuna | posted 2026-09-30
 - **Restoration Project Assistant** — Teichert Construction | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-16
 - **Construction Project Coordinator** — Tesla | Fremont, CA, USA | bay_area | indeed | posted 2026-10-24
@@ -563,21 +722,24 @@
 - **Showroom Sales Consultant** — The Sliding Door Company | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Construction Assistant Project Manager** — The Walsh Group | Sunnyvale, CA | bay_area | gj | posted 
 - **Water Project Assistant Manager – Infrastructure Leadership** — The Walsh Group - Walsh Construction & Archer Western | San Francisco, CA | bay_area | gj | posted 
-- **Receptionist** — The Walsh Group - Walsh Construction &amp; Archer Western | Concord, CA | bay_area | li | posted 2026-10-30
+- **Receptionist** — The Walsh Group - Walsh Construction &amp; Archer Western | Concord, CA | bay_area | li | posted 2026-11-05
 - **Finance & Compliance Manager - Construction Industry** — Thiessen Construction & Engineering LLC | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-15
+- **Construction Project Manager** — ThinkingAhead | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Sales & Project Manager - Residential Construction** — Together Home Remodeling | San Francisco Bay Area, CA, USA | bay_area | indeed | posted 2026-10-08
 - **Construction Office Assistant** — Total Underground Construction | Hayward, CA, USA | bay_area | indeed | posted 2026-10-09
-- **Assistant Project Manager** — Truebeck Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-20
 - **Accounting Assistant** — Truebeck Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-28
+- **Assistant Project Manager** — Truebeck Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-20
 - **Safety Director** — Truebeck Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-02
 - **Senior Project Manager** — Truebeck Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-20
 - **Project Manager** — Truebeck Construction | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-20
+- **Project Manager - Life Sciences Construction** — Turner & Townsend | San Francisco, CA | bay_area | ziprecruiter | posted 2026-11-13
 - **Senior Electrical Cost Estimator - Data Center Construction** — Turner & Townsend | San Francisco, California | bay_area | adzuna | posted 2026-10-15
 - **Senior Construction Scheduler - Data Centers** — Turner & Townsend | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-09
-- **Cost Manager / Quantity Surveyor - Data Center Construction** — Turner & Townsend | San Francisco, California | bay_area | adzuna | posted 2026-10-07
 - **Cost Manager - Commercial Real Estate Construction** — Turner & Townsend | San Francisco, California | bay_area | adzuna | posted 2026-09-26
 - **Assistant Project Manager - Construction Management** — Turner & Townsend | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-09-30
 - **Senior Cost Manager / Quantity Surveyor - Construction Management** — Turner & Townsend | San Francisco, California | bay_area | adzuna | posted 2026-09-25
+- **Senior Estimator / Cost Manager - EV Construction** — Turner & Townsend Pty Limited | Hayes Valley, San Francisco | bay_area | adzuna | posted 2026-11-13
+- **Assistant Project Manager - TI/Fit Out Construction** — Turner & Townsend Pty Limited | San Jose, CA, USA | bay_area | indeed | posted 2026-11-11
 - **Senior Construction Scheduler - Data Centers** — Turner & Townsend Pty Limited | San Jose, CA, USA | bay_area | indeed | posted 2026-10-09
 - **Assistant Project Manager - Construction Management** — Turner & Townsend Pty Limited | San Jose, CA, USA | bay_area | indeed | posted 2026-09-29
 - **Senior Construction Scheduler - Data Centers** — Turner &amp; Townsend | San Jose, CA | bay_area | li | posted 2026-10-31
@@ -594,11 +756,12 @@
 - **Associate Director of Business Development** — W.E. O'Neil Construction Company | Pleasanton, CA, USA | bay_area | indeed | posted 2026-09-24
 - **Senior Project Manager - Aviation** — W.E. O'Neil Construction Company | Pleasanton, CA, USA | bay_area | indeed | posted 2026-09-28
 - **Construction Estimator** — WRIGHT CONTRACTING | Santa Rosa, CA, USA | bay_area | indeed | posted 2026-10-31
+- **VP, Construction Scheduler — Rail & Transit Programs (Bay Area)** — WSP Global Inc. | Hayes Valley, San Francisco | bay_area | adzuna | posted 2026-11-11
 - **Client Manager - Construction** — WTW | San Francisco, CA, USA | bay_area | indeed | posted 2026-11-05
 - **Strategic Account Manager, Roofing - PNW** — Westlake Corporation | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Sales Representative** — Window Pros | Burlingame, CA, USA | bay_area | indeed | posted 2026-10-16
-- **Home Improvement Inside Sales Rep** — Wonderly | Remote | remote | jooble | posted 
-- **Preconstruction Manager** — XL Construction | Milpitas, Santa Clara County | bay_area | adzuna | posted 2026-09-12
+- **Sr Project Manager** — XL Construction | Milpitas, Santa Clara County | bay_area | adzuna | posted 2026-11-07
+- **Project Manager** — XL Construction | Milpitas, Santa Clara County | bay_area | adzuna | posted 2026-11-07
 - **Project Manager, Special Projects Construction** — XL Construction Corp. | San Francisco, CA | bay_area | ziprecruiter | posted 
 - **Assistant Project Manager** — XL Construction Corp. | Oakland, CA (+1 other) | bay_area | gj | posted 
 - **Electrical Estimator** — Young Electric Co. | San Francisco, CA, USA | bay_area | indeed | posted 2026-10-13
@@ -610,3 +773,4 @@
 - **Residential Remodeling Estimator** — merrick design and build inc | Remote | remote | glassdoor | posted 
 - **Inside Sales Representative** — premier heating and air | Remote | remote | glassdoor | posted 
 - **Construction Project Manager** — primepoint | San Mateo, San Mateo County | bay_area | adzuna | posted 2026-09-18
+- **Office Administrator** — roberts electric | Oakland, CA, USA | bay_area | indeed | posted 2026-11-11
