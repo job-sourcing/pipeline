@@ -34,3 +34,9 @@ board-watch visionnav_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Ser
 board-watch visionnav_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Server Error: Bad Gateway for url: https://www.visionnav.com/about/data.php)
 (2026-11-12T18:39:46)
 
+board-watch visionnav_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Server Error: Bad Gateway for url: https://www.visionnav.com/about/data.php)
+(2026-11-13T02:08:57)
+
+board-watch visionnav_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Server Error: Bad Gateway for url: https://www.visionnav.com/about/data.php)
+(2026-11-13T02:11:03)
+
