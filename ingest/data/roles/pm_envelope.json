@@ -2,7 +2,7 @@
  "sources": {
   "l0_bundle": "ok",
   "findwork": "ok",
-  "adzuna": "ok",
+  "adzuna": "error:page1:head of prod:HTTP503",
   "dice": "ok",
   "careerjet": "error:product mana:HTTPError",
   "jooble": "ok",
@@ -15,18 +15,18 @@
   "free_trio": "ok",
   "talent": "ok",
   "muse": "error:HTTPError",
-  "usajobs": "error:relay-error:fleet:http402",
+  "usajobs": "ok:relay",
   "himalayas": "ok",
-  "seed_envelope": "ok:10299/11181"
+  "seed_envelope": "ok:10468/11308"
  },
  "layers": {
-  "l0": 223,
-  "l1.5": 7437,
+  "l0": 224,
+  "l1.5": 6387,
   "?": 0,
   "l1": 70,
-  "l2": 937
+  "l2": 1048
  },
- "ran_at": "2026-11-12T19:17:20Z",
+ "ran_at": "2026-11-13T18:54:15Z",
  "queries": [
   "product manager",
   "senior product manager",
@@ -36,50 +36,50 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 11308,
- "rows_dropped": 541,
+ "rows_kept": 11867,
+ "rows_dropped": 389,
  "counters": {
-  "family_other": 2609,
-  "nontech_gate": 467,
-  "dedup_merge": 4470,
-  "usgate_non_us": 38,
-  "pending_sector": 4722,
-  "staffing_repost": 2340,
-  "employer_anonymized": 263,
-  "dedup_dateless": 151,
-  "residual_dup_est": 5639,
-  "g1b_title": 35,
-  "screening_post": 39,
-  "seed_rows_in": 10299,
-  "seed_dup_absorbed": 1636,
-  "seed_dup_residual": 8660,
-  "roster_kept": 2636,
-  "agency_pending": 1674,
-  "res7_merge": 896,
-  "cross_src_merge": 105,
-  "jd_cache_hits": 1737,
-  "jd_seed_admitted": 1576,
-  "url_identity_merge": 602
+  "family_other": 2404,
+  "nontech_gate": 327,
+  "dedup_merge": 3506,
+  "usgate_non_us": 31,
+  "pending_sector": 4896,
+  "staffing_repost": 2068,
+  "employer_anonymized": 272,
+  "dedup_dateless": 105,
+  "residual_dup_est": 6066,
+  "g1b_title": 38,
+  "screening_post": 24,
+  "seed_rows_in": 10468,
+  "seed_dup_absorbed": 1416,
+  "seed_dup_residual": 9050,
+  "roster_kept": 2540,
+  "agency_pending": 1461,
+  "res7_merge": 489,
+  "cross_src_merge": 77,
+  "jd_cache_hits": 1666,
+  "jd_seed_admitted": 1555,
+  "url_identity_merge": 666
  },
- "seniority_conflicts": 1,
+ "seniority_conflicts": 0,
  "title_conflicts": 4,
  "day_delta_histogram": {
-  "re7": 896,
-  "xs3": 6,
-  "xs1": 69,
-  "xs2": 30,
-  "1": 10,
-  "0": 30
+  "re7": 489,
+  "xs1": 53,
+  "xs3": 5,
+  "xs2": 19,
+  "1": 8,
+  "0": 22
  },
- "dedup_merges": 4470,
+ "dedup_merges": 3506,
  "family_histogram": {
-  "adjacent": 1201,
-  "pm": 10107
+  "adjacent": 1219,
+  "pm": 10648
  },
  "seniority_histogram": {
-  "mid": 4759,
-  "senior": 3951,
-  "director+": 2275,
-  "junior": 323
+  "mid": 4919,
+  "senior": 4224,
+  "director+": 2403,
+  "junior": 321
  }
 }
