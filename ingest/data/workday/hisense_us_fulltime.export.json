@@ -1,9 +1,9 @@
 {
  "label": "hisense_us_fulltime",
- "rows": 19,
- "kept": 19,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 20,
+ "kept": 18,
+ "new": 2,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 19,
+ "state_rows": 20,
  "banded": 0,
  "lca_pools": 20,
- "snapshot": "2026-11-12"
+ "snapshot": "2026-11-13"
 }

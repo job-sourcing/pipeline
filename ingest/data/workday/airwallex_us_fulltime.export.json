@@ -1,18 +1,18 @@
 {
  "label": "airwallex_us_fulltime",
  "rows": 127,
- "kept": 127,
- "new": 0,
- "ghosts_dropped": 5,
+ "kept": 126,
+ "new": 1,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 322,
+ "gate_dropped": 326,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 322,
+ "gate_dropped_new": 326,
  "feed_excluded_state": 0,
- "state_rows": 449,
+ "state_rows": 453,
  "banded": 2,
  "lca_pools": 16,
- "snapshot": "2026-11-12"
+ "snapshot": "2026-11-13"
 }

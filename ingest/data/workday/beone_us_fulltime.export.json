@@ -1,18 +1,18 @@
 {
  "label": "beone_us_fulltime",
  "rows": 176,
- "kept": 164,
- "new": 12,
- "ghosts_dropped": 6,
+ "kept": 174,
+ "new": 2,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 90,
+ "gate_dropped": 93,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 90,
+ "gate_dropped_new": 93,
  "feed_excluded_state": 0,
- "state_rows": 266,
+ "state_rows": 269,
  "banded": 1,
  "lca_pools": 56,
- "snapshot": "2026-11-12"
+ "snapshot": "2026-11-13"
 }
