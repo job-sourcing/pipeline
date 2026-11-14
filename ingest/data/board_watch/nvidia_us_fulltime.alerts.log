@@ -2941,3 +2941,9 @@ NEW Senior Mixed Signal Design Engineer | US, CA, Santa Clara | 2026-11-13 | htt
 NEW Senior Software Engineer, Distributed Systems Engineering - DGX Cloud | US, CA, Santa Clara; US, Remote | 2026-11-13 | https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Distributed-Systems-Engineer---DGX-Cloud_JR2026619
 (2026-11-13T18:06:01)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server Error: <none> for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-14T01:45:07)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server Error: <none> for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-14T01:47:46)
+
