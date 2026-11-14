@@ -29,3 +29,6 @@ board-watch nio_us_fulltime UNREACHABLE: list fetch network-failed (undeclared b
 board-watch nio_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-13T14:58:09)
 
+board-watch nio_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-14T13:50:53)
+
