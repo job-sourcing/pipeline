@@ -24,3 +24,7 @@ NEW Senior Talent Partner - US | San Francisco, California (Remote); San Francis
 board-watch genai_runware CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Runware&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-10T15:19:33)
 
+Runware board-watch 2026-11-14: +1 new, -0 gone (12 active [genai_runware])
+NEW Senior Staff Engineer - Infrastructure Systems | California (Remote) | Posted Today | https://apply.workable.com/j/4508C1A2FA
+(2026-11-14T16:45:03)
+
