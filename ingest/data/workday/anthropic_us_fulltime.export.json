@@ -1,9 +1,9 @@
 {
  "label": "anthropic_us_fulltime",
- "rows": 484,
- "kept": 475,
- "new": 9,
- "ghosts_dropped": 6,
+ "rows": 480,
+ "kept": 474,
+ "new": 6,
+ "ghosts_dropped": 10,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 1,
- "state_rows": 485,
- "banded": 66,
+ "state_rows": 481,
+ "banded": 64,
  "lca_pools": 98,
- "snapshot": "2026-11-13"
+ "snapshot": "2026-11-14"
 }
