@@ -32,3 +32,9 @@ CelerData board-watch 2026-10-28: +1 new, -0 gone (19 active [celerdata_us_fullt
 NEW Presales Solutions Architect | Remote (United States) | 2026-10-27 | https://ats.rippling.com/celerdataopenroles/jobs/2ad91a0a-1e68-4006-bbe2-049c1b597b1d
 (2026-10-28T13:34:30)
 
+board-watch celerdata_us_fulltime FAILED: list fetch crashed (HTTPError: 403 Client Error: Forbidden for url: https://ats.rippling.com/celerdataopenroles/jobs?page=0)
+(2026-11-14T13:49:35)
+
+board-watch celerdata_us_fulltime FAILED: list fetch crashed (HTTPError: 403 Client Error: Forbidden for url: https://ats.rippling.com/celerdataopenroles/jobs?page=0)
+(2026-11-14T13:54:05)
+
