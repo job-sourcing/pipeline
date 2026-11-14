@@ -477,3 +477,9 @@ board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Serve
 board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server Error: <none> for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
 (2026-11-14T01:47:36)
 
+board-watch tencent_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-14T13:50:59)
+
+board-watch tencent_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-14T13:53:32)
+
