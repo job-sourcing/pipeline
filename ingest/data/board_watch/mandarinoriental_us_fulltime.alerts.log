@@ -160,3 +160,9 @@ Mandarin Oriental board-watch 2026-11-14: +0 new, -1 gone (33 active [mandarinor
 GONE Sales Coordinator (first seen 2026-10-22)
 (2026-11-14T01:44:00)
 
+board-watch mandarinoriental_us_fulltime FAILED: list fetch crashed (RuntimeError: mandarinoriental:careers.mandarinoriental.com: Miami filter served a challenge/empty shell (no 'Displaying' marker) — board throttled or shape changed; refusing to report 0 rows as complete)
+(2026-11-14T13:50:22)
+
+board-watch mandarinoriental_us_fulltime FAILED: list fetch crashed (RuntimeError: mandarinoriental:careers.mandarinoriental.com: Miami filter served a challenge/empty shell (no 'Displaying' marker) — board throttled or shape changed; refusing to report 0 rows as complete)
+(2026-11-14T13:53:04)
+
