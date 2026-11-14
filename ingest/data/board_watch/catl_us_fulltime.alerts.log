@@ -247,3 +247,9 @@ REPOSTED Production technician (Live-line working) (label reset 29d→0d, startD
 REPOSTED Maintenance Technician (label reset 29d→0d, startDate +58d)
 (2026-11-13T14:59:26)
 
+board-watch catl_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.catl-career.com/search?q=&sortColumn=referencedate&sortDirection=desc&startrow=0)
+(2026-11-14T01:45:30)
+
+board-watch catl_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.catl-career.com/search?q=&sortColumn=referencedate&sortDirection=desc&startrow=0)
+(2026-11-14T01:50:51)
+
