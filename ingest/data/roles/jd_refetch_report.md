@@ -1,9 +1,10 @@
 # JD-refetch ledger (family: pm)
 
-- last leg: **2026-11-07T18:45:13Z** (transport: direct)
-- fetched this leg: 150 | remaining: 347 | targets seen: 1600
-- pending attrition since last leg: 0 (vanished without a verdict — F1 ledger)
+- last leg: **2026-11-14T18:27:00Z** (transport: fc_relay)
+- fetched this leg: 76 | remaining: 2541 | targets seen: 2764
+- pending attrition since last leg: 582 (vanished without a verdict — F1 ledger)
 
 ## per-source status counters
 
-- jooble:http-error:403: 150
+- jooble:error:fleet:http402: 63
+- jooble:http-error:429: 13
