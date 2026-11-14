@@ -82,3 +82,4 @@
 {"ts": "2026-11-13T02:05:19Z", "mode": "morning", "last_success": "2026-11-03T03:10:57Z", "runs_today": 0, "decision": "dispatched", "reason": "no successful watch in 30h (last=2026-11-03T03:10:57Z, age=238h)"}
 {"ts": "2026-11-13T17:59:27Z", "mode": "evening", "last_success": "2026-11-03T03:10:57Z", "runs_today": 0, "decision": "dispatched", "reason": "no SUCCESSFUL/active watch run today (2026-11-13, last_ok=2026-11-03T03:10:57Z)"}
 {"ts": "2026-11-14T01:42:07Z", "mode": "morning", "last_success": "2026-11-03T03:10:57Z", "runs_today": 0, "decision": "dispatched", "reason": "no successful watch in 30h (last=2026-11-03T03:10:57Z, age=262h)"}
+{"ts": "2026-11-14T16:41:46Z", "mode": "evening", "last_success": "2026-11-03T03:10:57Z", "runs_today": 0, "decision": "dispatched", "reason": "no SUCCESSFUL/active watch run today (2026-11-14, last_ok=2026-11-03T03:10:57Z)"}
