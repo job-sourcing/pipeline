@@ -2947,3 +2947,9 @@ board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server
 board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server Error: <none> for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
 (2026-11-14T01:47:46)
 
+board-watch nvidia_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-14T13:51:22)
+
+board-watch nvidia_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-14T13:54:18)
+
