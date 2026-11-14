@@ -900,3 +900,9 @@ board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server 
 board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 521 Server Error: <none> for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
 (2026-11-14T01:50:51)
 
+board-watch beone_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-14T13:51:07)
+
+board-watch beone_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-14T13:56:21)
+
