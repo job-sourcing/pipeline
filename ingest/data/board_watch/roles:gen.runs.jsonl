@@ -11,3 +11,5 @@
 {"ts": "2026-11-07T17:58:38Z", "family": "gen", "verdict": "complete", "rows": 29761, "sources_dead": ["careerjet:Irvine, CA", "careerjet:Riverside, CA", "careerjet:Fresno, CA", "careerjet:Bakersfield, CA"]}
 {"ts": "2026-11-07T18:19:08Z", "family": "gen", "verdict": "complete", "rows": 28929, "sources_dead": ["careerjet:remote"]}
 {"ts": "2026-11-12T20:34:48Z", "family": "gen", "verdict": "complete", "rows": 29520, "sources_dead": ["careerjet:Sacramento, CA", "jooble:Sacramento, CA", "careerjet:San Francisco, CA", "jooble:San Francisco, CA", "careerjet:Los Angeles, CA", "jooble:Los Angeles, CA", "careerjet:San Diego, CA", "jooble:San Diego, CA"]}
+{"ts": "2026-11-14T18:41:06Z", "family": "gen", "verdict": "complete", "rows": 29954, "sources_dead": ["careerjet:Irvine, CA", "jooble:Irvine, CA", "careerjet:Riverside, CA", "jooble:Riverside, CA", "careerjet:Fresno, CA", "jooble:Fresno, CA", "careerjet:Bakersfield, CA", "jooble:Bakersfield, CA"]}
+{"ts": "2026-11-14T18:50:48Z", "family": "gen", "verdict": "complete", "rows": 30200, "sources_dead": ["careerjet:remote", "jooble:remote"]}
