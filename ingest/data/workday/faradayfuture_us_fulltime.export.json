@@ -1,9 +1,9 @@
 {
  "label": "faradayfuture_us_fulltime",
- "rows": 76,
- "kept": 76,
+ "rows": 74,
+ "kept": 74,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 76,
+ "state_rows": 74,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-11-14"
+ "snapshot": "2026-11-15"
 }

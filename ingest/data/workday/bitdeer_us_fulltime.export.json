@@ -1,8 +1,8 @@
 {
  "label": "bitdeer_us_fulltime",
  "rows": 62,
- "kept": 61,
- "new": 1,
+ "kept": 62,
+ "new": 0,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -14,5 +14,5 @@
  "state_rows": 62,
  "banded": 2,
  "lca_pools": 7,
- "snapshot": "2026-11-14"
+ "snapshot": "2026-11-15"
 }

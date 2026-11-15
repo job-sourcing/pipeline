@@ -1,9 +1,9 @@
 {
  "label": "otterai_us_fulltime",
- "rows": 22,
- "kept": 21,
- "new": 1,
- "ghosts_dropped": 0,
+ "rows": 18,
+ "kept": 18,
+ "new": 0,
+ "ghosts_dropped": 4,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 22,
- "banded": 12,
+ "state_rows": 18,
+ "banded": 8,
  "lca_pools": 9,
- "snapshot": "2026-11-14"
+ "snapshot": "2026-11-15"
 }
