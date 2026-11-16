@@ -487,3 +487,9 @@ Tencent board-watch 2026-11-14: +0 new, -1 gone (245 active [tencent_us_fulltime
 GONE Senior Strategic Sales Executive (first seen 2026-09-19)
 (2026-11-14T16:44:33)
 
+board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
+(2026-11-16T16:30:51)
+
+board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
+(2026-11-16T16:33:03)
+
