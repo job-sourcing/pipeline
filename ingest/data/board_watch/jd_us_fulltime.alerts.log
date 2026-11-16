@@ -756,3 +756,9 @@ JD.com board-watch 2026-11-15: +1 new, -0 gone (698 active [jd_us_fulltime])
 NEW Superviseur Station de Livraison - Dijon | FRA-Rhône-Lyon | 2026-11-15 | https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/FRA-Rhne-Lyon/Superviseur-Station-de-Livraison---Dijon_JR103231
 (2026-11-15T01:18:40)
 
+board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
+(2026-11-16T01:23:43)
+
+board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
+(2026-11-16T01:26:41)
+
