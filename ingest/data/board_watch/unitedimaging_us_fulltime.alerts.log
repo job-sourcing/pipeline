@@ -206,3 +206,6 @@ REPOSTED Product Sales Specialist - Magnetic Resonance (MR), Northeast Region (l
 REPOSTED Product Sales Specialist - Magnetic Resonance (MR), Southeast Region (label reset 6d→1d, startDate +6d)
 (2026-11-16T01:26:09)
 
+board-watch unitedimaging_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='recruiting.paylocity.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-16T16:31:02)
+

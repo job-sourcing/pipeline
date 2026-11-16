@@ -598,3 +598,9 @@ GE Appliances board-watch 2026-11-14: +1 new, -0 gone (163 active [gea_us_fullti
 NEW 3rd Shift PLC Maintenance Technician | USA, LaFayette, GA | 2026-11-13 | https://haier.wd3.myworkdayjobs.com/GE_Appliances/job/USA-LaFayette-GA/XMLNAME-3rd-Shift-PLC-Maintenance-Technician_REQ-27303-1
 (2026-11-14T13:51:13)
 
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-16T16:30:20)
+
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-16T16:33:43)
+
