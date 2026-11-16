@@ -1,196 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-085eaa32-44fe-4928-8826-b48873823bfd,Head of GenAI Platform,Photoroom,photoroom,Full time,Posted 111 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
-
-Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
-
-We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
-
-We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
-
-Head of GenAI Platform
-
-Role Summary
-
-We're looking for a Head of GenAI Platform to lead the strategy and technical direction behind Photoroom's generative AI platform, spanning model orchestration, evaluation, agentic workflows, and foundation model training, enabling our teams to ship breakthrough AI products faster than anyone else. You'll partner closely with our Infrastructure team on inference infrastructure and model serving, rather than owning that layer outright.
-
-This is a highly strategic leadership role combining strong technical grounding, organisational leadership, and product thinking. Deep technical expertise already exists across our ML and Research teams, so we're not looking for the single deepest expert in the room, we're looking for someone who has been hands-on in ML or research themselves, understands the space well enough to lead a credible technical conversation and make sound calls, and can create the conditions for that expertise to thrive. You'll work closely with our CTO and senior leaders across Product and Engineering to shape how AI is built, deployed, and scaled across the company.
-
-Compensation: Competitive salary + meaningful equity
-
-Location: Paris, France (Hybrid)
-
-Relocation: Visa sponsorship and relocation support up to €10,000 available
-
-About the Role
-
-You'll be responsible for building both the technical foundations and the organisation that enable Photoroom's next generation of AI products.
-
-Your responsibilities will include:
-
-•
-Defining the long-term vision and technical strategy for our GenAI Platform around model orchestration, evaluation, agentic workflows and foundation model training
-
-•
-Partnering with our Infrastructure team on inference infrastructure, model serving and reliability, so the platform stays scalable and cost-efficient across billions of inference requests
-
-•
-Partnering with Research to rapidly bring new models into production
-
-•
-Leading and growing a multidisciplinary team of ML Engineers, Software Engineers and Researchers, setting direction for the team as a whole, while day-to-day management of individual contributors continues through the team's existing engineering leads
-
-•
-Creating an environment where ambitious technical ideas can move from research to production in days rather than months
-
-•
-Building evaluation frameworks that measure model quality, cost and latency consistently across the platform
-
-•
-Working closely with Product, Engineering and Executive leadership to ensure platform investments directly accelerate product innovation
-
-What You'll Bring
-
-We're looking for someone with strong technical grounding and proven leadership experience. You don't need to be the foremost technical authority in every area, as that depth already exists in the team, but you should have been a hands-on ML/research practitioner at some point in your career, ideally with some research experience, so you can lead the function credibly.
-
-You'll likely have:
-
-•
-Significant experience leading Machine Learning or AI organisations within product-focused companies, having started your career as a hands-on ML engineer or researcher before moving into leadership
-
-•
-Experience building and operating AI platforms: model orchestration, evaluation pipelines or agent frameworks, with enough grounding in inference infrastructure and model serving to partner effectively with an Infrastructure team, without needing to own that layer directly
-
-•
-Strong technical expertise across Generative AI, Computer Vision or Foundation Models
-
-•
-A track record of taking emerging technologies from research into production systems used by millions of users. We don't expect deep, specific agentic-workflow experience, the field is relatively new and nobody has a long track record there, but we do want evidence you can effectively leverage new technologies to productise what's next
-
-•
-Experience growing high-performing engineering and research teams through hiring, coaching and organisational design
-
-•
-Enough technical depth to follow and meaningfully contribute to an architecture conversation outside your core area, you don't need all the answers, but you must understand the building blocks well enough to ask the right questions and make a call when needed
-
-•
-Strong product instincts and the ability to balance long-term technical investments against immediate customer impact
-
-•
-Excellent communication skills and experience partnering with Product, Engineering, Marketing and Executive stakeholders
-
-What Success Looks Like
-
-Within your first 12-18 months, you'll have:
-
-•
-Established a clear long-term strategy for Photoroom's AI platform
-
-•
-Built infrastructure that significantly reduces the time required to ship new AI capabilities
-
-•
-Enabled research teams to move new models into production rapidly and reliably
-
-•
-Improved platform performance, reliability and infrastructure efficiency at scale, in close partnership with the Infrastructure team
-
-•
-Built and retained a world-class team of ML Engineers, Researchers and Platform Engineers
-
-•
-Created evaluation frameworks that allow model quality, cost and latency to be measured consistently across the platform
-
-•
-Helped define the technical direction that underpins the next generation of AI-powered products at Photoroom
-
-Why This Role Matters
-
-Every AI capability at Photoroom depends on the platform your team builds.
-
-From foundation model training to model orchestration, evaluation pipelines and production inference, you'll shape the technical backbone that enables our teams to innovate quickly while operating at massive scale.
-
-This is an opportunity to influence both the long-term direction of our AI strategy and the systems that process billions of images every year.
-
-About Photoroom
-
-Photoroom was launched in 2020 after being accepted into Y Combinator and has grown into one of the world's leading AI photo editing platforms.
-
-Today we have:
-
-•
-Over 300 million downloads
-
-•
-More than 5 billion images processed annually
-
-•
-Millions of active users across mobile, web and API
-
-•
-Customers ranging from individual creators to global brands including Amazon, Shopify, eBay, DoorDash, Decathlon and Depop
-
-We're profitable, growing rapidly and continuing to invest heavily in AI research and product innovation. Our teams train our own foundation models, operate large-scale GPU infrastructure, and build AI products used every day by millions of people worldwide.
-
-Working at Photoroom
-
-We believe great people do their best work when given ownership, autonomy and ambitious problems to solve.
-
-We offer:
-
-•
-Competitive salary and meaningful equity
-
-•
-Hybrid working from our Paris headquarters
-
-•
-Visa sponsorship and relocation support
-
-•
-MacBook Pro and full home office setup
-
-•
-30 days annual leave
-
-•
-Private healthcare
-
-•
-Regular company off-sites and team retreats
-
-•
-A collaborative, high-performance engineering culture focused on shipping impactful AI products
-
-Hiring Process
-
-•
-Recruiter conversation
-
-•
-Leadership & values conversation with our CTO
-
-•
-Technical screening
-
-•
-Technical case study (working session)
-
-•
-Leadership and cross-functional interviews
-
-•
-References
-
-•
-Offer
-
-Diversity, Equity, Inclusion, and Belonging
-
-We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
-
-That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
-
-All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",8483,https://jobs.ashbyhq.com/photoroom/085eaa32-44fe-4928-8826-b48873823bfd,,,,,,,not_checked,,2026-10-31,,2026-11-15,,,,true,0,,,,,,,,,,,,,,
 12001ea8-3725-4ac7-a5dc-cb2165678223,Senior People Ops Manager (International),Photoroom,photoroom,Full time,Posted 24 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
 
 Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
@@ -361,7 +169,7 @@ We're committed to enabling everyone to feel included and valued at work. We bel
 
 That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
 
-All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",7233,https://jobs.ashbyhq.com/photoroom/12001ea8-3725-4ac7-a5dc-cb2165678223,,,,,,,not_checked,,2026-10-31,,2026-11-15,,,,true,0,,,,,,,,,,,,,,
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",7233,https://jobs.ashbyhq.com/photoroom/12001ea8-3725-4ac7-a5dc-cb2165678223,,,,,,,not_checked,,2026-10-31,,2026-11-16,,,,true,0,,,,,,,,,,,,,,
 5dc9a4e6-f56d-40f7-a659-b57e1ea5d97d,Senior Backend Engineer - (Django),Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
 
 Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
@@ -472,7 +280,7 @@ We're committed to enabling everyone to feel included and valued at work. We bel
 
 That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
 
-All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4265,https://jobs.ashbyhq.com/photoroom/5dc9a4e6-f56d-40f7-a659-b57e1ea5d97d,,,,,,,not_checked,,2026-10-31,,2026-11-15,,,,true,0,,,,,,,,,,,,,,
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4265,https://jobs.ashbyhq.com/photoroom/5dc9a4e6-f56d-40f7-a659-b57e1ea5d97d,,,,,,,not_checked,,2026-10-31,,2026-11-16,,,,true,0,,,,,,,,,,,,,,
 9bf0b49f-b54c-40fb-90d4-b568b7482c64,"Staff Product Manager, Agentic & AI Platform",Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
 
 Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
@@ -586,7 +394,7 @@ We're committed to enabling everyone to feel included and valued at work. We bel
 
 That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
 
-All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",6106,https://jobs.ashbyhq.com/photoroom/9bf0b49f-b54c-40fb-90d4-b568b7482c64,,,,,,,not_checked,,2026-10-31,,2026-11-15,,,,true,0,,,,,,,,,,,,,,
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",6106,https://jobs.ashbyhq.com/photoroom/9bf0b49f-b54c-40fb-90d4-b568b7482c64,,,,,,,not_checked,,2026-10-31,,2026-11-16,,,,true,0,,,,,,,,,,,,,,
 a7dbe175-07fc-43c7-8061-4e7e9bfc1d2a,"Senior Product Manager, Core Product",Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
 
 Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
@@ -647,7 +455,7 @@ We're committed to enabling everyone to feel included and valued at work. We bel
 
 That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
 
-All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4094,https://jobs.ashbyhq.com/photoroom/a7dbe175-07fc-43c7-8061-4e7e9bfc1d2a,,,,,,,not_checked,,2026-10-31,,2026-11-15,,,,true,0,,,,,,,,,,,,,,
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4094,https://jobs.ashbyhq.com/photoroom/a7dbe175-07fc-43c7-8061-4e7e9bfc1d2a,,,,,,,not_checked,,2026-10-31,,2026-11-16,,,,true,0,,,,,,,,,,,,,,
 f3934b79-3cde-450d-b8bb-548aa7bfd43f,"Senior Product Manager, SMB e-commerce Growth",Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
 
 Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
@@ -710,4 +518,131 @@ We're committed to enabling everyone to feel included and valued at work. We bel
 
 That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
 
-All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4838,https://jobs.ashbyhq.com/photoroom/f3934b79-3cde-450d-b8bb-548aa7bfd43f,,,,,,,not_checked,,2026-10-31,,2026-11-15,,,,true,0,,,,,,,,,,,,,,
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4838,https://jobs.ashbyhq.com/photoroom/f3934b79-3cde-450d-b8bb-548aa7bfd43f,,,,,,,not_checked,,2026-10-31,,2026-11-16,,,,true,0,,,,,,,,,,,,,,
+866bdfdb-a1d8-4d68-b9d1-66219f5f2d59,Product ML Engineer,Photoroom,photoroom,Full time,Posted Today,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator’s Summer 2020 cohort, Photoroom is the leading AI photo and video solution for e-commerce, helping businesses sell at first sight.
+
+Backed by Series B funding, we’ve reached 300M+ downloads and now process around 7 billion images a year for businesses of every size, from solo sellers to global brands and marketplaces like Amazon, Decathlon, and Depop. We serve them through our mobile app, web platform, and API, with tailored solutions for enterprise catalogs.
+
+We’re an international team of 130+, with offices in Paris and New York. We take ownership of what we build, move quickly to learn what works, and speak candidly, united by our ambition to create exceptional impact for e-commerce businesses worldwide.
+
+Role Summary
+
+We're looking for a Product ML Engineer to join one of our product experience teams — SMB, Scaler or Enterprise — and own the ML side of short, high-impact projects.
+
+You'll work on focused ML problems with a clear product outcome, sometimes fine-tuning one of our models, sometimes integrating the best externally available model, but always choosing the fastest and most effective path to customer value.
+
+You'll bring the technical depth of an Applied Scientist while operating with the pace and pragmatism of a product engineer. You'll own the journey from framing the problem through to shipping, measuring and iterating on the feature in production.
+
+This is not a research role. Your time horizon is weeks rather than quarters, and success is measured by what reaches users and the impact it creates.
+
+About the role
+
+•
+Embed directly within a product team. Work closely with the SMB, Scaler or Enterprise team on focused ML problems tied to clear customer and business outcomes.
+
+•
+Own ML projects end to end. Frame the problem, choose the approach, execute the plan, ship the feature and monitor its performance in production.
+
+•
+Make the build vs. buy decision. Determine when to fine-tune or build a model yourself versus integrating an external model, API or existing library.
+
+•
+Move from idea to production quickly. Work on projects scoped in weeks rather than quarters, prioritising rapid iteration and customer impact.
+
+•
+Work closely with the ML team. Leverage shared infrastructure, evaluation tooling and expertise while remaining embedded in the product team's priorities and cadence.
+
+•
+Stay close to users. Get rapid feedback from customers, monitor how people use what you've shipped and use those insights to drive the next iteration.
+
+•
+Balance technical depth with pragmatism. Know when deeper modelling work is necessary and when an existing solution is already good enough to ship.
+
+•
+Write production code. Work directly in the product team's codebase rather than operating primarily through research notebooks and experiments.
+
+•
+Own quality in production. Build sound evaluations, monitor performance and investigate failures once the feature is live.
+
+About You
+
+•
+You've shipped ML into production. You have 2+ years of hands-on experience building and shipping ML-powered products, with strong experience in PyTorch or equivalent frameworks such as TensorFlow or JAX.
+
+•
+You have applied-science depth. You can fine-tune vision or diffusion models, design meaningful evaluations and debug training runs when necessary.
+
+•
+You're a pragmatic builder. You care about solving the customer's problem rather than proving that your own model is the best approach. You'll happily use an external model, API or existing library when that's the fastest route to value.
+
+•
+You're product-minded. You measure success through shipped features, user behaviour and business outcomes rather than papers or benchmarks alone.
+
+•
+You're comfortable in production codebases. You can move between experimentation and production engineering, writing maintainable code that lives inside a real product.
+
+•
+You have strong ownership. You're comfortable taking an ambiguous ML problem, deciding what matters, choosing an approach and driving it through to production.
+
+•
+You iterate quickly. You enjoy short feedback loops and would rather ship something useful, learn from users and improve it than spend months optimising something that hasn't reached production.
+
+•
+You're curious and collaborative. You can both explain your expertise and learn from the deep technical expertise around you. You value knowledge sharing and humility.
+
+•
+You're fluent in English. French isn't required.
+
+Nice to have: experience shipping generative image models or diffusion models into production; experience evaluating third-party AI APIs against internal alternatives; experience working in a fast-growing startup or directly within a product team.
+
+Benefits
+
+•
+Competitive salary + meaningful equity
+
+•
+Hybrid working from our Paris headquarters
+
+•
+Visa sponsorship and relocation support up to €10,000
+
+•
+MacBook Pro
+
+•
+Private healthcare
+
+•
+Regular company off-sites and team retreats
+
+•
+International English-speaking team
+
+•
+Language lessons in English and French
+
+Hiring Process
+
+•
+Screening with an ML Researcher / Engineer
+
+•
+Home technical assignment and review with the team
+
+•
+Culture fit interview and meet the team
+
+•
+Reference check and offer
+
+Support: We value diversity and aim to create an inclusive experience for all applicants. Please let us know if there's anything we can do to make the process more accessible for you.
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",6057,https://jobs.ashbyhq.com/photoroom/866bdfdb-a1d8-4d68-b9d1-66219f5f2d59,,,,,,,not_checked,,2026-11-15,,2026-11-16,,,,true,0,,,,,,,,,,,,,,
