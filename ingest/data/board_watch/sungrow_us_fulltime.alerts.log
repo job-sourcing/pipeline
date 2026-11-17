@@ -63,3 +63,6 @@ Sungrow board-watch 2026-11-06: +0 new, -1 gone (11 active [sungrow_us_fulltime]
 GONE Service Contract Manager (first seen 2026-10-03)
 (2026-11-06T01:52:26)
 
+board-watch sungrow_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ConnectTimeout: HTTPSConnectionPool(host='workforcenow.adp.com', port=443): Max retries exceeded with url: /mascsr/default/careercenter/public/events/staffing/v1/job-requisitions?cid=c2e0ba67-e6f9-439e-b8a3-0d734568eac2&lang=en_US&locale=en_US&$skip=19&$top=20&userQuery= (Caused by ConnectTimeoutError(<HTTPSConnection(host='workforcenow.adp.com', port=443) at 0x7476e84afe00>, 'Connection to workforcenow.adp.com timed out. (connect timeout=15)'))) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-17T16:34:04)
+
