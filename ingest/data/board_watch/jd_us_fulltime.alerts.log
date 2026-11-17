@@ -786,3 +786,9 @@ board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Err
 board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
 (2026-11-17T16:34:33)
 
+board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
+(2026-11-17T19:19:24)
+
+board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
+(2026-11-17T19:23:00)
+
