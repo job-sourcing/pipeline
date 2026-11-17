@@ -1,5 +1,5 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-2dbad3de-0b96-47bd-92ab-d82b1f125452,Account Executive,Agora,   ,Full time,Posted 379 Days Ago,2025-09-16,426,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"About Agora
+2dbad3de-0b96-47bd-92ab-d82b1f125452,Account Executive,Agora,   ,Full time,Posted 379 Days Ago,2025-09-16,427,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"About Agora
 
 Agora is the global leader in real-time engagement, providing developers with simple, flexible, and powerful APIs to embed real-time conversational AI, voice, video, interactive live streaming, and chat into their applications and IoT devices. Headquartered in Santa Clara, CA, Agora is trusted by over 1,700 leading organizations across the globe to power best-in-class real-time experiences from social media and live shopping to education and telehealth.
 
@@ -40,8 +40,8 @@ Qualifications
 • Ability and willingness to travel domestically and internationally, up to 30% of the time.
 
 Compensation:
-Annual Base $150,000-$190,000 + commission",2819,https://ats.rippling.com/agora/jobs/2dbad3de-0b96-47bd-92ab-d82b1f125452,,https://www.linkedin.com/jobs/view/4301588819,2026-09-16,141,141 applicants,365,matched,title,2026-09-30,2026-09-30T05:43:23,2026-11-16,,426,startDate,true,0,,,,,"Sales, US",2025-09-16,,false,,,,,,
-e820916b-e38a-4f39-9272-d4f8fa7131f8,Product Marketing Manager,Agora,   ,Full time,Posted 177 Days Ago,2026-05-18,182,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"About Agora
+Annual Base $150,000-$190,000 + commission",2819,https://ats.rippling.com/agora/jobs/2dbad3de-0b96-47bd-92ab-d82b1f125452,,https://www.linkedin.com/jobs/view/4301588819,2026-09-16,141,141 applicants,365,matched,title,2026-09-30,2026-09-30T05:43:23,2026-11-17,,427,startDate,true,0,,,,,"Sales, US",2025-09-16,,false,,,,,,
+e820916b-e38a-4f39-9272-d4f8fa7131f8,Product Marketing Manager,Agora,   ,Full time,Posted 177 Days Ago,2026-05-18,183,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"About Agora
 
 Agora is the global leader in real-time engagement, providing developers with simple, flexible, and powerful APIs to embed real-time conversational AI, voice, video, interactive live streaming, and chat into their applications and IoT devices. Headquartered in Santa Clara, CA, Agora is trusted by over 5,800 leading organizations across the globe to power best-in-class real-time experiences from social media and live shopping to education and telehealth.
 
@@ -107,4 +107,81 @@ You don’t need experience in every part of our market. We’re looking for a s
 
 Work Location
 
-This is a hybrid role based in our Santa Clara office. The role requires in-office presence three days per week, generally Tuesday through Thursday.",5408,https://ats.rippling.com/agora/jobs/e820916b-e38a-4f39-9272-d4f8fa7131f8,,https://www.linkedin.com/jobs/view/4489928281,2026-11-11,25,among first 25,177,matched,,2026-09-30,2026-11-11T14:44:41,2026-11-16,,182,startDate,true,0,,,,,,2026-05-18,,true,,,,,,
+This is a hybrid role based in our Santa Clara office. The role requires in-office presence three days per week, generally Tuesday through Thursday.",5408,https://ats.rippling.com/agora/jobs/e820916b-e38a-4f39-9272-d4f8fa7131f8,,https://www.linkedin.com/jobs/view/4489928281,2026-11-11,25,among first 25,177,matched,,2026-09-30,2026-11-11T14:44:41,2026-11-17,,183,startDate,true,0,,,,,,2026-05-18,,true,,,,,,
+fc74fd9c-54fb-46ff-b9c7-822097ce093a,"Field Product & Developer Evangelist- HQ, Santa Clara ",Agora,   ,Full time,Posted 5 Days Ago,2026-11-11,6,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"About Agora
+
+Agora (NASDAQ: API) helps people connect- with each other and with AI- in real time. As AI becomes part of everyday life, conversations with it need to feel as natural and immediate as talking to another person. Making that work everywhere, for everyone, takes more than intelligent AI. It takes infrastructure built for real-time conversation at a global scale. That’s where we come in.
+
+We give developers the APIs and no-code tools to bring conversational AI, voice, video, live streaming, and chat to applications and connected devices- from social platforms and virtual classrooms to AI assistants and embedded agents. Based in Santa Clara, California, we’ve reached more than 450,000 developers, and our technology is embedded in over 3 billion devices. Every month, 80 billion minutes of audio and video run through our carrier-grade network.
+
+Join us to help build what comes next: a world where people and AI can connect, communicate, and take action together- from anywhere, on any device.
+
+Field Product & Developer Evangelist
+
+Location: San Francisco/Santa Clara, CA
+
+Role Overview
+
+We’re looking for a passionate Field Product & Developer Evangelist who thrives at the intersection of technology, community, and storytelling. This role blends deep product understanding with a public-facing presence. You’ll represent Agora at key AI, developer, and product events; translate developer and market feedback into product insight; and act as a bridge between our Product, Engineering, and Developer Ecosystem teams.
+
+The ideal candidate is equal parts technical communicator, product strategist, and community builder — someone who can inspire developers while shaping the roadmap with real-world insight.
+
+Key Responsibilities
+
+Field Product Engagement
+
+·       Act as a product expert for Agora’s Conversational AI and real-time engagement solutions in the field.
+
+·       Lead technical demos, workshops, and proof-of-concept sessions with customers, developers, and partners.
+
+·       Translate customer use cases and field insights into actionable feedback for Product and Engineering.
+
+·       Partner with the Sales, Solutions, and Customer Success teams to support adoption and product alignment.
+
+·       Identify market opportunities and help shape go-to-market strategies for new releases and SDKs.
+
+Developer Evangelism & Advocacy
+
+·       Represent Agora at global and regional AI and developer conferences, meetups, and industry events.
+
+·       Deliver keynotes, technical talks, and hands-on workshops that highlight Agora’s platform capabilities.
+
+·       Build and nurture relationships with developers, open-source contributors, and ecosystem partners.
+
+·       Create high-impact content (tutorials, blogs, code samples, videos) to educate and inspire the developer community.
+
+·       Foster authentic engagement through online channels (GitHub, Discord, X, LinkedIn, and community forums).
+
+Cross-Functional Partnership
+
+·       Collaborate with Product Marketing on positioning, messaging, and launch readiness.
+
+·       Provide structured feedback to Product Managers and Engineering on market trends and developer sentiment.
+
+·       Partner with Developer Relations to amplify ecosystem initiatives, hackathons, and strategic partnerships.
+
+Qualifications
+
+·       5–7 years of experience in product, developer advocacy, or technical field roles within SaaS, AI, or infrastructure technology.
+
+·       Hands-on experience with APIs, SDKs, or AI/ML frameworks (Python, Node.js, or similar).
+
+·       Proven ability to communicate complex technical concepts to both technical and non-technical audiences in the local language and English.
+
+·       Comfortable presenting at conferences and engaging on social channels or public forums.
+
+·       Strong understanding of the developer ecosystem, open-source culture, and community-driven growth.
+
+·       Passion for AI, real-time engagement, and the future of human-machine interaction.
+
+·       Willingness to travel (25–40%) for events, customer visits, and field engagements.
+
+Preferred Attributes
+
+·       Experience in conversational AI, voice/video APIs, or developer platform companies (e.g., Twilio, OpenAI, Hugging Face).
+
+·       Previous success in building or scaling a developer community.
+
+·       A creative storyteller who can connect business impact to technical depth.
+
+·       Self-starter comfortable working across global, fast-moving teams.",4458,https://ats.rippling.com/agora/jobs/fc74fd9c-54fb-46ff-b9c7-822097ce093a,,https://www.linkedin.com/jobs/view/4491509838,2026-11-16,25,among first 25,5,matched,,2026-11-17,2026-11-17T04:10:57,2026-11-17,,6,startDate,false,0,,,,,,2026-11-11,,true,,,,,,
