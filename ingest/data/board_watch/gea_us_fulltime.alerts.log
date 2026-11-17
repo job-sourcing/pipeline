@@ -622,3 +622,9 @@ board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Er
 board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
 (2026-11-17T16:36:41)
 
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-17T19:20:25)
+
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-17T19:23:53)
+
