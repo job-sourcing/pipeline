@@ -1,18 +1,18 @@
 {
  "label": "catl_us_fulltime",
- "rows": 60,
- "kept": 57,
- "new": 3,
+ "rows": 61,
+ "kept": 60,
+ "new": 1,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 1,
+ "gate_dropped": 2,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 1,
+ "gate_dropped_new": 2,
  "feed_excluded_state": 0,
- "state_rows": 61,
+ "state_rows": 63,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-11-17"
+ "snapshot": "2026-11-18"
 }

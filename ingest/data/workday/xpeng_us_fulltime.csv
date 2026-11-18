@@ -104,7 +104,7 @@
 </div>
 </div>
 </div>
-</div>",7389,https://job-boards.greenhouse.io/xpengmotors/jobs/8581353002,,,,,,,no_match,,2026-09-24,,2026-11-17,,,,true,0,,,,,AI Infrastructure Team,,,false,,,,,,
+</div>",7389,https://job-boards.greenhouse.io/xpengmotors/jobs/8581353002,,,,,,,no_match,,2026-09-24,,2026-11-18,,,,true,0,,,,,AI Infrastructure Team,,,false,,,,,,
 420,AI Research Intern – Predictive World Model,xpengmotors,XPENG,,Posted 8 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-lark-html-role=""root"">
 <div data-page-id=""PeZsdhFjdoz8PHx781IccZNinld"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-GonUdOmdKoWPaDxeOFrcyALxnTc"">
@@ -205,121 +205,7 @@
 </div>
 </div>
 </div>
-</div>",9233,https://job-boards.greenhouse.io/xpengmotors/jobs/8819001002,,https://www.linkedin.com/jobs/view/4468855620,2026-09-18,46,46 applicants,,matched,title,2026-09-24,2026-09-24T12:56:04,2026-11-17,,60,startDate+linkedin,true,0,,,,,AI Team,2026-09-18,,false,,,,,,
-419,Senior Machine Learning Engineer - AI Foundation,xpengmotors,XPENG,,Posted 9 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""JtHmdFPBFoDeeNxg3hrc4Xyjnhg"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-X1AxdI3wHoDJuhxEQzscIQfNnxb"">
-<div data-page-id=""IlWVdPHa4oaUIgxAp1KccvMknZZ"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-TMEXdNB2hoez9lx0yNEcRvhgnht"">
-<div data-page-id=""J9QXdzY9Vo8oQhxxdaice9A6nfb"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-doxcnDGT4DThW8i3iruWP8K7kLh"">
-<div data-page-id=""UUExdPHmlod9ESxE22jci10hnre"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-doxcnhMxbX0qxDrUNDwdnAJqfae"">
-<div data-page-id=""DlNidu1DAoHawoxx41Ic0c33nFg"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-Pt8LdNZzMojVM1xzBNAcEQYMnm0"">
-<div data-page-id=""JdpGdwPYlocSqsxZ9ljcmCfpnjm"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-UOm2dF9cWotanHxtYR2cCyexnyg""><strong>XPENG</strong> is a leading smart technology company at the forefront of innovation, integrating advanced AI and autonomous driving technologies into its vehicles, including electric vehicles (EVs), electric vertical take-off and landing (eVTOL) aircraft, and robotics. With a strong focus on intelligent mobility, XPENG is dedicated to reshaping the future of transportation through cutting-edge R&D in AI, machine learning, and smart connectivity.</div>
-<div class=""ace-line ace-line old-record-id-AJmGd3zelozIy5xzHlUcfhsjn1d"">
-<div data-page-id=""HbEvd6LIYoaIVSxnlCPcArQGnah"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
-<div class=""ace-line ace-line old-record-id-H7etdKLdUoBtA2x3vsLcnpO0nvg""> </div>
-<div class=""ace-line ace-line old-record-id-RcUudT36LoU8ItxJu0PcIZrfnPi"">We are looking for a full-time Machine Learning Engineer - AI Foundation, with deep knowledge and strong enthusiasm towards<strong> establishing a state-of-art </strong><strong>ML</strong><strong> infrastructure for training very large foundation model and accelerating model training/inference.</strong></div>
-<div class=""ace-line ace-line old-record-id-VbZ2d5E3aoZcKxxgovRcIVmfnOb""> </div>
-<div class=""ace-line ace-line old-record-id-SLeHdn2Syo9zLdxfM0ecudeZnUg"">Our mission is to solve the autonomous driving problem. You will work with a team of talented software engineers, machine learning engineers and research scientists to push the boundary of state-of-art machine learning models which will enable the next-generation E2E solution of autonomous driving.</div>
-<div class=""ace-line ace-line old-record-id-Byj3da2JfoTVYRx0fHccnCVDnFc""> </div>
-<div class=""ace-line ace-line old-record-id-S9XzdmezIos4Xex4coRce9I9nmo""><strong>Job Responsibilities:</strong></div>
-<ul class=""list-bullet1"">
-<li class=""ace-line ace-line old-record-id-LgRydwxi0obKWRxwCgxcpggpnue"" data-list=""bullet"">
-<div>Design and implement training data pipeline that streams data from hundreds of petabytes of labeled and unlabeled data from a fleet of over a million vehicles.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-RlcYdTkXoofuFCxJ7oEc81X6nsd"" data-list=""bullet"">
-<div>Implement training framework for all physical AI foundation models in XPeng, including VLA 2.0, XWorld, Robotics.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-CXhMd4KAIoBjbHx0heMc8y3Gncf"" data-list=""bullet"">
-<div>Accelerate training with state of the art parallelisms, e.g., FSDP, Expert Parallel, Context Parallel, and data types.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-ZX6kdrf4uowKzFxuW8DckjPCn2c"" data-list=""bullet"">
-<div>Accelerate model inference on the cloud for closed-loop simulation, reinforcement learning, and enterprise LLM/VLM applications.</div>
-</li>
-</ul>
-<div class=""ace-line ace-line old-record-id-I8OGdbZvwo93wnxziRGcxHYJntc""> </div>
-<div class=""ace-line ace-line old-record-id-DwXxdU85boo49zxFJFqc49M0nud""><strong>Minimum Skill Requirements:</strong></div>
-<ul class=""list-bullet1"">
-<li class=""ace-line ace-line old-record-id-CFvodOvZ6oIisjxAJKjctQqQn3g"" data-list=""bullet"">
-<div>Master's Degree in CS/CE/EE, or equivalent, in industry experience.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-P1lndhX5foRRJexXsomcMO9Hndb"" data-list=""bullet"">
-<div>Deep knowledge of PyTorch.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-GV6adff0wo5tFDxPmUKcjYgmnhg"" data-list=""bullet"">
-<div>Knowledge of model inference framework (e.g. vLLM, SGLang)</div>
-</li>
-<li class=""ace-line ace-line old-record-id-R5DGda5QooP7XAxRtk8cl3HunWe"" data-list=""bullet"">
-<div>In-depth knowledge of transformer architecture and ways to accelerate the training and inference of transformer models.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-DhjVdhRcno2jz3x3FsHcycpGnYg"" data-list=""bullet"">
-<div>Experience of performing large scale distributed training of models.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-MP9idxmR1oWIRhxR94gcIRZSnhb"" data-list=""bullet"">
-<div>A track record of profiling model and doing detective work to improve model training and inference speed.</div>
-</li>
-</ul>
-<div class=""ace-line ace-line old-record-id-GEv9d4U1NoggKrxqnJAcbnoSn0g""> </div>
-<div class=""ace-line ace-line old-record-id-A5jZdZDVwou6wwxCMbucPFwbnaf""><strong>Preferred Skill Requirements:</strong></div>
-<ul class=""list-bullet1"">
-<li class=""ace-line ace-line old-record-id-NhXId27WGoGK3FxTinhce2DdnOe"" data-list=""bullet"">
-<div>Previous experience in the autonomous driving industry.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-JEIfdmD1yoOZ2rx9QlkceMQYnvh"" data-list=""bullet"">
-<div>Experience with CUDA language for writing custom ops.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-YLnQdq6CTordW4xHWXfci6VAneh"" data-list=""bullet"">
-<div>Experience with edge computing systems.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-PFDJdEOUbomzySxRUq1cdjsHnzc"" data-list=""bullet"">
-<div>Knowledge of disributed computing frameworks, such as Ray.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-KWIQdcNA6ofez7xaADDc5tIPnLc"" data-list=""bullet"">
-<div>A track record of efficiently solving complex problems collaboratively on larger teams</div>
-</li>
-</ul>
-<div class=""ace-line ace-line old-record-id-AYCedAvMsoOrtMxzoYHcq569ncH""> </div>
-<div class=""ace-line ace-line old-record-id-RIscdGPA5oXEn3xj8QFcTJWcnMc""><strong>What do we provide:</strong></div>
-<ul class=""list-bullet1"">
-<li class=""ace-line ace-line old-record-id-HXaxdEsVlomVsTxqLkScwYJInAg"" data-list=""bullet"">
-<div>A fun, supportive and engaging environment.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-LB35dasJRomoArxl87fcUg7xnBb"" data-list=""bullet"">
-<div>Infrastructures and computational resources to support your work.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-JmdidztWeowh4pxkDb8ck3jHnBc"" data-list=""bullet"">
-<div>Opportunity to work on cutting edge technologies with the top talents in the field.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-W0cTduQStoconuxaFrHcBBiznL9"" data-list=""bullet"">
-<div>Opportunity to make a significant impact on the transportation revolution by the means of advancing autonomous driving.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-RukYduLRZoicHpxhGwhcVkHhnnh"" data-list=""bullet"">
-<div>Competitive compensation package.</div>
-</li>
-<li class=""ace-line ace-line old-record-id-Ijigdgi3voZaCSxrAr0coyeAnfc"" data-list=""bullet"">
-<div>Snacks, lunches, dinners, and fun activities.</div>
-</li>
-</ul>
-<div class=""ace-line ace-line old-record-id-Fwl6dyCtfoDcN8xVjrccUfsmnWb""> </div>
-<div class=""ace-line ace-line old-record-id-K9Xed6tEPoLlr2xZmdTcwDkdn0b"">The base salary range for this full-time position is $174,720-$295,680, in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</div>
-<div class=""ace-line ace-line old-record-id-BlhddGeN2oY4qSxXgnkcbY7kniR""> </div>
-<div class=""ace-line ace-line old-record-id-JGhidtLJsoZS5rxP7FUcFQOUncd"">We are an Equal Opportunity Employer. It is our policy to provide equal employment opportunities to all qualified persons without regard to race, age, color, sex, sexual orientation, religion, national origin, disability, veteran status or marital status or any other prescribed category set forth in federal or state regulations.</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>",8730,https://job-boards.greenhouse.io/xpengmotors/jobs/8815854002,,https://www.linkedin.com/jobs/view/4467173016,2026-09-17,115,115 applicants,,matched,title,2026-09-24,2026-09-24T12:55:28,2026-11-17,,61,startDate+linkedin,true,0,,,,,AI Infrastructure Team,2026-09-17,,false,,,,,,
+</div>",9233,https://job-boards.greenhouse.io/xpengmotors/jobs/8819001002,,https://www.linkedin.com/jobs/view/4468855620,2026-09-18,46,46 applicants,,matched,title,2026-09-24,2026-09-24T12:56:04,2026-11-18,,61,startDate+linkedin,true,0,,,,,AI Team,2026-09-18,,false,,,,,,
 299,Senior Machine Learning Engineer - Foundation Model,xpengmotors,XPENG,,Posted 619 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""JtHmdFPBFoDeeNxg3hrc4Xyjnhg"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-X1AxdI3wHoDJuhxEQzscIQfNnxb"">
 <div data-page-id=""IlWVdPHa4oaUIgxAp1KccvMknZZ"" data-docx-has-block-data=""false"">
@@ -425,7 +311,7 @@
 </div>
 </div>
 </div>
-</div>",10085,https://job-boards.greenhouse.io/xpengmotors/jobs/7813395002,,https://www.linkedin.com/jobs/view/4466412954,2026-09-12,30,30 applicants,,matched,title,2026-09-24,2026-09-24T12:55:38,2026-11-17,,66,startDate+linkedin,true,0,,,,,AI Team,2026-09-12,,false,,,,,,
+</div>",10085,https://job-boards.greenhouse.io/xpengmotors/jobs/7813395002,,https://www.linkedin.com/jobs/view/4466412954,2026-09-12,30,30 applicants,,matched,title,2026-09-24,2026-09-24T12:55:38,2026-11-18,,67,startDate+linkedin,true,0,,,,,AI Team,2026-09-12,,false,,,,,,
 403,Senior Reinforcement Learning Engineer - Robotics,xpengmotors,XPENG,,Posted 59 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""WQeKdafuooTzUqxJkWbcwDafnDd"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-doxcnnM3knej3QmBxZytwC70xI7"">
 <div data-page-id=""VG1odbGFJo2QAOxaY8Oc5QCinRe"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
@@ -501,7 +387,7 @@
 </div>
 </div>
 </div>
-</div>",5885,https://job-boards.greenhouse.io/xpengmotors/jobs/8657382002,,https://www.linkedin.com/jobs/view/4466415831,2026-09-12,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:37,2026-11-17,,66,startDate+linkedin,true,0,,,,,Robotics Center,2026-09-12,,true,,,,,,
+</div>",5885,https://job-boards.greenhouse.io/xpengmotors/jobs/8657382002,,https://www.linkedin.com/jobs/view/4466415831,2026-09-12,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:37,2026-11-18,,67,startDate+linkedin,true,0,,,,,Robotics Center,2026-09-12,,true,,,,,,
 409,"Senior Software Engineer, Agentic Platforms",xpengmotors,XPENG,,Posted 51 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""TlgzdweAoorcvgxnmU8ci6FKnye"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-TdaCdnylEo4J28xTrXvc4m9NnVc""><strong>XPENG</strong> is a leading smart technology company at the forefront of innovation, integrating advanced AI and autonomous driving technologies into its vehicles, including electric vehicles (EVs), electric vertical take-off and landing (eVTOL) aircraft, and robotics. With a strong focus on intelligent mobility, XPENG is dedicated to reshaping the future of transportation through cutting-edge R&D in AI, machine learning, and smart connectivity.</div>
 <div class=""ace-line ace-line old-record-id-UUjQdf7dhoill9x5b9xcHGTJnDJ""> </div>
@@ -621,7 +507,7 @@
 <div class=""ace-line ace-line old-record-id-J8VMdiwBeo2zqQxDRMecnRQLnLb"">The base salary range for this full-time position is $174,720 - $295,680, in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</div>
 <div class=""ace-line ace-line old-record-id-OjmsdgdqJoF2Ffx2WmucgDRHnlf""> </div>
 <div class=""ace-line ace-line old-record-id-YGF1dEgzXoSVvkxCzmictA0Yn50"">We are an Equal Opportunity Employer. It is our policy to provide equal employment opportunities to all qualified persons without regard to race, age, color, sex, sexual orientation, religion, national origin, disability, veteran status or marital status or any other prescribed category set forth in federal or state regulations.</div>
-</div>",10188,https://job-boards.greenhouse.io/xpengmotors/jobs/8686834002,,https://www.linkedin.com/jobs/view/4464078784,2026-09-07,34,34 applicants,,matched,title,2026-09-24,2026-09-24T12:55:30,2026-11-17,,71,startDate+linkedin,true,0,,,,,AI Infrastructure Team,2026-09-07,,false,,,,,,
+</div>",10188,https://job-boards.greenhouse.io/xpengmotors/jobs/8686834002,,https://www.linkedin.com/jobs/view/4464078784,2026-09-07,34,34 applicants,,matched,title,2026-09-24,2026-09-24T12:55:30,2026-11-18,,72,startDate+linkedin,true,0,,,,,AI Infrastructure Team,2026-09-07,,false,,,,,,
 375,Senior Staff Machine Learning Engineer – Autonomous Driving Foundation Models,xpengmotors,XPENG,,Posted 193 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""O9Ngd1aT7oQ84nxGSdHcF5ANnO9"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-LckpdxDRUoQMUQx3tZVcXVz1nDd""><span class=""text-only"" data-eleid=""3""><span class=""text-only""><strong>XPENG</strong> is a leading smart technology company at the forefront of innovation, integrating advanced </span><span class=""text-only text-with-abbreviation text-with-abbreviation-bottomline"">AI</span><span class=""text-only""> and autonomous driving technologies into its vehicles, including electric vehicles (EVs), electric vertical take-off and landing (</span><span class=""text-only text-with-abbreviation text-with-abbreviation-bottomline"">eVTOL</span><span class=""text-only"">) aircraft, and robotics. With a strong focus on intelligent mobility, XPENG is dedicated to reshaping the future of transportation through cutting-edge R&D in AI, </span><span class=""text-only text-with-abbreviation text-with-abbreviation-bottomline"">machine learning</span><span class=""text-only"">, and smart connectivity.</span></span></div>
 <div class=""ace-line ace-line old-record-id-ZU9zdAUG9o7A1Sxpkfhcmas5ngc""> </div>
@@ -692,7 +578,7 @@
 <div class=""ace-line ace-line old-record-id-SgMXdcDMQowahrxfLlXcBRDgnfb"">The base salary range for this full-time position is $244,140-$413,160, in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</div>
 <div class=""ace-line ace-line old-record-id-Cpk0duNFfoDCvOxLI0mcPkf3n9c""> </div>
 <div class=""ace-line ace-line old-record-id-VvRpd6C7noPu7kxvdbccGvgQnld"">We are an Equal Opportunity Employer. It is our policy to provide equal employment opportunities to all qualified persons without regard to race, age, color, sex, sexual orientation, religion, national origin, disability, veteran status or marital status or any other prescribed category set forth in federal or state regulations.</div>
-</div>",7267,https://job-boards.greenhouse.io/xpengmotors/jobs/8465375002,,https://www.linkedin.com/jobs/view/4447237795,2026-07-31,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:43,2026-11-17,,109,startDate+linkedin,true,0,,,,,General Intelligence Center,2026-07-31,,true,,,,,,
+</div>",7267,https://job-boards.greenhouse.io/xpengmotors/jobs/8465375002,,https://www.linkedin.com/jobs/view/4447237795,2026-07-31,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:43,2026-11-18,,110,startDate+linkedin,true,0,,,,,General Intelligence Center,2026-07-31,,true,,,,,,
 415,Staff Machine Learning Engineer,xpengmotors,XPENG,,Posted 33 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""O9Ngd1aT7oQ84nxGSdHcF5ANnO9"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-LckpdxDRUoQMUQx3tZVcXVz1nDd"">
 <div data-page-id=""GVgYdSFDPoCOqOxEjwbciF77n82"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
@@ -797,7 +683,7 @@
 <div class=""ace-line ace-line old-record-id-VxZ8d1YBEoSUglx5LvucdjcvnFh"">We are an Equal Opportunity Employer. It is our policy to provide equal employment opportunities to all qualified persons without regard to race, age, color, sex, sexual orientation, religion, national origin, disability, veteran status or marital status or any other prescribed category set forth in federal or state regulations.</div>
 </div>
 </div>
-</div>",8648,https://job-boards.greenhouse.io/xpengmotors/jobs/8743596002,,https://www.linkedin.com/jobs/view/4471193232,2026-09-24,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:33,2026-11-17,,54,startDate+linkedin,true,0,,,,,General Intelligence Center,2026-09-24,,true,,,,,,
+</div>",8648,https://job-boards.greenhouse.io/xpengmotors/jobs/8743596002,,https://www.linkedin.com/jobs/view/4471193232,2026-09-24,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:33,2026-11-18,,55,startDate+linkedin,true,0,,,,,General Intelligence Center,2026-09-24,,true,,,,,,
 298,Staff Machine Learning Engineer - Foundation Model,xpengmotors,XPENG,,Posted 619 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""JtHmdFPBFoDeeNxg3hrc4Xyjnhg"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-X1AxdI3wHoDJuhxEQzscIQfNnxb"">
 <div data-page-id=""IlWVdPHa4oaUIgxAp1KccvMknZZ"" data-docx-has-block-data=""false"">
@@ -901,7 +787,7 @@
 </div>
 </div>
 </div>
-</div>",9967,https://job-boards.greenhouse.io/xpengmotors/jobs/7813393002,,https://www.linkedin.com/jobs/view/4339807846,2025-11-30,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:45,2026-11-17,,352,startDate+linkedin,true,0,,,,,AI Team,2025-11-30,,true,,,,,,
+</div>",9967,https://job-boards.greenhouse.io/xpengmotors/jobs/7813393002,,https://www.linkedin.com/jobs/view/4339807846,2025-11-30,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:45,2026-11-18,,353,startDate+linkedin,true,0,,,,,AI Team,2025-11-30,,true,,,,,,
 389,Staff Robotics Engineer / Tech Lead – Whole-Body Control & Robot Learning,xpengmotors,XPENG,,Posted 141 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""WQeKdafuooTzUqxJkWbcwDafnDd"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-doxcnnM3knej3QmBxZytwC70xI7"">
 <div data-page-id=""VG1odbGFJo2QAOxaY8Oc5QCinRe"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
@@ -980,7 +866,7 @@
 <div class=""ace-line ace-line old-record-id-V8oAd9CL7oeLRWx8YIPcZB8unEd"">We are an Equal Opportunity Employer. It is our policy to provide equal employment opportunities to all qualified persons without regard to race, age, color, sex, sexual orientation, religion, national origin, disability, veteran status or marital status or any other prescribed category set forth in federal or state regulations.</div>
 </div>
 </div>
-</div>",7513,https://job-boards.greenhouse.io/xpengmotors/jobs/8542153002,,https://www.linkedin.com/jobs/view/4448911925,2026-08-05,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:47,2026-11-17,,104,startDate+linkedin,true,0,,,,,Robotics Center,2026-08-05,,true,,,,,,
+</div>",7513,https://job-boards.greenhouse.io/xpengmotors/jobs/8542153002,,https://www.linkedin.com/jobs/view/4448911925,2026-08-05,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:47,2026-11-18,,105,startDate+linkedin,true,0,,,,,Robotics Center,2026-08-05,,true,,,,,,
 404,Staff Technical Program Manager,xpengmotors,XPENG,,Posted 53 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""JtHmdFPBFoDeeNxg3hrc4Xyjnhg"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-X1AxdI3wHoDJuhxEQzscIQfNnxb"">
 <div data-page-id=""IlWVdPHa4oaUIgxAp1KccvMknZZ"" data-docx-has-block-data=""false"">
@@ -1099,7 +985,7 @@
 </div>
 </div>
 </div>
-</div>",9754,https://job-boards.greenhouse.io/xpengmotors/jobs/8675326002,,https://www.linkedin.com/jobs/view/4466434739,2026-09-12,31,31 applicants,,matched,title,2026-09-24,2026-09-24T12:55:31,2026-11-17,,66,startDate+linkedin,true,0,,,,,General Intelligence Center,2026-09-12,,false,,,,,,
+</div>",9754,https://job-boards.greenhouse.io/xpengmotors/jobs/8675326002,,https://www.linkedin.com/jobs/view/4466434739,2026-09-12,31,31 applicants,,matched,title,2026-09-24,2026-09-24T12:55:31,2026-11-18,,67,startDate+linkedin,true,0,,,,,General Intelligence Center,2026-09-12,,false,,,,,,
 424,Tech Lead — XPENG Robotics Xplore Lab,xpengmotors,XPENG,,Posted 5 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""WQeKdafuooTzUqxJkWbcwDafnDd"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-doxcnnM3knej3QmBxZytwC70xI7"">
 <div data-page-id=""VG1odbGFJo2QAOxaY8Oc5QCinRe"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
@@ -1183,7 +1069,7 @@
 </div>
 </div>
 </div>
-</div>",6429,https://job-boards.greenhouse.io/xpengmotors/jobs/8827815002,,https://www.linkedin.com/jobs/view/4470246323,2026-09-22,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:44,2026-11-17,,56,startDate+linkedin,true,0,,,,,Robotics Center,2026-09-22,,true,,,,,,
+</div>",6429,https://job-boards.greenhouse.io/xpengmotors/jobs/8827815002,,https://www.linkedin.com/jobs/view/4470246323,2026-09-22,25,among first 25,,matched,title,2026-09-24,2026-09-24T12:55:44,2026-11-18,,57,startDate+linkedin,true,0,,,,,Robotics Center,2026-09-22,,true,,,,,,
 427,Senior Staff Machine Learning Performance Engineer,XPENG,XPENG,,Posted Today,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""JtHmdFPBFoDeeNxg3hrc4Xyjnhg"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-X1AxdI3wHoDJuhxEQzscIQfNnxb"">
 <div data-page-id=""IlWVdPHa4oaUIgxAp1KccvMknZZ"" data-docx-has-block-data=""false"">
@@ -1312,7 +1198,7 @@
 </div>
 </div>
 </div>
-</div>",10464,https://job-boards.greenhouse.io/xpengmotors/jobs/8918459002,,https://www.linkedin.com/jobs/view/4483779914,2026-10-27,25,among first 25,,matched,,2026-10-27,2026-10-27T12:52:20,2026-11-17,,21,startDate+linkedin,true,0,,,,,,2026-10-27,,true,,,,,,
+</div>",10464,https://job-boards.greenhouse.io/xpengmotors/jobs/8918459002,,https://www.linkedin.com/jobs/view/4483779914,2026-10-27,25,among first 25,,matched,,2026-10-27,2026-10-27T12:52:20,2026-11-18,,22,startDate+linkedin,true,0,,,,,,2026-10-27,,true,,,,,,
 423,Head of World Model,XPENG,XPENG,,Posted 53 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""WQeKdafuooTzUqxJkWbcwDafnDd"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
 <div class=""ace-line ace-line old-record-id-doxcnnM3knej3QmBxZytwC70xI7"">
 <div data-page-id=""VG1odbGFJo2QAOxaY8Oc5QCinRe"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
@@ -1379,4 +1265,97 @@
 </div>
 </div>
 </div>
-</div>",5868,https://job-boards.greenhouse.io/xpengmotors/jobs/8827798002,,,,,,,not_checked,,2026-11-13,,2026-11-17,,,,true,0,,,,,,,,,,,,,,
+</div>",5868,https://job-boards.greenhouse.io/xpengmotors/jobs/8827798002,,,,,,,not_checked,,2026-11-13,,2026-11-18,,,,true,0,,,,,,,,,,,,,,
+370,Senior Machine Learning Engineer - AI Foundation,XPENG,XPENG,,Posted 260 Days Ago,,,"Santa Clara, CA",1,"Santa Clara, CA",false,,United States,,0,"<div data-page-id=""JtHmdFPBFoDeeNxg3hrc4Xyjnhg"" data-docx-has-block-data=""false"">
+<div class=""ace-line ace-line old-record-id-X1AxdI3wHoDJuhxEQzscIQfNnxb"">
+<div data-page-id=""IlWVdPHa4oaUIgxAp1KccvMknZZ"" data-docx-has-block-data=""false"">
+<div class=""ace-line ace-line old-record-id-TMEXdNB2hoez9lx0yNEcRvhgnht"">
+<div data-page-id=""J9QXdzY9Vo8oQhxxdaice9A6nfb"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
+<div class=""ace-line ace-line old-record-id-doxcnDGT4DThW8i3iruWP8K7kLh"">
+<div data-page-id=""UUExdPHmlod9ESxE22jci10hnre"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
+<div class=""ace-line ace-line old-record-id-doxcnhMxbX0qxDrUNDwdnAJqfae"">
+<div data-page-id=""DlNidu1DAoHawoxx41Ic0c33nFg"" data-lark-html-role=""root"" data-docx-has-block-data=""false"">
+<div class=""ace-line ace-line old-record-id-Pt8LdNZzMojVM1xzBNAcEQYMnm0""><strong>XPENG</strong> is a leading smart technology company at the forefront of innovation, integrating advanced AI and autonomous driving technologies into its vehicles, including electric vehicles (EVs), electric vertical take-off and landing (eVTOL) aircraft, and robotics. With a strong focus on intelligent mobility, XPENG is dedicated to reshaping the future of transportation through cutting-edge R&D in AI, machine learning, and smart connectivity.</div>
+<div class=""ace-line ace-line old-record-id-GUN9dLJj3oXh2Gx5zp4cFkaOnrh""> </div>
+<div class=""ace-line ace-line old-record-id-BHlNdpuzDoK94FxjPlAcbpevnnb"">We are looking for a full-time Machine Learning Engineer - AI Foundation, with deep knowledge and strong enthusiasm towards<strong> establishing a state-of-art </strong><strong>ML</strong><strong> infrastructure for training very large foundation model and accelerating model training/inference. </strong></div>
+<div class=""ace-line ace-line old-record-id-Ra7ed3ghxoudQrxsD3ScuoTinUg""> </div>
+<div class=""ace-line ace-line old-record-id-VO44d0pk4ocAR8xqymQckqMzn6f"">Our mission is to solve the autonomous driving problem. You will work with a team of talented software engineers, machine learning engineers and research scientists to push the boundary of state-of-art machine learning models which will enable the next-generation E2E solution of autonomous driving.</div>
+<div class=""ace-line ace-line old-record-id-PyNndUjLqoGLm3x3PzqcLXkKn9b""> </div>
+<div class=""ace-line ace-line old-record-id-Z9crdsovooQbq2xdYXYczr6hnIg""><strong>Job Responsibilities:</strong></div>
+<ul class=""list-bullet1"">
+<li class=""ace-line ace-line old-record-id-LxIBdymOCoK2IAxwchecWZFPnXg"" data-list=""bullet"">
+<div>Optimize transformer-based LLMs for low-latency and high-throughput inference.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-AKNidIgvOoo0SOxip24c5FOanvh"" data-list=""bullet"">
+<div>Optimize kernels and model graphs using tools like CUDA, Triton, and custom fused operators.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-Mn7JdmWaToCxXpxABoYcVdaqnpL"" data-list=""bullet"">
+<div>Implement and benchmark (Quantization, Knowledge distillation, structured and unstructured pruning, KV-cache optimization, etc.).</div>
+</li>
+<li class=""ace-line ace-line old-record-id-VCk9dgHrVoN62ox3dFVcA0JNnrb"" data-list=""bullet"">
+<div>Deploy optimized models across GPUs, CPUs, and edge acceleators.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-Wb8EdCTLRoyth5xZYercu9pVnFd"" data-list=""bullet"">
+<div>Contribute to internal tooling and documentation for model optimization flows.</div>
+</li>
+</ul>
+<div class=""ace-line ace-line old-record-id-C2aWd2QEio59x3xLhWfcS3TTn5b""> </div>
+<div class=""ace-line ace-line old-record-id-AIHTdHDdboiRaRxtxiTckTw6n7e""><strong>Minimum Skill Requirements:</strong></div>
+<ul class=""list-bullet1"">
+<li class=""ace-line ace-line old-record-id-PPj3d29UBoyiYdxDEHPc33rInDc"" data-list=""bullet"">
+<div>Master in CS/CE/EE, or equivalent, with 3 + years of industry experience.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-TzArdqA6aoTtH0xQqTTcaC0dnjU"" data-list=""bullet"">
+<div>Good knowledge of PyTorch.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-UYMgd9GUloze0zxgFd6cJAs4n9e"" data-list=""bullet"">
+<div>Knowledge of transformer architecture and ways to accelerate the training and inference of transformer models.</div>
+</li>
+</ul>
+<div class=""ace-line ace-line old-record-id-KoV0d0FsEowyCOxAtFTc5uj5nUf""> </div>
+<div class=""ace-line ace-line old-record-id-MLh9dy1dKoPUpQxSLEecHz99nod""><strong>Preferred Skill Requirements:</strong></div>
+<ul class=""list-bullet1"">
+<li class=""ace-line ace-line old-record-id-T8J0dIYZVojC6BxYwWkcZoZtnkd"" data-list=""bullet"">
+<div>Previous experience in the autonomous driving industry.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-D8rUdR920oZcIdxjeZ6cR7XXnqh"" data-list=""bullet"">
+<div>Knowledge of Torchscript and Nvidia TensorRT.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-YJSydKbfxo9lLLxSvgNcLXAwnvh"" data-list=""bullet"">
+<div>Strong programming skills in Python and C++</div>
+</li>
+<li class=""ace-line ace-line old-record-id-PaY6dpZ4wow5F8xnigxcGxpDnwh"" data-list=""bullet"">
+<div>Familiarity with GPU CPU, NPU, DSP architecture.</div>
+</li>
+<li class=""ace-line ace-line old-record-id-Rs9Ydi2UeoGKPrxG1IycGJtdnNb"" data-list=""bullet"">
+<div>Deep understanding of memory bandwidth, compute bottlenecks, and hardware-aware model optimization</div>
+</li>
+<li class=""ace-line ace-line old-record-id-FDnod4dzVoqx8Yxmx4Vcfbc2nkc"" data-list=""bullet"">
+<div>Being efficiently in solving complex problems collaboratively on larger teams</div>
+</li>
+</ul>
+<div class=""ace-line ace-line old-record-id-Boy0dZsjYoqwezx5AFSchEsHnHe""> </div>
+<div class=""ace-line ace-line old-record-id-YQfodwd0roSoE1xku35ctLAEn0g""><strong>What do we provide:</strong></div>
+<div class=""ace-line ace-line old-record-id-HLxadkmd3ozOuvxcHhTcJTQ1nbf"">
+<ul>
+<li>A fun, supportive and engaging environment.</li>
+<li>Infrastructures and computational resources to support your work.</li>
+<li>Opportunity to work on cutting edge technologies with the top talents in the field.</li>
+<li>Opportunity to make significant impact on the transportation revolution by the means of advancing autonomous driving.</li>
+<li>Competitive compensation package.</li>
+<li>Snacks, lunches, dinners, and fun activities.</li>
+</ul>
+</div>
+<div class=""ace-line ace-line old-record-id-F8D4deCymoyydBxmv2cclpZEn0b""> </div>
+<div class=""ace-line ace-line old-record-id-Mo7Kd73G9oC7olxNYh0c30tWngd"">The base salary range for this full-time position is $174,720 - $295,680, in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</div>
+<div class=""ace-line ace-line old-record-id-FMeCdi8rUoOs1TxXFn2cyYG1nVg""> </div>
+<div class=""ace-line ace-line old-record-id-OrCndDSCFoPbSVxuFh1c47Kwnqb"">We are an Equal Opportunity Employer. It is our policy to provide equal employment opportunities to all qualified persons without regard to race, age, color, sex, sexual orientation, religion, national origin, disability, veteran status or marital status or any other prescribed category set forth in federal or state regulations.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>",7451,https://job-boards.greenhouse.io/xpengmotors/jobs/8446966002,,https://www.linkedin.com/jobs/view/4467173016,2026-09-17,123,123 applicants,,matched,,2026-11-18,2026-11-18T03:15:30,2026-11-18,,62,startDate+linkedin,true,0,,,,,,2026-09-17,,false,,,,,,

@@ -1,8 +1,8 @@
 {
  "label": "ankerus_us_fulltime",
- "rows": 32,
+ "rows": 33,
  "kept": 32,
- "new": 0,
+ "new": 1,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 72,
  "feed_excluded_state": 4,
- "state_rows": 108,
+ "state_rows": 109,
  "banded": 0,
  "lca_pools": 25,
- "snapshot": "2026-11-17"
+ "snapshot": "2026-11-18"
 }
