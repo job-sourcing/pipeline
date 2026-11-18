@@ -93,3 +93,6 @@ Anker (US) board-watch 2026-11-17: +1 new, -0 gone (102 active [ankerus_us_fullt
 NEW Demand Planning Specialist | Seattle | 2026-11-17 | https://anker-in.jobs.feishu.cn/index/position/7709057969052535082/detail
 (2026-11-17T16:31:04)
 
+board-watch ankerus_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Anker+%28US%29&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-18T03:08:28)
+
