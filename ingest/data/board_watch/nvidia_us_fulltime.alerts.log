@@ -3085,3 +3085,9 @@ board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client
 board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
 (2026-11-18T03:16:23)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-18T16:02:44)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-18T16:06:01)
+

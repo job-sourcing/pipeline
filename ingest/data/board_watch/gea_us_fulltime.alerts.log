@@ -644,3 +644,9 @@ REPOSTED Die Maintenance Technician, Metal Stamping-1st Shift (label reset 12dâ†
 REPOSTED Material Handler - Receiving (label reset 16dâ†’1d)
 (2026-11-18T03:16:17)
 
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-18T16:02:24)
+
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-18T16:05:54)
+
