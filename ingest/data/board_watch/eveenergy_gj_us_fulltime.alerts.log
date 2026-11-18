@@ -33,3 +33,9 @@ board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: g
 board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (http402) — failing loudly, state untouched)
 (2026-11-11T18:00:09)
 
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-18T18:56:06)
+
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-18T18:58:12)
+
