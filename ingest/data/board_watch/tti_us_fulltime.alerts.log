@@ -1278,3 +1278,38 @@ GONE Concept Design Engineer (first seen 2026-09-30)
 GONE Metrology Technician - 2nd Shift (first seen 2026-09-30)
 (2026-11-18T16:02:09)
 
+board-watch tti_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Techtronic+Industries&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-19T02:48:35)
+
+Techtronic Industries board-watch 2026-11-19: +20 new, -9 gone (886 active [tti_us_fulltime])
+NEW Cycle Counter I | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Cycle-Counter-I_R78866
+NEW Design Engineer 3 | Anderson, SC | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Design-Engineer-3_R79841
+NEW Dock Assoc | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Dock-Assoc_R79697
+NEW Equipment Operator | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Equipment-Operator_R79701
+NEW Equipment Operator | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Equipment-Operator_R79696-1
+NEW Equipment Operator | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Equipment-Operator_R79682
+NEW Fulfillment Assoc II | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Fulfillment-Assoc-II_R79695
+NEW Gatekeeper | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Gatekeeper_R79698
+NEW Gatekeeper | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Gatekeeper_R79699
+NEW General Labor - Service | Greenwood, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Greenwood-MS/General-Labor---Service_R79828
+NEW General Labor - Service | Greenwood, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Greenwood-MS/General-Labor---Service_R79830-1
+NEW Jackson Assembler 2 | Jackson, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Jackson-MS/Jackson-Assembler-2_R79825
+NEW OB Fulfillment Assoc I | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/OB-Fulfillment-Assoc-I_R78981
+NEW OB Fulfillment Assoc I | Olive Branch, MS | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/OB-Fulfillment-Assoc-I_R78980
+NEW Operations Specialist - X Shift | West Bend, WI | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/West-Bend-WI/Operations-Specialist---X-Shift_R79499
+NEW Packaging Engineer II | Brookfield, WI | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Brookfield-WI/Packaging-Engineer-II_R79724-1
+NEW Project Engineer 1 | Anderson, SC | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Project-Engineer-1_R79839
+NEW Project Engineer 3 | Anderson, SC | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Project-Engineer-3_R79837
+NEW Project Leader – New Product Development (NPD) | Anderson, SC | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Project-Leader---New-Product-Development--NPD-_R79838-1
+NEW Senior Cell Engineer - Cell Technology | Brookfield, WI | 2026-08-17 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Brookfield-WI/Senior-Cell-Engineer---Cell-Technology_R76738
+GONE Material Operator (first seen 2026-11-13)
+GONE OB Assembler 1 (first seen 2026-11-12)
+GONE Gatekeeper (first seen 2026-11-11)
+GONE Assistant Video Editor / AD (first seen 2026-10-21)
+GONE Camera Operator (first seen 2026-10-21)
+GONE Metrology Technician (first seen 2026-10-10)
+GONE Sr Product Owner (first seen 2026-09-30)
+GONE Prototype Machinist (first seen 2026-09-30)
+GONE Customer Fulfillment Analyst (first seen 2026-09-30)
+(2026-11-19T02:48:35)
+
