@@ -1,8 +1,8 @@
 {
  "label": "beone_us_fulltime",
  "rows": 185,
- "kept": 179,
- "new": 6,
+ "kept": 185,
+ "new": 0,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 8,
@@ -14,5 +14,5 @@
  "state_rows": 291,
  "banded": 1,
  "lca_pools": 56,
- "snapshot": "2026-11-18"
+ "snapshot": "2026-11-19"
 }

@@ -1,7 +1,7 @@
 {
  "label": "genai_runware",
- "rows": 10,
- "kept": 10,
+ "rows": 9,
+ "kept": 9,
  "new": 0,
  "ghosts_dropped": 1,
  "ghosts_in_state": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 1,
- "state_rows": 11,
+ "state_rows": 10,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-11-18"
+ "snapshot": "2026-11-19"
 }
