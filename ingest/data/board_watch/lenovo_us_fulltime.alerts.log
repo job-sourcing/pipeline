@@ -935,3 +935,15 @@ NEW Client Relationship Manager (Account Executive) - Indiana | Morrisville, Nor
 GONE HR Operations Intern - Spring and Summer 2027 (first seen 2026-10-27)
 (2026-11-19T02:49:15)
 
+board-watch lenovo_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Lenovo&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-19T16:07:40)
+
+Lenovo board-watch 2026-11-19: +3 new, -3 gone (273 active [lenovo_us_fulltime])
+NEW Financial Controls, Business Controls and PMO Governance Manager | Morrisville, North Carolina, United States of America | 2026-11-19 | https://jobs.lenovo.com/en_US/careers/JobDetail/Financial-Controls-Business-Controls-and-PMO-Governance-Manager/84150
+NEW Regional Deployment Manager | Whitsett, North Carolina, United States of America | 2026-11-19 | https://jobs.lenovo.com/en_US/careers/JobDetail/Regional-Deployment-Manager/84151
+NEW Finance Digital Transformation Analyst | Morrisville, North Carolina, United States of America | 2026-09-11 | https://jobs.lenovo.com/en_US/careers/JobDetail/Finance-Digital-Transformation-Analyst/81378
+GONE Client Relationship Manager - New Jersey and Philadelphia (first seen 2026-10-17)
+GONE Server Test Engineer (first seen 2026-10-09)
+GONE Tools Development Engineer (REMOTE) (first seen 2026-09-27)
+(2026-11-19T16:07:40)
+
