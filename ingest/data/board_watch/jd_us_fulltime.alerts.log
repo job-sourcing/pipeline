@@ -839,3 +839,9 @@ REPOSTED Business Project Manager (label reset 5d→0d)
 REPOSTED Warehouse Compliance Officer (label reset 6d→0d)
 (2026-11-18T19:05:35)
 
+board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
+(2026-11-19T02:48:10)
+
+board-watch jd_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://jd.wd103.myworkdayjobs.com/wday/cxs/jd/Careers_at_JD/jobs)
+(2026-11-19T02:52:18)
+
