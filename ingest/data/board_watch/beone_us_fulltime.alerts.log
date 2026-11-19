@@ -1011,3 +1011,31 @@ board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client 
 board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
 (2026-11-19T02:55:51)
 
+board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
+(2026-11-19T16:07:21)
+
+board-watch beone_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=BeOne+Medicines&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-19T16:16:07)
+
+BeOne Medicines board-watch 2026-11-19: +7 new, -0 gone (180 active [beone_us_fulltime])
+NEW Manager, Packaging Engineering | Remote (US) | Posted Today | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Remote-US/Manager--Packaging-Engineering_R37858
+NEW Regional Clinical Study Manager | Germany Remote | Posted Today — 200 applicants | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Germany-Remote/Regional-Clinical-Study-Manager_R37856-1
+NEW Associate Director, Group Leader, BeOne Institute | Remote (US) | Posted Yesterday | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Remote-US/Associate-Director--Group-Leader--BeOne-Institute_R37319
+NEW Senior Director, Corporate Communications | Remote (US) | Posted Yesterday | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Remote-US/Senior-Director--Corporate-Communications_R37242
+NEW Senior Manager, Advanced Analytics & Innovation | San Carlos | Posted Yesterday — 25 applicants | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/San-Carlos/Senior-Manager--Advanced-Analytics---Innovation_R37785
+NEW Senior Clinical Research Associate | Brazil Remote | Posted Yesterday | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Brazil-Remote/Senior-Clinical-Research-Associate_R37793
+NEW Executive Director, Procurement Strategy, Excellence and Digital Enablement Lead | Hopewell | Posted Yesterday — 32 applicants | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Hopewell/Executive-Director--Procurement-Strategy--Excellence-and-Digital-Enablement-Lead_R37702
+REPOSTED (11)
+REPOSTED Senior Engineer I, Drug Product Process Engineer (Hopewell, NJ) (label reset 30+d→1d)
+REPOSTED Engineer I, Process Equipment Engineer Small Molecule (Hopewell, NJ) (label reset 1d→1d)
+REPOSTED Senior Global Clinical Study Manager (label reset 0d→0d)
+REPOSTED Key Account Manager, Commercial Public Market – Regions: São Paulo, Rio de Janeiro, South, North (label reset 5d→0d)
+REPOSTED Key Account Manager, Solid Tumors (label reset 3d→0d)
+REPOSTED Senior Manager, Process Engineering Drug Substance and Drug Product (label reset 30+d→1d)
+REPOSTED Associate Director, Global Regulatory Project & Submission Management (label reset 30+d→1d)
+REPOSTED Director, Direct-to-Customer (DTC) Innovation & Digital Health (label reset 1d→1d)
+REPOSTED Country Medical Director, Switzerland (label reset 27d→1d)
+REPOSTED Marketing Lead Solid Tumors (label reset 5d→1d)
+REPOSTED … and 1 more (reposts.jsonl)
+(2026-11-19T16:16:07)
+

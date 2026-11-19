@@ -689,3 +689,21 @@ REPOSTED Senior Product Designer, Fiat/Earn (label reset 29d→24d)
 REPOSTED Staff Software Engineer, Mobile Security (label reset 135d→83d)
 (2026-11-19T02:52:55)
 
+board-watch okx_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=OKX&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-19T16:10:31)
+
+OKX board-watch 2026-11-19: +2 new, -4 gone (269 active [okx_us_fulltime])
+NEW Senior Business Development Manager, Germany | Germany (Remote); Lower Austria, Austria | Posted 275 Days Ago | https://job-boards.greenhouse.io/okx/jobs/7632854003
+NEW Senior Business Operations Manager, OKX SG | Singapore, Singapore | Posted Today | https://job-boards.greenhouse.io/okx/jobs/8209040003
+GONE Business Development Manager (first seen 2026-10-07)
+GONE Principal / Senior Product Manager, Asset (Tax Reporting, Client Statements & Portfolio) (first seen 2026-10-07)
+GONE Senior/Staff Software Engineer, Liquidity Platform (first seen 2026-10-07)
+GONE Specialist, Legal Response (first seen 2026-10-16)
+REPOSTED (5)
+REPOSTED Compliance Analyst (label reset 30d→29d)
+REPOSTED Design System Designer, OKDS (label reset 762d→69d)
+REPOSTED Principal / Senior Product Manager, Payment (label reset 794d→373d)
+REPOSTED Senior Product Designer, Core (label reset 78d→69d)
+REPOSTED Senior Product Designer, Global Exchange (label reset 1073d→69d)
+(2026-11-19T16:10:31)
+
