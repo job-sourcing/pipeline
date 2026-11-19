@@ -355,3 +355,7 @@ GONE Sr. Specialist, Quality IT (first seen 2026-11-17)
 board-watch legendbiotech_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Legend+Biotech&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-19T16:09:00)
 
+Legend Biotech board-watch 2026-11-19: +0 new, -1 gone (67 active [legendbiotech_us_fulltime])
+GONE Lab Support Specialist (first seen 2026-09-27)
+(2026-11-19T19:12:52)
+
