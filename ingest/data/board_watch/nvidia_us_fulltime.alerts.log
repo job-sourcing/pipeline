@@ -3135,3 +3135,9 @@ REPOSTED Senior Software Engineer, Hardware Tools and Methodology Development (l
 REPOSTED … and 12 more (reposts.jsonl)
 (2026-11-18T19:13:19)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-19T02:51:47)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-19T02:57:06)
+
