@@ -131,3 +131,6 @@ Zeekr board-watch 2026-11-19: +1 new, -0 gone (25 active [zeekr_us_fulltime])
 NEW Area Sales Manager | Stockholm, Sweden | 2026-11-19 | https://zeekreu.teamtailor.com/jobs/8766229-area-sales-manager
 (2026-11-19T16:10:19)
 
+board-watch zeekr_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Zeekr&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-19T19:12:20)
+
