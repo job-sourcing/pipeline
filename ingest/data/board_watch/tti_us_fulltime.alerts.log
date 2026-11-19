@@ -1313,3 +1313,15 @@ GONE Prototype Machinist (first seen 2026-09-30)
 GONE Customer Fulfillment Analyst (first seen 2026-09-30)
 (2026-11-19T02:48:35)
 
+board-watch tti_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Techtronic+Industries&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-19T16:08:36)
+
+Techtronic Industries board-watch 2026-11-19: +6 new, -0 gone (892 active [tti_us_fulltime])
+NEW Assistant Store Manager - Ellenton | PE-DTFO-Ellenton, FL | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/PE-DTFO-Ellenton-FL/Assistant-Store-Manager---Ellenton_R79859
+NEW Electrical Engineer 3 | Anderson, SC | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Electrical-Engineer-3_R79861
+NEW Mechanical Engineer 1 - Advanced and Analytical Engineering | Anderson, SC | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Mechanical-Engineer-1---Advanced-and-Analytical-Engineering_R79864
+NEW Packer 1 2nd Shift | Coal Center, PA | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Coal-Center-PA/Packer-1-2nd-Shift_R79858
+NEW Quality Technician I - Weekend Y Shift | West Bend, WI | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/West-Bend-WI/Quality-Technician-I---Weekend-Y-Shift_R79780
+NEW Sr Manager- Information Technology | Menomonee Falls, WI | 2026-11-18 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Menomonee-Falls-WI/Sr-Manager--Information-Technology_R79728
+(2026-11-19T16:08:36)
+
