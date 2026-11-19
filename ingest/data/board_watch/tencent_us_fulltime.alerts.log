@@ -535,3 +535,9 @@ board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Clien
 board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
 (2026-11-18T19:07:31)
 
+board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
+(2026-11-19T02:51:57)
+
+board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
+(2026-11-19T02:55:17)
+
