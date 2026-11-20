@@ -1352,3 +1352,22 @@ GONE Assistant Mgr, Service NPD (first seen 2026-09-30)
 GONE Field Sales and Marketing Representative - Springfield, VA (first seen 2026-09-30)
 (2026-11-20T02:36:01)
 
+board-watch tti_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Techtronic+Industries&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T15:48:54)
+
+Techtronic Industries board-watch 2026-11-20: +10 new, -3 gone (901 active [tti_us_fulltime])
+NEW Field Sales and Marketing Representative-Broomfield, CO | RNB - West HD Team | 2026-11-20 | https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/RNB---West-HD-Team/Field-Sales-and-Marketing-Representative-Broomfield--CO_R79707
+NEW Associate Service Project Leader - PSE/VE | Brookfield, WI | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Brookfield-WI/Associate-Service-Project-Leader---PSE-VE_R79849
+NEW Dock Assoc | Olive Branch, MS | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Dock-Assoc_R79834
+NEW Dock Assoc | Olive Branch, MS | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Dock-Assoc_R79835
+NEW Dock Assoc | Olive Branch, MS | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Dock-Assoc_R79836
+NEW Fulfillment Assoc II | Olive Branch, MS | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Fulfillment-Assoc-II_R79833
+NEW Project Engineer 3 - New Product Development | Anderson, SC | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Project-Engineer-3---New-Product-Development_R79909
+NEW Sr Systems Quality Firmware Engineer | Brookfield, WI | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Brookfield-WI/Sr-Systems-Quality-Firmware-Engineer_R79481
+NEW Supply Chain Customer Solutions Sr Analyst | Milwaukee, WI | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Milwaukee-WI/Supply-Chain-Customer-Solutions-Sr-Analyst_R79608
+NEW Training Operations Specialist | Brookfield, WI | 2026-11-19 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Brookfield-WI/Training-Operations-Specialist_R79795
+GONE Design Engineer II (first seen 2026-11-13)
+GONE EMC Electrical Engineering Technician II - 1st Shift (first seen 2026-10-10)
+GONE Operator III (Sorter Operator) (first seen 2026-10-08)
+(2026-11-20T15:48:54)
+
