@@ -1049,3 +1049,18 @@ board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client 
 board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
 (2026-11-20T02:40:41)
 
+board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
+(2026-11-20T15:48:42)
+
+board-watch beone_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=BeOne+Medicines&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T15:56:21)
+
+BeOne Medicines board-watch 2026-11-20: +1 new, -0 gone (20 active [beone_us_fulltime])
+NEW Associate Director, Enterprise Data Governance | Remote (US) | 2026-11-19 | https://beigene.wd5.myworkdayjobs.com/BeiGene/job/Remote-US/Associate-Director--Enterprise-Data-Governance_R37205
+REPOSTED (4)
+REPOSTED Engineer I, Process Equipment Engineer Small Molecule (Hopewell, NJ) (label reset 1d→0d)
+REPOSTED Director, GCO Program Lead (GCPL) (label reset 14d→0d, startDate +15d)
+REPOSTED Senior Director, Global Clinical Program Lead and External Partnering (label reset 10d→0d)
+REPOSTED Senior Content Operations Specialist (label reset 30+d→0d)
+(2026-11-20T15:56:21)
+
