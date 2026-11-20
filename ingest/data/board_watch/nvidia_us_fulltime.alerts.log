@@ -3211,3 +3211,9 @@ REPOSTED NVIDIA 2027 Internships: Autonomous Vehicles and Robotics (label reset 
 REPOSTED NVIDIA 2027 Internships: Deep Learning (label reset 16d→1d)
 (2026-11-20T15:53:32)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-20T18:49:15)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-20T18:52:44)
+

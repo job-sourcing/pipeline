@@ -115,3 +115,6 @@ Faraday Future board-watch 2026-11-19: +1 new, -0 gone (65 active [faradayfuture
 NEW Corporate FP&A Manager | El Segundo, California, United States | Posted 107 Days Ago | https://job-boards.greenhouse.io/faradayfuture/jobs/7826484003
 (2026-11-19T02:50:31)
 
+board-watch faradayfuture_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Faraday+Future&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T18:48:52)
+
