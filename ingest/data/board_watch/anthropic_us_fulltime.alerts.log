@@ -1076,3 +1076,15 @@ GONE Safeguards Enforcement Analyst, Conventional Weapons (first seen 2026-09-19
 GONE State and Local Affairs Lead, West (first seen 2026-09-29)
 (2026-11-20T02:35:33)
 
+board-watch anthropic_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Anthropic&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T15:48:50)
+
+Anthropic board-watch 2026-11-20: +3 new, -1 gone (452 active [anthropic_us_fulltime])
+NEW [P] Engineering Manager, Privacy Infrastructure | San Francisco, CA | New York City, NY | Posted Today | https://job-boards.greenhouse.io/anthropic/jobs/5490122008
+NEW Strategic Account Executive, Financial Services | San Francisco, CA | New York City, NY | Posted Today | https://job-boards.greenhouse.io/anthropic/jobs/5480875008
+NEW Strategic Account Executive, HCLS | San Francisco, CA | New York City, NY | Posted Today | https://job-boards.greenhouse.io/anthropic/jobs/5480893008
+GONE GTM Narrative Lead (first seen 2026-11-14)
+REPOSTED (1)
+REPOSTED Principal Engineer Capacity/Compute (label reset 33d→32d)
+(2026-11-20T15:48:50)
+
