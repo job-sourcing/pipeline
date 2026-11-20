@@ -1,7 +1,7 @@
 {
  "label": "shein_us_fulltime",
- "rows": 14,
- "kept": 14,
+ "rows": 13,
+ "kept": 13,
  "new": 0,
  "ghosts_dropped": 1,
  "ghosts_in_state": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 14,
+ "state_rows": 13,
  "banded": 0,
  "lca_pools": 30,
- "snapshot": "2026-11-19"
+ "snapshot": "2026-11-20"
 }
