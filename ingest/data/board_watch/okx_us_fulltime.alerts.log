@@ -738,3 +738,6 @@ REPOSTED Principal/Senior VIP Product Manager, Onshore Markets (label reset 23d�
 REPOSTED Senior Product Designer, Core (label reset 79d→70d)
 (2026-11-20T15:51:55)
 
+board-watch okx_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=OKX&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T18:50:41)
+
