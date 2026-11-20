@@ -100,3 +100,10 @@ Anker (US) board-watch 2026-11-19: +1 new, -0 gone (103 active [ankerus_us_fullt
 NEW 【US】Security Engineer — Code Audit & Audit Automation | Seattle | 2026-11-18 | https://anker-in.jobs.feishu.cn/index/position/7709651360450431286/detail
 (2026-11-19T02:49:48)
 
+board-watch ankerus_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Anker+%28US%29&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T02:34:41)
+
+Anker (US) board-watch 2026-11-20: +1 new, -0 gone (104 active [ankerus_us_fulltime])
+NEW DE-（senior）PR Manager | Düsseldorf; Munich | 2026-11-20 | https://anker-in.jobs.feishu.cn/index/position/7710049909152975114/detail
+(2026-11-20T02:34:41)
+

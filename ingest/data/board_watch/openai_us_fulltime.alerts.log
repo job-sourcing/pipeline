@@ -1402,3 +1402,33 @@ NEW Product Designer, Advertiser Experiences | San Francisco | Posted Today — 
 GONE Product Manager, API Infrastructure (first seen 2026-09-19)
 (2026-11-19T19:14:12)
 
+board-watch openai_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=OpenAI&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T02:38:33)
+
+OpenAI board-watch 2026-11-20: +13 new, -3 gone (660 active [openai_us_fulltime])
+NEW Art Director, Business Marketing | San Francisco | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/2b5587bf-9df9-4606-920b-a988e392a2d2
+NEW Software Security Architect, Operating Systems | Consumer Devices | Seattle | Posted 1 Days Ago — 45 applicants | https://jobs.ashbyhq.com/openai/c4008fa3-45f2-4487-b967-ef6c274b28ea
+NEW Manager, Delivery Leads - NYC | New York City | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/1a17baf0-8b00-4020-acfa-fd530f20881f
+NEW Manager, Delivery Leads - San Francisco | San Francisco | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/a1f5372d-a912-479d-8d12-7fc22298083d
+NEW Community Engagement Lead, Texas | US - Remote | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/b5a6e300-5f33-4ac8-9fb3-11578e5cdd14
+NEW Product Manager, Native Learning and Credentials | San Francisco | Posted Today | https://jobs.ashbyhq.com/openai/43d75302-2eef-46b6-b991-611e705f9fb1
+NEW Manufacturing Quality Engineer, Data Center Modular Builds | US - Remote | Posted Today | https://jobs.ashbyhq.com/openai/5a693757-8c54-43a2-abd7-44ab598d4c6e
+NEW Designer, OpenAI.com | US - Remote | Posted 1 Days Ago — 88 applicants | https://jobs.ashbyhq.com/openai/4e9a1479-320a-465c-887d-ebbd9249db8a
+NEW Certification Assessment Specialist | San Francisco | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/2d286e1b-1d57-4ef9-a121-4e781c5b3896
+NEW Technical Certification Lead | San Francisco | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/3ee8aeab-aef0-44f7-918f-a0d6ca2fa928
+NEW Certification Operations and Policy Program Manager | San Francisco | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/4311ea62-f628-4689-bec5-de886bb1f191
+NEW Brand Data Infrastructure Lead | San Francisco | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/3ae2f8d2-b687-493e-a963-e175fdbd17b9
+NEW Community Engagement Lead, Southeast | US - Remote | Posted 1 Days Ago | https://jobs.ashbyhq.com/openai/ecb1119c-0439-4b8d-938b-851b3ed84a02
+GONE Forward Deployed Engineer (FDE), Legal-NYC (first seen 2026-09-19)
+GONE Partnerships Operations Lead, OAI for Government (first seen 2026-09-19)
+GONE Land and Data Center Development (first seen 2026-10-28)
+REPOSTED (7)
+REPOSTED Operating Systems Engineer | Consumer Devices (label reset 85d→1d)
+REPOSTED Operating Systems Engineer, Linux Kernel | Consumer Devices (label reset 59d→1d)
+REPOSTED Forward Deployment Strategy and Operations (label reset 65d→1d)
+REPOSTED Model Policy Manager, Agentic Safety  (label reset 65d→0d)
+REPOSTED Software Security Architect, Operating Systems | Consumer Devices (label reset 86d→1d)
+REPOSTED Systems Integration Manager | Consumer Devices (label reset 84d→1d)
+REPOSTED Systems Test Engineer, End-to-End Validation | Consumer Devices (label reset 79d→1d)
+(2026-11-20T02:38:33)
+
