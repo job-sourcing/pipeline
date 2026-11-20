@@ -253,3 +253,9 @@ GONE Internal Audit Manager (first seen 2026-10-12)
 board-watch reolink_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Reolink&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-19T19:12:00)
 
+Reolink board-watch 2026-11-20: +1 new, -2 gone (77 active [reolink_us_fulltime])
+NEW Group Human Resource (HR) Manager | APAC  | Tai Seng MRT, Singapore | Posted Today | https://job-boards.greenhouse.io/reolink/jobs/4516112009
+GONE Group HR Manager | Asia Pacific (first seen 2026-10-09)
+GONE Key Account Manager – Germany (first seen 2026-10-09)
+(2026-11-20T02:38:13)
+
