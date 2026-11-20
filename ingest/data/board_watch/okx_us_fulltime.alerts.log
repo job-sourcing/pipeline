@@ -713,3 +713,17 @@ REPOSTED Senior Product Designer, Fiat/Earn (label reset 30d→24d)
 REPOSTED Senior Product Manager, Advanced Trading (Onshore) (label reset 133d→22d)
 (2026-11-19T19:15:20)
 
+board-watch okx_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=OKX&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T02:37:50)
+
+OKX board-watch 2026-11-20: +3 new, -2 gone (270 active [okx_us_fulltime])
+NEW Software Engineer, Card | San Jose, California, United States | Posted 1 Days Ago — 65 applicants | https://job-boards.greenhouse.io/okx/jobs/8209722003
+NEW Specialist, Legal Response | Kuala Lumpur, Malaysia | Posted 35 Days Ago | https://job-boards.greenhouse.io/okx/jobs/8035255003
+NEW Staff/Sr Staff Software Engineer, Payment | San Jose, California, United States | Posted 1 Days Ago | https://job-boards.greenhouse.io/okx/jobs/8209786003
+GONE Principal AI Engineer, AI Agent Development (first seen 2026-10-02)
+GONE Principal AI Engineer, Chatbot Development (first seen 2026-10-02)
+REPOSTED (2)
+REPOSTED Staff Software Engineer, Mobile Security (label reset 136d→84d)
+REPOSTED Tax Reporting Senior Manager (label reset 70d→63d)
+(2026-11-20T02:37:50)
+

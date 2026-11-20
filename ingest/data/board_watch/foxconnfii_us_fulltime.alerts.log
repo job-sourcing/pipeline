@@ -254,3 +254,6 @@ NEW Production Planner - (G-Project) | Houston, TX | 2026-11-18 | https://foxcon
 NEW Programs Manager - (G-Project) | Houston, TX | 2026-11-18 | https://foxconnassemblyllc.applytojob.com/apply/hwsYKIexwd/Programs-Manager-GProject
 (2026-11-18T19:03:47)
 
+board-watch foxconnfii_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Foxconn+Industrial+Internet&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-20T02:35:29)
+
