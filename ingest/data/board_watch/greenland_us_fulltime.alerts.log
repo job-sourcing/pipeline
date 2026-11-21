@@ -9,3 +9,6 @@ NEW Interior Design Manager – Construction Administration/Management Required 
 NEW Recruiter | New York, US |  | https://greenlandusa.com/careers
 (2026-10-01T14:28:40)
 
+board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='greenlandusa.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-21T17:47:24)
+
