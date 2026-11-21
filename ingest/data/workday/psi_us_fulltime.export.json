@@ -1,7 +1,7 @@
 {
  "label": "psi_us_fulltime",
- "rows": 32,
- "kept": 31,
+ "rows": 31,
+ "kept": 30,
  "new": 1,
  "ghosts_dropped": 2,
  "ghosts_in_state": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 32,
+ "state_rows": 31,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-11-20"
+ "snapshot": "2026-11-21"
 }

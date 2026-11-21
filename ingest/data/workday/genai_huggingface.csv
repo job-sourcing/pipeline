@@ -21,7 +21,7 @@ Benefits
 
 • Competitive salary, equity, unlimited time off, and remote-first flexibility.
 
-• The joy of knowing your work contributes to shaping the open AI movement.",883,https://apply.workable.com/j/0BD8C06DB3,,,,,,,not_checked,,2026-10-31,,2026-11-20,,,,true,0,,,,,,,,,,,,,,
+• The joy of knowing your work contributes to shaping the open AI movement.",883,https://apply.workable.com/j/0BD8C06DB3,,,,,,,not_checked,,2026-10-31,,2026-11-21,,,,true,0,,,,,,,,,,,,,,
 19A136F8E2,Open-Source Machine Learning Engineer - US Remote,Hugging Face,huggingface,Full time,Posted 155 Days Ago,,,"New York, New York (Remote)",2,"New York, New York (Remote); New York",true,,United States,,0,"At Hugging Face, we're on a journey to democratize good AI. We are building the fastest growing platform for AI builders with over 11 million users who collectively shared over 4 million models, 1 million datasets & 1.5 million Gradio apps. Our open-source libraries have more than 700,000 stars on Github.
 
 About the Role
@@ -84,7 +84,7 @@ We support the community. We believe major scientific advancements are the resul
 
 Requirements
 
-Please provide a cover letter mentioning why you would like to work in open-source at Hugging Face. We encourage you to mention your skills, potential expertise, and topics on which you would like to work.",5067,https://apply.workable.com/j/19A136F8E2,,https://www.linkedin.com/jobs/view/4420973678,2026-05-29,25,among first 25,,matched,,2026-10-31,2026-10-31T13:11:38,2026-11-20,,175,startDate+linkedin,true,0,,,,,,2026-05-29,,true,,,,,,
+Please provide a cover letter mentioning why you would like to work in open-source at Hugging Face. We encourage you to mention your skills, potential expertise, and topics on which you would like to work.",5067,https://apply.workable.com/j/19A136F8E2,,https://www.linkedin.com/jobs/view/4420973678,2026-05-29,25,among first 25,,matched,,2026-10-31,2026-10-31T13:11:38,2026-11-21,,176,startDate+linkedin,true,0,,,,,,2026-05-29,,true,,,,,,
 F88446C814,"Senior Open-Source Python Engineer, ML Developer Tools - US Remote",Hugging Face,huggingface,Full time,Posted 40 Days Ago,,,(Remote),1,(Remote),true,,United States,,0,"At Hugging Face, we're on a journey to democratize good AI. We are building the fastest growing platform for AI builders with over 11 million users who collectively shared over 4 million models, 1 million datasets & 1.5 million Gradio apps. Our open-source libraries have more than 700,000 stars on Github.
 
 About the Role
@@ -157,4 +157,130 @@ We support our employees wherever they are. While we have office spaces in NYC a
 
 We want our teammates to be shareholders. All employees have company equity as part of their compensation package. If we succeed in becoming a category-defining platform in machine learning and artificial intelligence, everyone enjoys the upside.
 
-We support the community. We believe major scientific advancements are the result of collaboration across the field. Join a community supporting the ML/AI community.",5781,https://apply.workable.com/j/F88446C814,,https://www.linkedin.com/jobs/view/4469872384,2026-09-21,25,among first 25,,matched,titleSearchFallback,2026-10-31,2026-10-31T13:11:41,2026-11-20,,60,startDate+linkedin,true,0,,,,,,2026-09-21,,true,,,,,,
+We support the community. We believe major scientific advancements are the result of collaboration across the field. Join a community supporting the ML/AI community.",5781,https://apply.workable.com/j/F88446C814,,https://www.linkedin.com/jobs/view/4469872384,2026-09-21,25,among first 25,,matched,titleSearchFallback,2026-10-31,2026-10-31T13:11:41,2026-11-21,,61,startDate+linkedin,true,0,,,,,,2026-09-21,,true,,,,,,
+2EC9909936,"Senior Software Engineer, Bot Detection (Client-Side & Signals) - US Remote",Hugging Face,huggingface,Full time,Posted Today,,,"New York, New York (Remote)",2,"New York, New York (Remote); New York",true,,United States,,0,"At Hugging Face, we're on a journey to democratize good AI. We are building the fastest growing platform for AI builders with over 20 million users who collectively shared over 4 million models, 1 million datasets & 1.5 million apps. Our open-source libraries have more than 700,000 stars on Github.
+
+About the Role
+
+Hugging Face hosts millions of models, datasets and Spaces, and serves a very large community of developers. That scale also brings automated abuse: fake accounts, scraping, spam, credential stuffing, and bots gaming downloads, likes and trending signals. We're building a small, dedicated bot-detection effort inside our Trust & Safety team, and we're looking for an engineer to own the signal-collection side of it.
+
+You'll design and ship the mechanisms that tell humans from automation across every surface where people and machines touch the Hub: web, API, git/LFS, CLI and client libraries. ""Front"" here is broad. It covers browser instrumentation, but also what we can learn from network, TLS and protocol behavior, and from how clients talk to our infrastructure.
+
+What you'll do
+
+• Design, build and deploy detection signals in production: browser and device fingerprinting, client-side challenges, TLS/HTTP fingerprinting, behavioral telemetry
+
+• Analyze how real-world bots and automation frameworks work (headless browsers, anti-detect browsers, residential proxies, CAPTCHA farms) and build countermeasures that hold up when attackers adapt
+
+• Work with our data-focused bot-detection engineer to turn raw signals into reliable features and decisions
+
+• Respect user privacy and keep legitimate developers, researchers and API users free of friction
+
+• Partner with infra, security and Hub engineers to roll out mitigations (rate limiting, step-up challenges, enforcement) safely at scale
+
+• Contribute openly where it makes sense: tooling, write-ups and research shared with the community
+
+Requirements
+
+• You have solid hands-on experience in bot detection, anti-fraud, browser fingerprinting, web security or a closely related field, and you've shipped things that ran in production
+
+• You understand browser internals and the web platform deeply (JavaScript, DOM and rendering APIs, WebGL/Canvas/Audio, extensions), as well as networking protocols (HTTP/2/3, TLS)
+
+• You know the attacker's toolbox from the inside (Puppeteer/Playwright/Selenium, stealth plugins, automation frameworks) and you like taking it apart
+
+• You're comfortable across the stack: TypeScript/JavaScript, and at least one backend language (Python, Go, Rust…)
+
+• You're pragmatic: you prefer a signal that works today and improves tomorrow over a perfect system that never ships
+
+• You care about privacy and about not punishing legitimate users
+
+Nice to have
+
+• Published work or talks on fingerprinting, bot detection or web measurement (academic or industry). A research background is welcome as long as you like seeing your work in prod
+
+• Experience at a bot-management, anti-fraud or CDN/WAF company
+
+• Open-source contributions
+
+One more thing
+
+At Hugging Face we believe great AI shouldn't require a massive cluster, we build for everyone, especially the GPU-poor. And because we read every application, here's a small sign that you read this one too: start your answer to the first application question with the words “GPU-poor and proud 🤗”. No trick, no catch, it just tells us a real person is on the other side.
+
+Benefits
+
+More about Hugging Face
+
+We are actively working to build a culture that values diversity, equity, and inclusivity. We are intentionally building a workplace where people feel respected and supported—regardless of who you are or where you come from. We believe this is foundational to building a great company and community. Hugging Face is an equal opportunity employer and we do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.
+
+We value development. You will work with some of the smartest people in our industry. We are an organization that has a bias for impact and is always challenging ourselves to continuously grow. We provide all employees with reimbursement for relevant conferences, training, and education.
+
+We care about your well-being. We offer flexible working hours and remote options. We offer health, dental, and vision benefits for employees and their dependents. We also offer parental leave and flexible paid time off.
+
+We support our employees wherever they are. While we have office spaces in NYC and Paris, we're very distributed and all remote employees have the opportunity to visit our offices. If needed, we'll also outfit your workstation to ensure you succeed.
+
+We want our teammates to be shareholders. All employees have company equity as part of their compensation package. If we succeed in becoming a category-defining platform in machine learning and artificial intelligence, everyone enjoys the upside.
+
+We support the community. We believe major scientific advancements are the result of collaboration across the field. Join a community supporting the ML/AI community.",5160,https://apply.workable.com/j/2EC9909936,,https://www.linkedin.com/jobs/view/4492918149,2026-11-20,25,among first 25,,matched,titleSearchFallback,2026-11-20,2026-11-20T15:52:57,2026-11-21,,1,startDate+linkedin,true,0,,,,,,2026-11-20,,true,,,,,,
+D6D882F48F,"Senior Software/Data Engineer, Bot Detection - US Remote",Hugging Face,huggingface,Full time,Posted Today,,,"New York, New York (Remote)",2,"New York, New York (Remote); New York",true,,United States,,0,"At Hugging Face, we're on a journey to democratize good AI. We are building the fastest growing platform for AI builders with over 20 million users who collectively shared over 4 million models, 1 million datasets & 1.5 million apps. Our open-source libraries have more than 700,000 stars on Github.
+
+About the Role
+
+Hugging Face hosts millions of models, datasets and Spaces, and serves a very large community of developers. With that scale comes automated abuse: fake accounts, scraping, spam, and bots gaming downloads, likes and trending signals. We're building a small, dedicated bot-detection effort inside our Trust & Safety team, and we're looking for an engineer to own the data and modeling side of it.
+
+You'll turn large volumes of traffic, account and behavioral data into reliable decisions about what is human, what is automated, and what is abusive. You'll work hand-in-hand with our signals-focused bot-detection engineer, from raw telemetry all the way to production detection and enforcement.
+
+What you'll do
+
+• Build and run detection pipelines on large-scale traffic and activity data (requests, sessions, accounts, repo interactions, API usage)
+
+• Develop and deploy detection models and heuristics: anomaly detection, clustering of coordinated activity, graph-based approaches, supervised classifiers where labels exist
+
+• Define features from client and network signals together with the signals engineer, and measure how robust they are as attackers adapt
+
+• Build the feedback loops: labeling, evaluation, false-positive monitoring, dashboards, alerting
+
+• Investigate live campaigns end-to-end (fake account waves, metric inflation, large-scale scraping) and turn what you learn into durable detections
+
+• Keep things proportionate and privacy-respecting, and minimize impact on legitimate users and automated-but-legitimate workloads (CI, research crawlers, integrations)
+
+Requirements
+
+• You have strong experience applying data science or ML to adversarial problems in production: bot detection, fraud, abuse, spam, security analytics or similar
+
+• You're fluent in Python and SQL, and comfortable with large-scale data tooling (Spark, ClickHouse, BigQuery, or similar)
+
+• You've taken models or detection logic from exploration to production and kept them working over time
+
+• You understand web traffic and network data well enough to reason about what a signal really means and how it can be spoofed
+
+• You think in terms of precision/recall trade-offs, attacker adaptation and operational cost, not just offline metrics
+
+• You're pragmatic, autonomous, and you enjoy working closely with one or two people in a fast-moving team
+
+Nice to have
+
+• Published work on bot detection, web measurement or adversarial ML (a PhD is welcome but not required, as long as you want your work running in prod)
+
+• Experience with graph analytics or streaming detection
+
+• Familiarity with the ML/open-source ecosystem and the Hugging Face Hub
+
+One more thing
+
+At Hugging Face we believe great AI shouldn't require a massive cluster, we build for everyone, especially the GPU-poor. And because we read every application, here's a small sign that you read this one too: start your answer to the first application question with the words “GPU-poor and proud 🤗”. No trick, no catch, it just tells us a real person is on the other side.
+
+Benefits
+
+More about Hugging Face
+
+We are actively working to build a culture that values diversity, equity, and inclusivity. We are intentionally building a workplace where people feel respected and supported—regardless of who you are or where you come from. We believe this is foundational to building a great company and community. Hugging Face is an equal opportunity employer and we do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.
+
+We value development. You will work with some of the smartest people in our industry. We are an organization that has a bias for impact and is always challenging ourselves to continuously grow. We provide all employees with reimbursement for relevant conferences, training, and education.
+
+We care about your well-being. We offer flexible working hours and remote options. We offer health, dental, and vision benefits for employees and their dependents. We also offer parental leave and flexible paid time off.
+
+We support our employees wherever they are. While we have office spaces in NYC and Paris, we're very distributed and all remote employees have the opportunity to visit our offices. If needed, we'll also outfit your workstation to ensure you succeed.
+
+We want our teammates to be shareholders. All employees have company equity as part of their compensation package. If we succeed in becoming a category-defining platform in machine learning and artificial intelligence, everyone enjoys the upside.
+
+We support the community. We believe major scientific advancements are the result of collaboration across the field. Join a community supporting the ML/AI community.",5078,https://apply.workable.com/j/D6D882F48F,,https://www.linkedin.com/jobs/view/4492902560,2026-11-20,44,44 applicants,,matched,titleSearchFallback,2026-11-20,2026-11-20T15:53:00,2026-11-21,,1,startDate+linkedin,true,0,,,,,,2026-11-20,,false,,,,,,

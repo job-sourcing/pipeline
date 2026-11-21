@@ -1,9 +1,9 @@
 {
  "label": "bitdeer_us_fulltime",
- "rows": 61,
+ "rows": 60,
  "kept": 60,
- "new": 1,
- "ghosts_dropped": 0,
+ "new": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 61,
+ "state_rows": 60,
  "banded": 3,
  "lca_pools": 7,
- "snapshot": "2026-11-20"
+ "snapshot": "2026-11-21"
 }
