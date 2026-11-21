@@ -260,3 +260,7 @@ board-watch foxconnfii_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration
 board-watch foxconnfii_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Foxconn+Industrial+Internet&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-20T18:48:42)
 
+Foxconn Industrial Internet board-watch 2026-11-21: +1 new, -0 gone (166 active [foxconnfii_us_fulltime])
+NEW SMT Engineer Supervisor (NVD) | Houston, TX | 2026-11-20 | https://foxconnassemblyllc.applytojob.com/apply/Ommq0XKUJY/SMT-Engineer-Supervisor-NVD
+(2026-11-21T02:50:29)
+

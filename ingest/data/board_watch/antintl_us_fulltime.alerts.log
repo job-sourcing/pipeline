@@ -83,3 +83,6 @@ Ant International board-watch 2026-11-20: +1 new, -0 gone (7 active [antintl_us_
 NEW 蚂蚁国际-Enterprise Solutions Manager-US WorldFirst Enterprise | Sunnyvale | 2026-11-20T18:45:45.000+00:00 | https://talent.antgroup.com/off-campus-position?positionId=261121012999747&from=intl
 (2026-11-20T18:48:08)
 
+board-watch antintl_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Ant+International&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-21T02:48:54)
+
