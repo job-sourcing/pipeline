@@ -561,3 +561,9 @@ Canadian Solar board-watch 2026-11-21: +1 new, -0 gone (60 active [canadiansolar
 NEW Logistics Data Specialist | Mesquite, TX | Posted Today | https://canadiansolar.wd5.myworkdayjobs.com/CanadianSolar/job/Mesquite-TX/Logistics-Data-Specialist_10001588
 (2026-11-21T02:55:03)
 
+board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
+(2026-11-21T14:58:40)
+
+board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
+(2026-11-21T15:05:15)
+
