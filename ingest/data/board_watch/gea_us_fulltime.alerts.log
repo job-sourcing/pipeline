@@ -723,3 +723,6 @@ REPOSTED Appliance Service Technician (West Chester, PA) ***$1500 Sign On*** (la
 REPOSTED Senior Manufacturing Quality Engineer - Plastics (label reset 1d→3d)
 (2026-11-21T15:08:54)
 
+board-watch gea_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://haier.wd3.myworkdayjobs.com/wday/cxs/haier/GE_Appliances/jobs)
+(2026-11-21T17:47:56)
+
