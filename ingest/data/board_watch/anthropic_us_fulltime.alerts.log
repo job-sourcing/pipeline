@@ -1119,3 +1119,8 @@ GONE Data Science, Finance & Strategy (first seen 2026-09-30)
 board-watch anthropic_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Anthropic&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-22T01:33:58)
 
+Anthropic board-watch 2026-11-22: +0 new, -2 gone (443 active [anthropic_us_fulltime])
+GONE Community Engagement Manager, Data Centers (New York) (first seen 2026-10-16)
+GONE Policy Development, Technical AI Governance (first seen 2026-10-14)
+(2026-11-22T14:56:34)
+

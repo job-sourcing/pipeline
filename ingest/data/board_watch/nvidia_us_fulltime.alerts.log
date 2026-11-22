@@ -3259,3 +3259,9 @@ REPOSTED (1)
 REPOSTED Senior Software R&D Engineer, VLSI Physical Design (label reset 16d→1d)
 (2026-11-22T01:39:00)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-22T14:57:08)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-22T15:00:22)
+
