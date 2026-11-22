@@ -9,3 +9,9 @@ NEW Senior Software Engineer, Bot Detection (Client-Side & Signals) - US Remote 
 NEW Senior Software/Data Engineer, Bot Detection - US Remote | New York, New York (Remote); New York | Posted Today — 44 applicants | https://apply.workable.com/j/D6D882F48F
 (2026-11-20T15:53:01)
 
+board-watch genai_huggingface FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v1/widget/accounts/huggingface?details=true)
+(2026-11-22T01:36:49)
+
+board-watch genai_huggingface FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v1/widget/accounts/huggingface?details=true)
+(2026-11-22T01:39:08)
+

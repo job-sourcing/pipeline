@@ -502,3 +502,9 @@ board-watch tplink_us_fulltime FAILED: EMPTY-LIST ANOMALY (had 29 postings yeste
 board-watch tplink_us_fulltime FAILED: EMPTY-LIST ANOMALY (had 29 postings yesterday) — state untouched
 (2026-11-21T17:56:04)
 
+board-watch tplink_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v1/widget/accounts/tp-link-usa-corp?details=true)
+(2026-11-22T01:36:42)
+
+board-watch tplink_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v1/widget/accounts/tp-link-usa-corp?details=true)
+(2026-11-22T01:39:01)
+
