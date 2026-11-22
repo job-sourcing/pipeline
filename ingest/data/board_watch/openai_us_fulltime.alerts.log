@@ -1471,3 +1471,21 @@ GONE GTM Strategy & Planning (first seen 2026-11-07)
 board-watch openai_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=OpenAI&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-21T17:49:10)
 
+board-watch openai_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=OpenAI&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-22T18:03:41)
+
+OpenAI board-watch 2026-11-22: +6 new, -6 gone (661 active [openai_us_fulltime])
+NEW Research Engineer / Research Scientist, Post-Training — Collective Alignment (User Signals) | San Francisco | Posted Today | https://jobs.ashbyhq.com/openai/ce15d226-65db-43f1-98ec-078e96a3a281
+NEW Research Engineer/Research Scientist-Post Training, Proactivity | San Francisco | Posted Today | https://jobs.ashbyhq.com/openai/d1906ab2-b829-4a13-b1f2-f4af97d699fa
+NEW Research Engineer/Research Scientist- Post Training, Model Experience | San Francisco | Posted Today | https://jobs.ashbyhq.com/openai/bc85c1a9-0f75-4c3a-807b-6d2bb26c8445
+NEW Research Engineer / Research Scientist - Post Training, Memory | San Francisco | Posted Today — 25 applicants | https://jobs.ashbyhq.com/openai/ecfe655c-1369-4bcd-aae0-4a3b75fdf61b
+NEW Research Engineer / Research Scientist, Human Flourishing | San Francisco | Posted Today | https://jobs.ashbyhq.com/openai/740b5d1b-f63d-49bb-962d-8e2778e925ef
+NEW Research Engineer / Research Scientist, Health | San Francisco | Posted Today | https://jobs.ashbyhq.com/openai/6785d983-8831-46d0-9c81-443f83664948
+GONE Research Engineer / Research Scientist - Post Training, Memory (first seen 2026-09-19)
+GONE Research Engineer / Research Scientist - Post Training, Personalization  (first seen 2026-09-19)
+GONE Research Engineer/Research Scientist - Post Training, North Stars (first seen 2026-09-19)
+GONE Research Engineer/Research Scientist- Post Training, Model Experience (first seen 2026-09-19)
+GONE Research Engineer / Research Scientist, Health (first seen 2026-09-19)
+GONE Research Engineer / Research Scientist, Human Flourishing (first seen 2026-10-29)
+(2026-11-22T18:03:41)
+
