@@ -17,16 +17,16 @@
   "muse": "error:HTTPError",
   "usajobs": "error:relay-error:fleet:http402",
   "himalayas": "ok",
-  "seed_envelope": "ok:11588/12500"
+  "seed_envelope": "ok:11662/12597"
  },
  "layers": {
-  "l0": 231,
-  "l1.5": 7429,
+  "l0": 233,
+  "l1.5": 7408,
   "?": 0,
   "l1": 70,
-  "l2": 960
+  "l2": 963
  },
- "ran_at": "2026-11-21T18:25:47Z",
+ "ran_at": "2026-11-22T18:48:00Z",
  "queries": [
   "product manager",
   "senior product manager",
@@ -36,50 +36,50 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 12597,
- "rows_dropped": 580,
+ "rows_kept": 12568,
+ "rows_dropped": 584,
  "counters": {
-  "family_other": 2653,
-  "nontech_gate": 512,
-  "dedup_merge": 4414,
+  "family_other": 2647,
+  "nontech_gate": 524,
+  "dedup_merge": 4503,
   "usgate_non_us": 34,
-  "pending_sector": 5486,
-  "staffing_repost": 2389,
-  "employer_anonymized": 270,
-  "dedup_dateless": 151,
-  "residual_dup_est": 6441,
-  "g1b_title": 35,
-  "screening_post": 33,
-  "seed_rows_in": 11588,
-  "seed_dup_absorbed": 1747,
-  "seed_dup_residual": 9838,
-  "roster_kept": 2651,
-  "agency_pending": 1669,
-  "res7_merge": 742,
-  "cross_src_merge": 100,
-  "jd_cache_hits": 1517,
-  "jd_seed_admitted": 1437,
-  "url_identity_merge": 559
+  "pending_sector": 5482,
+  "staffing_repost": 2397,
+  "employer_anonymized": 276,
+  "dedup_dateless": 144,
+  "residual_dup_est": 6436,
+  "g1b_title": 33,
+  "screening_post": 27,
+  "seed_rows_in": 11662,
+  "seed_dup_absorbed": 1812,
+  "seed_dup_residual": 9847,
+  "roster_kept": 2693,
+  "agency_pending": 1676,
+  "res7_merge": 881,
+  "cross_src_merge": 102,
+  "jd_cache_hits": 1504,
+  "jd_seed_admitted": 1424,
+  "url_identity_merge": 649
  },
- "seniority_conflicts": 1,
- "title_conflicts": 3,
+ "seniority_conflicts": 0,
+ "title_conflicts": 1,
  "day_delta_histogram": {
-  "re7": 742,
-  "xs3": 3,
-  "xs1": 85,
-  "xs2": 12,
-  "1": 13,
-  "0": 29
+  "re7": 881,
+  "xs3": 5,
+  "xs1": 78,
+  "xs2": 19,
+  "1": 11,
+  "0": 37
  },
- "dedup_merges": 4414,
+ "dedup_merges": 4503,
  "family_histogram": {
-  "adjacent": 1157,
-  "pm": 11440
+  "adjacent": 1150,
+  "pm": 11418
  },
  "seniority_histogram": {
-  "mid": 5280,
-  "senior": 4522,
-  "director+": 2465,
-  "junior": 330
+  "mid": 5276,
+  "senior": 4506,
+  "director+": 2459,
+  "junior": 327
  }
 }
