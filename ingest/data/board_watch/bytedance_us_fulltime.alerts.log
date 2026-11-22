@@ -305,3 +305,6 @@ NEW Solutions Architect | New York |  — 25 applicants | https://joinbytedance.
 NEW Solutions Architect | Los Angeles |  — 25 applicants | https://joinbytedance.com/search/7709798801414850869
 (2026-11-21T14:58:32)
 
+board-watch bytedance_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ByteDance&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-22T01:34:09)
+
