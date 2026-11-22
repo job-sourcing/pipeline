@@ -106,3 +106,9 @@ board-watch shein_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client 
 board-watch shein_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/shein/jobs?content=true)
 (2026-11-22T15:01:17)
 
+board-watch shein_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/shein/jobs?content=true)
+(2026-11-22T18:04:20)
+
+board-watch shein_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/shein/jobs?content=true)
+(2026-11-22T18:06:28)
+
