@@ -3317,3 +3317,9 @@ REPOSTED Account Manager, Media and Entertainment (label reset 1d→4d)
 REPOSTED … and 68 more (reposts.jsonl)
 (2026-11-23T18:56:30)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-23T22:14:36)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-23T22:17:10)
+
