@@ -582,3 +582,9 @@ board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429
 board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
 (2026-11-22T18:02:22)
 
+board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
+(2026-11-23T01:59:04)
+
+board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
+(2026-11-23T02:03:15)
+
