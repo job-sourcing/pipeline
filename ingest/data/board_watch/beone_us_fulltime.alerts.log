@@ -1147,3 +1147,9 @@ REPOSTED Senior Contract Associate - Clinical Trials (label reset 15d→0d, star
 REPOSTED Senior CRA (label reset 3d→0d, startDate +7d)
 (2026-11-23T18:58:25)
 
+board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
+(2026-11-23T22:14:28)
+
+board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
+(2026-11-23T22:19:34)
+
