@@ -113,3 +113,7 @@ board-watch webull_us_fulltime FAILED: list fetch crashed (HTTPError: 403 Client
 board-watch webull_us_fulltime FAILED: list fetch crashed (HTTPError: 403 Client Error: Forbidden for url: https://ats.rippling.com/webull/jobs?page=0)
 (2026-11-14T13:53:36)
 
+Webull board-watch 2026-11-23: +1 new, -0 gone (20 active [webull_us_fulltime])
+NEW Chief Compliance Officer - Webull Financial  | New York, NY | 2026-10-23 | https://ats.rippling.com/webull/jobs/002e31e0-3cd2-4ea6-8718-c688b63ba29a
+(2026-11-23T01:59:25)
+
