@@ -308,3 +308,9 @@ NEW Solutions Architect | Los Angeles |  — 25 applicants | https://joinbytedan
 board-watch bytedance_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=ByteDance&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-22T01:34:09)
 
+ByteDance board-watch 2026-11-23: +0 new, -3 gone (452 active [bytedance_us_fulltime])
+GONE Research Scientist - Global Frontier Tech Recruitment Program - 2027 Start (PhD) (first seen 2026-09-19)
+GONE AI Molecular Dynamics Algorithm Researcher Graduate (Seed AI for Science - Atomistic AI) - 2027 Start (PhD) (first seen 2026-09-19)
+GONE Research Scientist Graduate (Seed Quantum Chemistry and Machine Learning) - 2027 Start (PhD) (first seen 2026-09-19)
+(2026-11-23T22:14:03)
+
