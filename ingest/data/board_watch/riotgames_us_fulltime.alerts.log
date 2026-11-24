@@ -473,3 +473,6 @@ GONE Principal, Growth Lead - League of Legends (first seen 2026-10-09)
 GONE Senior 3D Environment Artist - VALORANT, Maps (first seen 2026-11-18)
 (2026-11-24T05:35:36)
 
+board-watch riotgames_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Riot+Games&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-24T20:53:10)
+
