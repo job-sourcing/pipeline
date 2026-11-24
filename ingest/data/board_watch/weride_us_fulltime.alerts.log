@@ -60,3 +60,9 @@ board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclare
 board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-18T16:02:03)
 
+WeRide board-watch 2026-11-24: +0 new, -3 gone (6 active [weride_us_fulltime])
+GONE Motion Planning Engineer (first seen 2026-09-24)
+GONE New Grads 2027 - Software Engineer - Perception/Computer Vision (first seen 2026-09-24)
+GONE New Grads 2027 - Software Engineer, Algorithm (first seen 2026-09-24)
+(2026-11-24T20:51:51)
+
