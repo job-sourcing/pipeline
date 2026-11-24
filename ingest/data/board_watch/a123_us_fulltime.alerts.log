@@ -51,3 +51,6 @@ board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared 
 board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.a123systems.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 4/14
 (2026-11-22T18:01:22)
 
+board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.a123systems.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-24T05:31:13)
+
