@@ -49,3 +49,7 @@ GONE FP&A Manager (first seen 2026-09-27)
 board-watch foxit_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-18T16:00:10)
 
+Foxit board-watch 2026-11-24: +0 new, -1 gone (6 active [foxit_us_fulltime])
+GONE Senior Business System Analyst (first seen 2026-10-07)
+(2026-11-24T18:22:13)
+
