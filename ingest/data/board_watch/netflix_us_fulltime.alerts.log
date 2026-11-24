@@ -1340,3 +1340,9 @@ board-watch netflix_us_fulltime FAILED: LIST FAILED — nothing to diff; state u
 board-watch netflix_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
 (2026-11-24T18:29:19)
 
+board-watch netflix_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-24T20:52:33)
+
+board-watch netflix_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://netflix.wd108.myworkdayjobs.com/wday/cxs/netflix/Netflix/jobs)
+(2026-11-24T20:56:20)
+
