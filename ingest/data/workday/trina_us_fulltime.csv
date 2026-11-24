@@ -1,24 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-2527054,Tracker Technical Supervisor (Commisioning),Trina Solar,,Full time,Posted 242 Days Ago,,,"Chile, Trina Solar (Chile) SpA",1,"Chile, Trina Solar (Chile) SpA",false,,,,0,"Responsibilities:
-Lead the commissioning of photovoltaic plants, ensuring that hazard and risk analyses are conducted prior to the start of activities. Coordinate start-up activities with Project Management, Engineering, Construction, HSE, Contractors, Facility Operations, and Commissioning personnel. Oversee on-site materials management and logistics.
-
-Perform general technical and engineering activities, including regulatory compliance reviews, project planning, grid connection cost assessments, technical design, preparation and evaluation of tender specifications, design reviews, and other key aspects of renewable energy project development.
-Â
-Prepare reports and documentation at the completion of each activity. Manage all commissioning documentation, including Taking-Over Certificates, as-built drawings, manufacturer manuals and instructions, punch lists, test procedures, risk assessments and method statements, permits, and final commissioning reports.
-Â
-Participate in design phases to ensure proper alignment and integration of all commissioning activities.
-Â
-Serve as the main point of contact for client relationships, ensuring effective communication and satisfaction throughout the project lifecycle.
-
-Requirements:
-Bachelorâs degree in engineering or a related field.
-Minimum of 4 years of experience in the construction of photovoltaic (PV) projects.
-Valid driverâs license.
-Ability to read and interpret technical drawings and project plans.
-Strong technical knowledge of commissioning processes and procedures.
-Proficiency in Microsoft Office and general computer skills.
-English level B2 (able to actively participate and lead meetings in English).
-Availability and willingness to travel nationally and/or internationally.",1755,https://trina-solar-1.jobs.personio.com/job/2527054,,,,,,,not_checked,,2026-10-11,,2026-11-23,,,,true,0,,,,,,,,,,,,,,
 2632167,Field Service Engineer (Utility BESS),Trina Solar,,Full time,Posted 152 Days Ago,,,"Poland - Home Based, Remote",1,"Poland - Home Based, Remote",true,,Poland,,0,"Responsibilities:
 Support and execute on site installations and commissioning works of Trinaâs energy storage projects in Eastern Europe
 Support Trinaâs project execution effortsÂ
@@ -51,42 +31,4 @@ Possibility for remote work
 Qualified training and support with our buddy system
 A detailed introduction to our product portfolio
 Competitive salary and a great bonus structure
-Attractive additional benefits that vary depending on the country",2185,https://trina-solar-1.jobs.personio.com/job/2632167,,,,,,,not_checked,,2026-10-11,,2026-11-23,,,,true,0,,,,,,,,,,,,,,
-2833293,LAC Storage Service Engineer,Trina Solar,,Full time,Posted 4 Days Ago,,,"Chile, Trina Solar (Chile) SpA",1,"Chile, Trina Solar (Chile) SpA",false,,,,0,"Responsibilities:
-Field Technical Support & Troubleshooting
-Act as second-level technical support for the FSE Supervisor and FSE Crew within the assigned zone, engaging when a fault or incident exceeds field-level troubleshooting capability.
-Diagnose root cause of recurring or complex faults across BESS systems â batteries, PCS/inverters, BMS/EMS, HVAC and balance-of-plant equipment.
-Escalate to the OEM/equipment manufacturer when a fault exceeds local resolution capacity, and track the case through to closure.
-Support incident response and root-cause analysis jointly with the FSE Supervisor, defining and tracking corrective actions within contractual response times.
-Maintenance Planning & Engineering
-Develop and maintain the preventive/predictive maintenance plan for assets in the assigned zone, incorporating OEM technical alerts, defect campaigns and field observations fed back by the FSE Supervisor and FSE Crew.
-Generate corrective action plans when recurring failure patterns or performance degradation are identified, and track their execution to closure.
-Recommend improvements to O&M procedures and to the site Maintenance Scope based on lessons learned from field execution.
-Sequence and prioritize inspection and maintenance campaigns across the zone in coordination with the FSE Supervisor, balancing site access, equipment condition and active OEM alerts.
-Availability & Performance Management
-Monitor plant availability, alarms and degradation indicators across the zone through SCADA/EMS and service management tools, issuing early warnings when trends threaten contractual performance targets.
-Prioritize technical interventions according to their impact on availability and contractual criticality (LTSA/SLA commitments).
-Support the FSE Supervisor in evaluating spare-parts and resourcing constraints that could affect maintenance timelines or contractual response commitments.
-Reporting & Technical Interface
-Act as the technical point of contact for client site representatives on engineering matters that exceed the FSE Supervisor's scope of detail.
-Document and transfer technical knowledge to the FSE Crew to raise first-line troubleshooting capability.
-Feed maintenance plan status, root-cause findings and recurring-failure trends into the Engineering Lead's zone-level and portfolio engineering reporting.
-Flag to the Engineering Lead when the assigned zone's site count or technical workload approaches the threshold defined for single-Engineer coverage, to trigger timely evaluation of additional Service Engineer coverage as the portfolio grows.
-
-Requirements:
-Requirements
-
-Technical degree or Bachelor's degree in Electrical, Electronic, Electromechanical Engineering or a related discipline.
-A minimum of 3â5 years of experience in maintenance or engineering of BESS, solar PV, or other grid-connected/industrial energy assets.
-Prior experience providing technical support to field crews or subcontracted maintenance teams is preferred.
-Availability to travel to site as required by the assigned zone.
-Availability for after-hours escalation on critical incidents, consistent with the 24/7 operational nature of the Maintenance scope.
-Fluency in Spanish and English is required.
-Competencies
-Working knowledge of BESS/PCS and MV equipment, and ability to read electrical diagrams and single-line drawings.
-Knowledge of BMS/EMS systems and associated communication protocols (Modbus, DNP3, as applicable).
-Root cause analysis (RCA) skills and familiarity with maintenance methodologies (RCM, TPM a plus).
-Working knowledge of SCADA/EMS and remote asset monitoring platforms.
-Ability to work under reactive pressure without losing planning discipline.
-Strong technical communication skills with field teams, OEMs and client site representatives.
-Autonomy â the role operates without constant direct supervision and must prioritize without escalating every decision.",3913,https://trina-solar-1.jobs.personio.com/job/2833293,,,,,,,not_checked,,2026-10-11,,2026-11-23,,,,true,0,,,,,,,,,,,,,,
+Attractive additional benefits that vary depending on the country",2185,https://trina-solar-1.jobs.personio.com/job/2632167,,,,,,,not_checked,,2026-10-11,,2026-11-24,,,,true,0,,,,,,,,,,,,,,

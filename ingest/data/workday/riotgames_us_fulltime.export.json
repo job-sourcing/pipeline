@@ -1,18 +1,18 @@
 {
  "label": "riotgames_us_fulltime",
- "rows": 97,
- "kept": 97,
+ "rows": 93,
+ "kept": 93,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 4,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 42,
+ "gate_dropped": 46,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 42,
+ "gate_dropped_new": 46,
  "feed_excluded_state": 0,
  "state_rows": 139,
  "banded": 26,
  "lca_pools": 29,
- "snapshot": "2026-11-23"
+ "snapshot": "2026-11-24"
 }

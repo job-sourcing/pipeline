@@ -1,18 +1,18 @@
 {
  "label": "genscript_us_fulltime",
- "rows": 46,
- "kept": 46,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 47,
+ "kept": 45,
+ "new": 2,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 33,
+ "gate_dropped": 34,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 33,
+ "gate_dropped_new": 34,
  "feed_excluded_state": 0,
- "state_rows": 79,
+ "state_rows": 81,
  "banded": 15,
  "lca_pools": 48,
- "snapshot": "2026-11-23"
+ "snapshot": "2026-11-24"
 }
