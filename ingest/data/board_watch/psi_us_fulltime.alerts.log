@@ -232,3 +232,14 @@ Power Solutions International board-watch 2026-11-24: +0 new, -1 gone (32 active
 GONE Supply Chain Buyer/Planner (first seen 2026-11-21)
 (2026-11-24T05:31:35)
 
+board-watch psi_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Power+Solutions+International&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-24T18:24:31)
+
+Power Solutions International board-watch 2026-11-24: +3 new, -2 gone (33 active [psi_us_fulltime])
+NEW Supply Chain Buyer/Planner | Corporate Headquarters 201 - Wood Dale, IL 60191 |  | https://www.paycomonline.net/v4/ats/web.php/portal/39DCF574C16448FF09ADD3EF809F9EF2/career-page
+NEW Mechanical Engineer II | WI Darien - Darien, WI 53114 |  | https://www.paycomonline.net/v4/ats/web.php/portal/39DCF574C16448FF09ADD3EF809F9EF2/career-page
+NEW Mechanical Engineer I   | WI Darien - Darien, WI 53114 |  | https://www.paycomonline.net/v4/ats/web.php/portal/39DCF574C16448FF09ADD3EF809F9EF2/career-page
+GONE Electrical Controls Engineer 2 (first seen 2026-10-11)
+GONE Fabrication Manager (first seen 2026-10-11)
+(2026-11-24T18:24:31)
+
