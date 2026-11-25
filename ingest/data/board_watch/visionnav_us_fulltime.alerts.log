@@ -49,3 +49,6 @@ board-watch visionnav_us_fulltime FAILED: EMPTY-LIST ANOMALY (had 15 postings ye
 board-watch visionnav_us_fulltime FAILED: EMPTY-LIST ANOMALY (had 15 postings yesterday) — state untouched
 (2026-11-24T18:29:19)
 
+board-watch visionnav_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.visionnav.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-25T04:37:30)
+
