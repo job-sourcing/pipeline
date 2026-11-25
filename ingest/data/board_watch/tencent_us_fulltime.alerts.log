@@ -669,3 +669,9 @@ REPOSTED (1)
 REPOSTED Tencent Cloud –  Senior Strategic Sales Executive (Malaysia) (label reset 30+d→0d, startDate +43d)
 (2026-11-25T17:44:20)
 
+board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
+(2026-11-25T20:11:25)
+
+board-watch tencent_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://tencent.wd1.myworkdayjobs.com/wday/cxs/tencent/Tencent_Careers/jobs)
+(2026-11-25T20:13:52)
+

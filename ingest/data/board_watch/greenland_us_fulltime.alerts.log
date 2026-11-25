@@ -45,3 +45,6 @@ board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undecl
 board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='greenlandusa.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))) — UNREACHABLE, state untouched; streak 12/14
 (2026-11-25T17:41:05)
 
+board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='greenlandusa.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))) — UNREACHABLE, state untouched; streak 13/14
+(2026-11-25T20:08:40)
+
