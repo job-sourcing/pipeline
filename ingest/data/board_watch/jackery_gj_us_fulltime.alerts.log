@@ -37,3 +37,12 @@ board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjo
 board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (http402) — failing loudly, state untouched)
 (2026-11-18T18:58:14)
 
+board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (http500) — failing loudly, state untouched)
+(2026-11-25T20:01:26)
+
+Jackery board-watch 2026-11-25: +2 new, -1 gone (2 active [jackery_gj_us_fulltime])
+NEW Senior Website Sales Representative at Jackery United States | Freeville, NY | Posted 9 Days Ago | https://www.google.com/search?q=Senior+Website+Sales+Representative+at+Jackery+United+States+Jackery&ibp=htl;jobs&hl=en&gl=us
+NEW Inbound Website Sales Specialist DTC | Fremont, CA | Posted 13 Days Ago | https://www.google.com/search?q=Inbound+Website+Sales+Specialist+DTC+Jackery&ibp=htl;jobs&hl=en&gl=us
+GONE Senior Website Sales Representative (first seen 2026-10-13)
+(2026-11-25T20:03:51)
+

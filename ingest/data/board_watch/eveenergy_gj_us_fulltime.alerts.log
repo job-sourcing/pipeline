@@ -39,3 +39,13 @@ board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: g
 board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (http402) — failing loudly, state untouched)
 (2026-11-18T18:58:12)
 
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (http500) — failing loudly, state untouched)
+(2026-11-25T20:01:19)
+
+EVE Energy board-watch 2026-11-25: +2 new, -2 gone (2 active [eveenergy_gj_us_fulltime])
+NEW B2B Battery Solutions Sales Pro — Mandarin & English | Lake Forest, CA | Posted 9 Days Ago | https://www.google.com/search?q=B2B+Battery+Solutions+Sales+Pro+%E2%80%94+Mandarin+%26+English+EVE+Energy&ibp=htl;jobs&hl=en&gl=us
+NEW Strategic Key Account Manager - Power Tool Industry \| Milwaukee, Wisconsin at EVE Energy Co.,Ltd. Milwaukee, WI | Milwaukee, WI | Posted 20 Days Ago | https://www.google.com/search?q=Strategic+Key+Account+Manager+-+Power+Tool+Industry+%5C%7C+Milwaukee%2C+Wisconsin+at+EVE+Energy+Co.%2CLtd.+Milwaukee%2C+WI+EVE+Energy&ibp=htl;jobs&hl=en&gl=us
+GONE Finance Accounting Intern at EVE Energy Co.,Ltd. Lake Forest, CA (first seen 2026-10-13)
+GONE After Sales Service Manager at EVE Energy Co.,Ltd. Orange County, CA (first seen 2026-10-13)
+(2026-11-25T20:03:39)
+

@@ -43,3 +43,9 @@ board-watch renogy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjob
 board-watch renogy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:renogy: firecrawl scrape failed (http402) — failing loudly, state untouched)
 (2026-11-18T18:58:09)
 
+board-watch renogy_gj_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-25T20:00:56)
+
+board-watch renogy_gj_us_fulltime FAILED: LIST FAILED — nothing to diff; state untouched (fail-safe)
+(2026-11-25T20:03:26)
+
