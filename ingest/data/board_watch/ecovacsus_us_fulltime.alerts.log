@@ -500,3 +500,9 @@ board-watch ecovacsus_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Cli
 board-watch ecovacsus_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.ecovacs.com/_next/data/9.9.23/us/careers/job-list.json)
 (2026-11-25T20:11:45)
 
+board-watch ecovacsus_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.ecovacs.com/_next/data/9.9.23/us/careers/job-list.json)
+(2026-11-26T03:47:28)
+
+board-watch ecovacsus_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.ecovacs.com/_next/data/9.9.23/us/careers/job-list.json)
+(2026-11-26T03:51:25)
+
