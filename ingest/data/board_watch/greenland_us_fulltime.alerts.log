@@ -60,3 +60,15 @@ board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undecl
 board-watch greenland_us_fulltime FAILED: UNREACHABLE STREAK CAP HIT (15 legs) — escalating to failed: the board is persistently network-dead from this egress; check the board URL and the adapter transport
 (2026-11-26T03:50:58)
 
+board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='greenlandusa.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))) — UNREACHABLE, state untouched; streak 16/14
+(2026-11-26T17:23:03)
+
+board-watch greenland_us_fulltime FAILED: UNREACHABLE STREAK CAP HIT (16 legs) — escalating to failed: the board is persistently network-dead from this egress; check the board URL and the adapter transport
+(2026-11-26T17:23:03)
+
+board-watch greenland_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='greenlandusa.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))) — UNREACHABLE, state untouched; streak 17/14
+(2026-11-26T17:27:20)
+
+board-watch greenland_us_fulltime FAILED: UNREACHABLE STREAK CAP HIT (17 legs) — escalating to failed: the board is persistently network-dead from this egress; check the board URL and the adapter transport
+(2026-11-26T17:27:20)
+
