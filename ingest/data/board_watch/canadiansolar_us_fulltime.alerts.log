@@ -643,3 +643,9 @@ NEW Managing Director, Key Accounts - Utility Scale | US - Remote | Posted Today
 NEW Creative and Brand Designer | Walnut Creek, CA | Posted Today | https://canadiansolar.wd5.myworkdayjobs.com/CanadianSolar/job/Walnut-Creek-CA/Creative-and-Brand-Designer_10001612
 (2026-11-26T03:55:29)
 
+board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
+(2026-11-26T17:23:18)
+
+board-watch canadiansolar_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://canadiansolar.wd5.myworkdayjobs.com/wday/cxs/canadiansolar/CanadianSolar/jobs)
+(2026-11-26T17:26:54)
+

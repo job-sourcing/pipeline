@@ -3435,3 +3435,9 @@ REPOSTED Senior AI Agent Test Developer, SDET (label reset 12d→0d)
 REPOSTED … and 115 more (reposts.jsonl)
 (2026-11-26T03:50:43)
 
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-26T17:23:43)
+
+board-watch nvidia_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/nvidiaexternalcareersite/jobs)
+(2026-11-26T17:27:23)
+
