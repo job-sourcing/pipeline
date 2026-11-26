@@ -376,3 +376,9 @@ board-watch mandarinoriental_us_fulltime FAILED: list fetch crashed (RuntimeErro
 board-watch mandarinoriental_us_fulltime FAILED: list fetch crashed (RuntimeError: mandarinoriental:careers.mandarinoriental.com: Miami filter served a challenge/empty shell (no 'Displaying' marker) — board throttled or shape changed; refusing to report 0 rows as complete)
 (2026-11-26T03:51:27)
 
+board-watch mandarinoriental_us_fulltime FAILED: list fetch crashed (RuntimeError: mandarinoriental:careers.mandarinoriental.com: Miami filter served a challenge/empty shell (no 'Displaying' marker) — board throttled or shape changed; refusing to report 0 rows as complete)
+(2026-11-26T17:23:30)
+
+board-watch mandarinoriental_us_fulltime FAILED: list fetch crashed (RuntimeError: mandarinoriental:careers.mandarinoriental.com: Miami filter served a challenge/empty shell (no 'Displaying' marker) — board throttled or shape changed; refusing to report 0 rows as complete)
+(2026-11-26T17:26:59)
+
