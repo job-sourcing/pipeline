@@ -1,18 +1,18 @@
 {
  "label": "okx_us_fulltime",
- "rows": 99,
- "kept": 98,
+ "rows": 100,
+ "kept": 99,
  "new": 1,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
- "gate_dropped": 170,
+ "gate_dropped": 172,
  "gate_dropped_survivors": 0,
- "gate_dropped_new": 170,
+ "gate_dropped_new": 172,
  "feed_excluded_state": 0,
- "state_rows": 269,
+ "state_rows": 272,
  "banded": 0,
  "lca_pools": 4,
- "snapshot": "2026-11-26"
+ "snapshot": "2026-11-27"
 }
