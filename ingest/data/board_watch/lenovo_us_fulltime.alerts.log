@@ -1069,3 +1069,6 @@ GONE Solutions Channel Account Executive (Bay Area & PNW) (first seen 2026-11-04
 GONE Field SMB Business Development Manager (Northeast) (first seen 2026-09-27)
 (2026-11-26T17:23:03)
 
+board-watch lenovo_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Lenovo&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-27T17:01:31)
+
