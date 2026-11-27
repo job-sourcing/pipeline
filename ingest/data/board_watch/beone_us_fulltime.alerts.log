@@ -1201,3 +1201,9 @@ board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client 
 board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
 (2026-11-26T19:53:27)
 
+board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
+(2026-11-27T03:47:01)
+
+board-watch beone_us_fulltime FAILED: list fetch crashed (HTTPError: 429 Client Error: Too Many Requests for url: https://beigene.wd5.myworkdayjobs.com/wday/cxs/beigene/BeiGene/jobs)
+(2026-11-27T03:51:47)
+

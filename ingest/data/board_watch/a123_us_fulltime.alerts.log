@@ -57,3 +57,9 @@ board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared 
 board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-24T20:50:32)
 
+board-watch a123_us_fulltime FAILED: list fetch crashed (HTTPError: 430 Client Error: Unknown Status for url: https://www.a123systems.com/verify430251023manu.html?token=2010774948&sign=af03b1a5d57b023c75546a2d12cef3de&mmtype=CE-WAF-NIP-MM&client_ip=172.210.149.19&backurl=%2Fjoin_us%2Fp-6-6.html)
+(2026-11-27T03:46:28)
+
+board-watch a123_us_fulltime FAILED: list fetch crashed (HTTPError: 430 Client Error: Unknown Status for url: https://www.a123systems.com/verify430251023manu.html?token=2010781500&sign=28b19272fd48bfd0275607f17a9d7d9f&mmtype=CE-WAF-NIP-MM&client_ip=172.210.149.19&backurl=%2Fjoin_us%2Fp-6-6.html)
+(2026-11-27T03:51:41)
+
