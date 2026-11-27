@@ -7,7 +7,7 @@
   "careerjet": "error:product mana:HTTPError",
   "jooble": "ok",
   "indeed": "ok",
-  "li_keyword": "ok",
+  "li_keyword": "blocked:429:director of ",
   "yc": "ok",
   "wellfound": "ok",
   "hn": "ok",
@@ -17,16 +17,16 @@
   "muse": "error:HTTPError",
   "usajobs": "ok:relay",
   "himalayas": "ok",
-  "seed_envelope": "ok:11833/12155"
+  "seed_envelope": "ok:11901/12785"
  },
  "layers": {
-  "l0": 237,
-  "l1.5": 7403,
+  "l0": 238,
+  "l1.5": 7397,
   "?": 0,
-  "l1": 70,
-  "l2": 1110
+  "l1": 60,
+  "l2": 1125
  },
- "ran_at": "2026-11-26T20:40:32Z",
+ "ran_at": "2026-11-27T20:26:43Z",
  "queries": [
   "product manager",
   "senior product manager",
@@ -36,50 +36,50 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 12785,
- "rows_dropped": 604,
+ "rows_kept": 12861,
+ "rows_dropped": 553,
  "counters": {
-  "family_other": 2725,
-  "nontech_gate": 553,
-  "dedup_merge": 4511,
-  "usgate_non_us": 28,
-  "pending_sector": 5617,
-  "staffing_repost": 2321,
-  "employer_anonymized": 366,
-  "dedup_dateless": 127,
-  "residual_dup_est": 6542,
+  "family_other": 2742,
+  "nontech_gate": 493,
+  "dedup_merge": 4540,
+  "usgate_non_us": 25,
+  "pending_sector": 5629,
+  "staffing_repost": 2309,
+  "employer_anonymized": 378,
+  "dedup_dateless": 121,
+  "residual_dup_est": 6583,
   "g1b_title": 36,
-  "screening_post": 15,
-  "seed_rows_in": 11833,
-  "seed_dup_absorbed": 1763,
-  "seed_dup_residual": 10067,
-  "roster_kept": 2844,
-  "agency_pending": 1602,
-  "res7_merge": 990,
-  "cross_src_merge": 100,
-  "jd_cache_hits": 1430,
-  "jd_seed_admitted": 1403,
-  "url_identity_merge": 610
+  "screening_post": 24,
+  "seed_rows_in": 11901,
+  "seed_dup_absorbed": 1788,
+  "seed_dup_residual": 10110,
+  "roster_kept": 3000,
+  "agency_pending": 1588,
+  "res7_merge": 896,
+  "cross_src_merge": 103,
+  "jd_cache_hits": 1423,
+  "jd_seed_admitted": 1393,
+  "url_identity_merge": 575
  },
- "seniority_conflicts": 0,
- "title_conflicts": 4,
+ "seniority_conflicts": 1,
+ "title_conflicts": 7,
  "day_delta_histogram": {
-  "re7": 990,
-  "xs3": 3,
-  "xs1": 74,
-  "xs2": 23,
-  "1": 13,
-  "0": 49
+  "re7": 896,
+  "xs1": 82,
+  "xs2": 20,
+  "xs3": 1,
+  "1": 11,
+  "0": 55
  },
- "dedup_merges": 4511,
+ "dedup_merges": 4540,
  "family_histogram": {
-  "adjacent": 1108,
-  "pm": 11677
+  "adjacent": 1113,
+  "pm": 11748
  },
  "seniority_histogram": {
-  "mid": 5354,
-  "senior": 4591,
-  "director+": 2520,
-  "junior": 320
+  "mid": 5384,
+  "senior": 4629,
+  "director+": 2529,
+  "junior": 319
  }
 }
