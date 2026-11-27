@@ -1070,3 +1070,31 @@ NEW Temporary Part-Time Sales Associate | US-NY-Lake Grove |  | https://careers-
 NEW Store Manager | US-PA-Pittsburgh |  | https://careers-miniso-us.icims.com/jobs/4866/store-manager/job?in_iframe=1
 (2026-11-25T20:10:42)
 
+board-watch minisous_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=MINISO+%28US%29&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-27T17:04:11)
+
+MINISO (US) board-watch 2026-11-27: +3 new, -19 gone (960 active [minisous_us_fulltime])
+NEW Assistant Store Manager | US-TX-Austin |  | https://careers-miniso-us.icims.com/jobs/4901/assistant-store-manager/job?in_iframe=1
+NEW Store Manager | US-TX-Plano |  | https://careers-miniso-us.icims.com/jobs/4900/store-manager/job?in_iframe=1
+NEW Part-Time Shift Leader | US-PA-Erie |  | https://careers-miniso-us.icims.com/jobs/4867/part-time-shift-leader/job?in_iframe=1
+GONE Part-Time Shift Leader (first seen 2026-11-18)
+GONE Seasonal Part-Time Shift Leader (first seen 2026-11-18)
+GONE Seasonal Part-Time Sales Associate (first seen 2026-11-14)
+GONE Seasonal Part-Time Sales Associate (first seen 2026-11-12)
+GONE Part-Time Shift Leader (first seen 2026-11-10)
+GONE Part-Time Shift Leader (first seen 2026-11-07)
+GONE Part-Time Shift Leader (first seen 2026-10-28)
+GONE Seasonal Part-Time Sales Associate (first seen 2026-10-28)
+GONE Seasonal Part-Time Sales Associate (first seen 2026-10-22)
+GONE Part-Time Sales Associate (first seen 2026-10-17)
+GONE Seasonal Part-Time Sales Associate (first seen 2026-10-17)
+GONE Seasonal Part-Time Sales Associate (first seen 2026-10-16)
+GONE Part-Time Shift Leader (first seen 2026-10-11)
+GONE Part-Time Sales Associate (first seen 2026-10-11)
+GONE Part-Time Sales Associate (first seen 2026-10-11)
+GONE Part-Time Sales Associate (first seen 2026-10-11)
+GONE Part-Time Shift Leader (first seen 2026-10-11)
+GONE Part-Time Sales Associate (first seen 2026-10-11)
+GONE Part-Time Shift Leader (first seen 2026-10-11)
+(2026-11-27T17:04:11)
+
