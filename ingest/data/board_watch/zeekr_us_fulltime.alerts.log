@@ -164,3 +164,6 @@ Zeekr board-watch 2026-11-27: +1 new, -0 gone (32 active [zeekr_us_fulltime])
 NEW Accounting Internship - Geely | Amsterdam, Netherlands | 2026-11-27 | https://zeekreu.teamtailor.com/jobs/8806594-accounting-internship-geely
 (2026-11-27T17:06:13)
 
+board-watch zeekr_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Zeekr&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-27T19:41:05)
+
