@@ -1072,3 +1072,7 @@ GONE Field SMB Business Development Manager (Northeast) (first seen 2026-09-27)
 board-watch lenovo_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Lenovo&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-27T17:01:31)
 
+Lenovo board-watch 2026-11-28: +0 new, -1 gone (261 active [lenovo_us_fulltime])
+GONE AI Application Developer (first seen 2026-10-02)
+(2026-11-28T03:32:57)
+
