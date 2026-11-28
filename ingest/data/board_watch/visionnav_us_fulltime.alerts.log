@@ -61,3 +61,6 @@ board-watch visionnav_us_fulltime UNREACHABLE: list fetch network-failed (undecl
 board-watch visionnav_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.visionnav.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 3/14
 (2026-11-28T03:31:50)
 
+board-watch visionnav_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.visionnav.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 4/14
+(2026-11-28T15:53:19)
+

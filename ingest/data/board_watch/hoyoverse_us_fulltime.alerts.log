@@ -104,3 +104,6 @@ HoYoverse board-watch 2026-11-26: +1 new, -0 gone (18 active [hoyoverse_us_fullt
 NEW Head of Account & Payment Risk Management | Singapore | Posted Today | https://jobs.ashbyhq.com/hoyoverse/347a75c0-85b5-4a24-958a-c74ba060015b
 (2026-11-26T03:48:07)
 
+board-watch hoyoverse_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=HoYoverse&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-28T15:52:20)
+
