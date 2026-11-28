@@ -493,3 +493,6 @@ Riot Games board-watch 2026-11-27: +0 new, -1 gone (136 active [riotgames_us_ful
 GONE Staff Software Engineer - Unpublished R&D Product (Australia-Based; Relocation Provided) (first seen 2026-10-07)
 (2026-11-27T17:05:53)
 
+board-watch riotgames_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Riot+Games&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-28T15:54:37)
+
