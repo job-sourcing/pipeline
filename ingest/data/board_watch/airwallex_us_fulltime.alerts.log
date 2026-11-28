@@ -1252,3 +1252,6 @@ GONE Site Reliability Engineer, Spend (first seen 2026-11-20)
 GONE Counsel, Product Legal (first seen 2026-11-26)
 (2026-11-27T17:00:50)
 
+board-watch airwallex_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Airwallex&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-28T03:30:20)
+
