@@ -1,9 +1,9 @@
 {
  "label": "popmart_us_fulltime",
- "rows": 66,
- "kept": 66,
+ "rows": 65,
+ "kept": 65,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 113,
  "feed_excluded_state": 0,
- "state_rows": 179,
+ "state_rows": 178,
  "banded": 0,
  "lca_pools": 6,
- "snapshot": "2026-11-27"
+ "snapshot": "2026-11-28"
 }
